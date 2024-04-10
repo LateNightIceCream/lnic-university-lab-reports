@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "saw_sensor")(type "KiCad")(uri "${KIPRJMOD}/libs/saw_sensor_local/saw_sensor.pretty")(options "")(descr ""))
+)

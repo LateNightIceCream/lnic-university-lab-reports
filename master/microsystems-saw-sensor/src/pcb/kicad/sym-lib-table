@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "saw_sensor")(type "KiCad")(uri "${KIPRJMOD}/libs/saw_sensor_local/saw_sensor.kicad_sym")(options "")(descr ""))
+  (lib (name "hs_wismar_logo")(type "KiCad")(uri "${KIPRJMOD}/libs/saw_sensor_local/hs_wismar_logo.kicad_sym")(options "")(descr ""))
+)
