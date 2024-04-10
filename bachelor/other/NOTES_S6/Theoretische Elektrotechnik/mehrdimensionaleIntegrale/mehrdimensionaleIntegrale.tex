@@ -1,0 +1,123 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\newcommand{\colorEmph}[1]{\textbf{\color{blue-5}#1}}
+
+
+\begin{document}
+
+\begin{center}
+  \Large{Mehrdimensionale Integrale}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\section{Eindimensional}
+Bei der bestimmten Integration über eine Funktion erhält man anschaulich die \colorEmph{Fläche}, die der Funktionsgraph mit der x-Achse in einem \colorEmph{Intervall [a,b]} einschließt.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{eindim.pdf_tex}}
+\end{figure}
+
+\[F = \int_{a}^{b}{f(x) \cdot dx}\]
+
+\section{Zweidimesional}
+\subsection{Kartesisch}
+Bei der Integration über eine Funktion mit 2 Argumenten/Variablen integriert man nicht über ein Intervall (wie auch), sondern über eine(r) \colorEmph{Fläche} M, die in der Ebene liegt, die die Argumente aufspannen (x,y - Ebene). Diese Fläche ist eine \colorEmph{Menge von (x,y)-Paaren} und bei der Integration über dieses Gebiet wird nur der Teil der Funktion betrachtet, der direkt über der Fläche liegt (wie ein Intervall, nur 2D). Das Ergebnis ist dann das \colorEmph{Volumen} zwischen der Fläche, über der integriert wurde und dem Funktionsverlauf.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweidim.pdf_tex}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.75\textwidth}{!}{\import{graphics/}{zweidim_bsp.pdf_tex}}
+\end{figure}
+
+\[V = \iint_{M}{f(x,y)\cdot dx dy}\]
+
+\subsubsection{Beispiel}
+\[f(x,y) = x^{2} + y^{2}\]
+\begin{center}
+M = Dreieck (0|0), (0|1), (1|0)
+\end{center}
+
+Es muss zwei Mal integriert werden. Ein Mal über y und ein Mal über x. y läuft dabei einfach von 0 bis 1 (eine Seite des Dreiecks auf der y-Achse). Nun ist die Frage, in welchen Grenzen über x integriert werden muss. Man muss also eine Funktion \colorEmph{$x(y)$} finden, die einem für jeden Punkt y von (0,1) einen x-Wert entsprechend der gegebenen Dreiecksform zuweist.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweidim_bsp2.pdf_tex}}
+\end{figure}
+
+\[x(y) = (-y) + 1 = 1 - y\]
+
+x läuft also von 0 bis $1-y$. Die doppelte Integration kann man sich dann vorstellen wie eine geschachtelte for-schleife: das äußere Integral hält die Variable y konstant auf einem Wert während das innere Integral für dieses konstante y alle x-Werte in seinen Grenzen (0...y-1), die von y abhängen, durchläuft.
+
+\[V = \iint_{M}{(x^2+y^{2})dxdy}\]
+\[V = \int_{0}^{1}{  \int_{0}^{1-y}{(x^{2}+y^{2}dx)}dy  }\]
+\[V = \frac{1}{6}\]
+
+\subsection{Polar}
+Statt in kartesischen Koordinaten kann man auch völlig äquivalent die mehrdimensionale Funktion als Funktion der Punkte im Abstand $r$ mit dem Winkel $\phi$ darstellen, $f(r,\phi)$. Die infinitesimalen Flächenelemente der Grundfläche, die nun aufsummiert werden, hängen nicht nur von $dr$ und $d\phi$ ab ($dr\cdot d\phi$ funktioniert schon einheitenmäßig nicht). Es bedarf einem Korrekturfaktor.
+
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweidim_blep.pdf_tex}}
+\end{figure}
+
+Um die Fläche $dA$ zu bestimmen, braucht man die Bogenlänge arc. Da alles sehr klein ist, vernachlässigt man dann die Krümmungen und nimmt einfach an, dass die Fläche ein Rechteck der Fläche $dA = dr \cdot \text{arc}$ ist.
+\[\text{arc} = r \cdot d\phi\]
+\[dA = dr \cdot r \cdot d\phi\]
+
+Dadurch wird das Integral zu
+\[\int_{\phi}\int_{r}{f(r,\phi) \cdot r \cdot drd\phi}\]
+
+\subsubsection{Beispiel}
+Es soll die Fläche eines Kreises mit Radius $R$ mithilfe der mehrdimensionalen Integration bestimmt werden. Als Fläche $M$ wird dafür der Kreis selbst verwendet. Man muss sich die Frage stellen, welches Volumen (das Ergebnis der Integration) als Wert die Fläche A selbst ist. Die Antwort ist die konstante Funktion $f(x,y) = 1$ (ergibt Zylinder mit Höhe 1).
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweidim_blep_bsp.pdf_tex}}
+\end{figure}
+
+Nun wird diese Funktion ganz normal in das Integral eingesetzt.
+\[\int_{\phi}\int_{r}{1 \cdot r \cdot drd\phi}\]
+
+$\phi$ läuft einmal um den gesamten Kreis, also von $0...2\pi$. Für jeden eingestellten Winkel (äußeres Integral) muss nun der Radius variiert werden von $0...R$.
+
+\[\int_{0}^{2\pi}\int_{0}^{R}{1 \cdot r \cdot drd\phi} = \pi \cdot R^{2}\]
+
+Vergleich: Die kartesische Methode würde den Kreis in solche Flächen aufteilen:
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweidim_blep_bsp_kart.pdf_tex}}
+\end{figure}
+
+Die polare Methode würde den Kreis in solche Flächen aufteilen:
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweidim_blep_bsp_kart_2.pdf_tex}}
+\end{figure}
+
+
+\section{Dreidimensional}
+Das Gebiet über das Integriert wird ist selbst ein \colorEmph{Volumen} / Raum M, also wie im 2D-Fall die Menge aller Punkte (x,y,z) in einem bestimmten Gebiet.
+Bei einer dreidimensionalen Funktion wird jedem Raumpunkt (x,y,z) ein Funktionswert, also ein Skalar oder auch ein Vektor oder auch eine komplexe Zahl zugewiesen.
+\[X=\iiint_{M}{f(x,y,z) \cdot dxdydz}\]
+
+Ein Beispiel ist eine Funktion, die jedem Punkt im Raum eine Dichte zuordnet. Um dann die Gesamtmasse eines bestimmten Teilgebietes (M) des Raumes herauszufinden, muss man die Dichte $\rho(x,y,z)$ über dieses Teilgebiet integrieren. Die Dichte jedes Punktes (x,y,z), der im Gebiet M liegt wird aufsummiert und man erhält die Masse.
+
+\[m_{M} = \iiint_{M}{\rho(x,y,z) dxdydz}\]
+
+
+%\notebox{hey}{\blindtext}
+\end{document}

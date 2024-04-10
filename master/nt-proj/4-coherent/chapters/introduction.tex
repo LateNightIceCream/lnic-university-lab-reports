@@ -1,0 +1,13 @@
+The goal of coherent and incoherent integration is to improve the signal-to-noise-ratio (SNR) of a measured signal by means of averaging. \cite{hysell_radar}\cite{yt_tut}\\
+
+With the assumption that the underlying noise is white and gaussian distributed (uncorrelated) with a mean of zero, we can conclude that averaging this form of noise will move it towards its mean value of zero. For averaging, one has to define a window size (number of samples) which should match the duration that the complex symbols are stable. This defines the number of samples that will contribute to a new averaged sample and therefore determine the sample rate of the result.\\
+
+The (non-)coherent integrations will act as a low pass averaging filter and reduce the number of samples and therefore the sampling rate which also affects the frequency resolution. So ideally, the signal of interest is oversampled, i.e. there are more samples than needed so that the downsampled version is still sufficient for spectral analysis and provides the benefits of the integrations.\\
+
+An example application is pulsed radar, where the pulse duration is generally known so that echos can be averaged with these methods.
+
+% - incoherent int
+% no increase in SNR??
+% averaging magnitude of the spectra
+% -> lose phase information
+% - block-wise -> split time series, take spectra -> average (like welch method) OR rearrange

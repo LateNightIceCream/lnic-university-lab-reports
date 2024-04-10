@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="618"
+   viewBox="0 0 264.58332 163.5125"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="/home/zamza/Documents/HS/Notes Template/general_graphic_template.svg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="geschaeft_baum.svg">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Mend"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.4) rotate(180) translate(10,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path978" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="221.56693"
+     inkscape:cy="348.66975"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     width="1000px"
+     inkscape:window-width="1571"
+     inkscape:window-height="1127"
+     inkscape:window-x="182"
+     inkscape:window-y="40"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <ellipse
+       style="fill:#e9ecef;fill-opacity:0.464112;stroke-width:0.122975;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path1261"
+       cx="171.388"
+       cy="97.596642"
+       rx="50.8918"
+       ry="6.9053364"
+       transform="matrix(0.92154401,0.38827392,-0.967617,0.25242297,0,0)" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="21.713284"
+       y="40.749065"
+       id="text832"><tspan
+         sodipodi:role="line"
+         id="tspan830"
+         x="21.713284"
+         y="40.749065"
+         style="stroke-width:0.264583"><tspan
+   style="fill:#0ca678"
+   id="tspan836">E: </tspan>&quot;Kunde erscheint in der nächsten</tspan><tspan
+         sodipodi:role="line"
+         x="21.713284"
+         y="45.599766"
+         style="stroke-width:0.264583"
+         id="tspan834">Stunde&quot;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="21.495277"
+       y="51.19043"
+       id="text842"><tspan
+         sodipodi:role="line"
+         id="tspan840"
+         x="21.495277"
+         y="51.19043"
+         style="stroke-width:0.264583"><tspan
+   style="fill:#d6336c"
+   id="tspan850">NE: </tspan>&quot;Kunde erscheint nicht in der </tspan><tspan
+         sodipodi:role="line"
+         x="21.495277"
+         y="56.04113"
+         style="stroke-width:0.264583"
+         id="tspan844">nächsten Stunde&quot;</tspan></text>
+    <circle
+       style="fill:#dee2e6;fill-opacity:0.464112;stroke-width:0.285001"
+       id="path852"
+       cx="23.062586"
+       cy="74.157784"
+       r="1.9080311" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#0ca678;stroke-width:0.264583"
+       x="34.744785"
+       y="68.981918"
+       id="text858"><tspan
+         sodipodi:role="line"
+         id="tspan856"
+         x="34.744785"
+         y="68.981918"
+         style="fill:#0ca678;stroke-width:0.264583">E</tspan></text>
+    <path
+       style="fill:none;stroke:#212529;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 34.037237,67.857002 23.145424,74.145393 33.64918,80.20974"
+       id="path862" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#d6336c;stroke-width:0.264583"
+       x="34.351437"
+       y="81.758965"
+       id="text866"><tspan
+         sodipodi:role="line"
+         id="tspan864"
+         x="34.351437"
+         y="81.758965"
+         style="fill:#d6336c;stroke-width:0.264583">NE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="21.835222"
+       y="81.56842"
+       id="text870"><tspan
+         sodipodi:role="line"
+         id="tspan868"
+         x="21.835222"
+         y="81.56842"
+         style="stroke-width:0.264583">$1-p$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="25.576998"
+       y="69.373779"
+       id="text874"><tspan
+         sodipodi:role="line"
+         id="tspan872"
+         x="25.576998"
+         y="69.373779"
+         style="stroke-width:0.264583">$p$</tspan></text>
+    <path
+       style="fill:none;stroke:#212529;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 51.45637,73.910211 39.698856,80.698419 50.94133,87.189267"
+       id="path876" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#d6336c;stroke-width:0.264583"
+       x="51.125492"
+       y="88.688522"
+       id="text866-3"><tspan
+         sodipodi:role="line"
+         id="tspan864-6"
+         x="51.125492"
+         y="88.688522"
+         style="fill:#d6336c;stroke-width:0.264583">NE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#0ca678;stroke-width:0.264583"
+       x="52.468578"
+       y="74.959076"
+       id="text858-7"><tspan
+         sodipodi:role="line"
+         id="tspan856-5"
+         x="52.468578"
+         y="74.959076"
+         style="fill:#0ca678;stroke-width:0.264583">E</tspan></text>
+    <path
+       style="fill:none;stroke:#212529;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 68.83362,80.812714 57.0761,87.600925 68.31858,94.091776"
+       id="path876-3" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#d6336c;stroke-width:0.264583"
+       x="68.502739"
+       y="95.591026"
+       id="text866-3-5"><tspan
+         sodipodi:role="line"
+         id="tspan864-6-6"
+         x="68.502739"
+         y="95.591026"
+         style="fill:#d6336c;stroke-width:0.264583">NE</tspan></text>
+    <path
+       style="fill:none;stroke:#212529;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 86.15094,87.744534 74.39343,94.532746 85.6359,101.0236"
+       id="path876-1" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#d6336c;stroke-width:0.264583"
+       x="85.820053"
+       y="102.52284"
+       id="text866-3-2"><tspan
+         sodipodi:role="line"
+         id="tspan864-6-7"
+         x="85.820053"
+         y="102.52284"
+         style="fill:#d6336c;stroke-width:0.264583">NE</tspan></text>
+    <path
+       style="fill:none;stroke:#212529;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 91.42825,102.07249 9.59197,5.53793"
+       id="path959" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="101.38181"
+       y="108.8826"
+       id="text963"><tspan
+         sodipodi:role="line"
+         id="tspan961"
+         x="101.38181"
+         y="108.8826"
+         style="stroke-width:0.264583">$... N Kunden$</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 109.55359,110.20343 c -3.78912,2.42121 0.13508,1.97212 1.62858,2.86999 0.54517,0.32774 -3.52188,3.4861 1.66614,2.97553"
+       id="path967" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="113.35674"
+       y="117.38699"
+       id="text1247"><tspan
+         sodipodi:role="line"
+         id="tspan1245"
+         x="113.35674"
+         y="117.38699"
+         style="stroke-width:0.264583">unbekannt</tspan></text>
+  </g>
+</svg>

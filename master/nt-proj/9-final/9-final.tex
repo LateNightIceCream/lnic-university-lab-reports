@@ -1,0 +1,67 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{preamble.tex}
+
+\addbibresource{sources.bib}
+\addbibresource{web.bib}
+
+\begin{document}
+
+\includepdf{./titlepage/titlepage.pdf}
+
+\section*{Homework Tasks}
+\input{task.tex}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Task 1}
+\input{chapters/task-1.tex}
+
+\section{Task 2}
+\input{chapters/task-2.tex}
+
+\section{Task 3}
+\input{chapters/task-3.tex}
+
+\section{Task 4}
+\input{chapters/task-4.tex}
+
+\section{Task 5}
+\input{chapters/task-5.tex}
+
+\section{Task 6}
+\input{chapters/task-6.tex}
+
+\section{Task 7}
+\input{chapters/task-7.tex}
+
+%\section{Conclusions}
+%\input{chapters/conclusions.tex}
+
+\pagebreak
+% ------------------------------------------------------------------------------
+
+\printbibheading
+%\begin{refsection}[sources.bib]
+%\nocite{*}
+%\printbibliography[heading=subbibliography,title={Literature}]
+%\end{refsection}
+
+\begin{refsection}[web.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Web}]
+\end{refsection}
+
+\begin{refsection}[software.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Software Used}]
+\end{refsection}
+
+
+\appendix
+\section{Task 4: Additional Cross Spectra}\label{app:xspec}
+\input{task4_app.tex}
+
+\end{document}

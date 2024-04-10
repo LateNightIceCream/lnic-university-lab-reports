@@ -1,0 +1,30 @@
+\section{Introduction}
+A periodogram is an estimation of the power spectral density (PSD) of a random process such as a measured signal that is superimposed by noise.
+
+\subsection{Power Spectral Density}
+The power spectral density (PSD) describes the distribution of a signal's power over frequency. This is in contrast to the regular fourier transform (or DFT) of the signal which describes its harmonic content based on amplitude and phase. It can be used to uncover hidden periodicities of a random process (or an estimation of such).\cite{weather_radar}
+\\
+
+The autocorrelation of a signal will provide a measure of similarity of the signal to a time-shifted version of itself. It will be in units of power ($\si{\volt\squared}$). If the signal has any periodic components then the autocorrelation will also show this periodicity. Therefore, we can analyze the harmonic content of the signal's power by performing the fourier transform of its autocorrelation, which will result in the power spectral density (PSD) and be in units of ``power per frequency'' ($\si{\volt\squared\per\hertz}$ or $\si{\volt\squared\second}$).
+For a wide-sense-stationary (WSS) random process (such as white gaussian noise), the autocorrelation does not change with time. Hence it is used as a method of estimating the power spectral density. \cite{weather_radar}\cite{book_2}
+
+\subsection{Periodograms}
+Since real-world signals are usually time-limited, the exact analytical solutions for the power spectral density cannot be obtained because we can never measure \textit{all} of the infinite realizations of a random process, i.e. we discretely sample the process. Therefore, an estimation has to be made that, ideally, increases in quality as more of the process is measured. \cite{book_2}\cite{weather_radar}  % The Fourier Transform of the auto correlation x[n] is identical to the magnitude squared of the Fourier Transform of x[n]\\
+
+Methods for spectral estimation can generally be split into the two categories \textit{parametric} and \textit{non-parametric}. \cite{book_2}\\
+
+The simplest estimator of the PSD is the standard non-parametric periodogram. It is defined as the square of the DFT sequence normalized by the sequence length. If $x[n]$ is a sequence of $N$ samples of the random process and its DFT is $X[m]$, then the PSD-estimation computes as \cite{weather_radar}
+\[
+\tilde{S}_{m} = \frac{1}{N}\cdot|X[m]|^{2}
+\]
+
+Which can be shown to equal the DFT of the autocorrelation function. \cite{dsp_tp}\cite{book_2}\\
+
+ There are extensions to the standard periodogram that aim to reduce its relatively poor variance, e.g. \textit{Bartlett's Method} or \textit{Welch's Method} which will be discussed below. \cite{dsp_tp}
+
+%The DFT of the signal's autocorrelation function is the sampled version of its power spectral density.\\
+
+% A standard periodogram tries to estimate the PSD by first squaring the input sequence to produce a representation of the power and then performing the DFT to produce a
+% It will provide a better estimate for the PSD the greater the time interval $T$ of averaging as well as the number of averages.
+
+% % With discrete and time-limited sequences, we cannot perform the fourier integral but have to rely on the DFT to perform spectral analysis. So by taking the DFT of the autocorrelation of some input sequence, an estimation of the PSD can be obtained.

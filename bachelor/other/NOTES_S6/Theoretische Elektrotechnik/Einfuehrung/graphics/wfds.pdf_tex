@@ -1,0 +1,69 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'wfds.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{272.58669311bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.52368725)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{wfds.pdf}}%
+    \put(0.11369011,0.1991993){\color[rgb]{1,0.41960784,0.41960784}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d\vec{s}$\end{tabular}}}}%
+    \put(0.34103755,0.29891832){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$...$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{wfds.pdf}}%
+    \put(-0.00342853,0.08174906){\color[rgb]{0.91372549,0.9254902,0.9372549}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec{r_a}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{wfds.pdf}}%
+    \put(0.06949688,0.34812432){\color[rgb]{0.45490196,0.56078431,0.98823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec{F}(\vec{r_1})$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{wfds.pdf}}%
+    \put(0.68761686,0.4541095){\color[rgb]{0.91372549,0.9254902,0.9372549}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec{r_b}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{wfds.pdf}}%
+    \put(0.60227096,0.34689727){\color[rgb]{0.45490196,0.56078431,0.98823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vec{F}(\vec{r_2})$\end{tabular}}}}%
+    \put(0.57443297,0.49373688){\color[rgb]{1,0.41960784,0.41960784}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d\vec{s}$\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

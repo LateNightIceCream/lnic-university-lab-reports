@@ -1,0 +1,100 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'prozessverwaltung.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{186.9683926bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.33563154)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{prozessverwaltung.pdf}}%
+    \put(0.17456622,1.29285657){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Arbeitsspeicher\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{prozessverwaltung.pdf}}%
+    \put(0.17590175,1.20938729){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Betriebssystem\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{prozessverwaltung.pdf}}%
+    \put(0.05814508,1.12236327){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Kontext A\end{tabular}}}}%
+    \put(0.07166228,0.94230236){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}SP\end{tabular}}}}%
+    \put(0.07928632,0.88571099){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}IP\end{tabular}}}}%
+    \put(0.0749406,0.99526475){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Hi\end{tabular}}}}%
+    \put(0.07024925,1.05428171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{prozessverwaltung.pdf}}%
+    \put(0.16625187,1.05126122){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{prozessverwaltung.pdf}}%
+    \put(0.16625187,0.9980288){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{prozessverwaltung.pdf}}%
+    \put(0.16625187,0.94479638){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}430A\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{prozessverwaltung.pdf}}%
+    \put(0.16625187,0.89156395){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4EE0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{prozessverwaltung.pdf}}%
+    \put(0.41570297,1.12236327){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Kontext B\end{tabular}}}}%
+    \put(0.42922016,0.94230236){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}SP\end{tabular}}}}%
+    \put(0.4368442,0.88571099){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}IP\end{tabular}}}}%
+    \put(0.43249848,0.99526475){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Hi\end{tabular}}}}%
+    \put(0.42780714,1.05428171){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lo\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{prozessverwaltung.pdf}}%
+    \put(0.52380975,1.05126122){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{prozessverwaltung.pdf}}%
+    \put(0.52380975,0.9980288){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}F000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{prozessverwaltung.pdf}}%
+    \put(0.52380975,0.94479638){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}62E2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{prozessverwaltung.pdf}}%
+    \put(0.52380975,0.89156395){\color[rgb]{0.97254902,0.97647059,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}E340\end{tabular}}}}%
+    \put(0.20617744,0.71188828){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Programm A\end{tabular}}}}%
+    \put(0.20732651,0.30954471){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Programm B\end{tabular}}}}%
+    \put(0.23624053,0.03255386){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}unbenutzt\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{prozessverwaltung.pdf}}%
+    \put(0.85834561,0.82469415){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}4000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{prozessverwaltung.pdf}}%
+    \put(0.85834584,0.56395493){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}5000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{prozessverwaltung.pdf}}%
+    \put(0.85433463,0.08259027){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}F000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{prozessverwaltung.pdf}}%
+    \put(0.85433463,0.76452361){\color[rgb]{0.12941176,0.14509804,0.16078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}IP\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

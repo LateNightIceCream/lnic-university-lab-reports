@@ -1,0 +1,158 @@
+\documentclass[a4paper, 12pt]{article}
+
+\setlength\parindent{0pt}
+
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+
+\definecolor{red1}{HTML}{f38181}
+\definecolor{yellow1}{HTML}{fce38a}
+\definecolor{green1}{HTML}{95e1d3}
+\definecolor{blue1}{HTML}{66bfbf}
+
+\newcommand{\holine}{
+  \noindent\rule{\textwidth}{0.618pt}\\[0.021286\paperheight]
+}
+
+\newcommand{\minisec}[1]{ \underline{\textit {#1} } \\[0.021286\paperheight]}
+
+\newcommand{\plotfun}[3]{
+  \vspace{0.021286\paperheight}
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+        axis x line=center,
+        axis y line=center,
+        ]
+        \addplot[draw=red1][domain=#2:#3]{#1};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+}
+
+\tcbset{colback=white,colframe=red1!100!black,title=Note!,width=0.618\paperwidth,arc=0pt}
+\newcommand{\notebox}[1]{
+
+ \begin{center}
+  \begin{tcolorbox}[]
+   #1 
+  \end{tcolorbox}
+ 
+ \end{center} 
+ 
+}
+
+\begin{document}
+
+\section*{Oscilloscopes, an overwiew}
+
+Oscilloscopes are useful for displaying specific numerical measurements as
+well as depicting graphical representations of AC Waveforms.\\
+  
+\holine 
+
+\subsection*{ General }
+
+Oscilloscope screens are divided into vertical divisions and horizontal
+divisions where the vertical axis is showing the current value of the
+measured/calculated quantity (voltage, power, etc.) in the current domain (time,
+frequency), shown by the horizontal axis. The axes divisions can be scaled to fit the appropriate value of
+measurement. The scaling is given in unit/division so the
+interpretation of an oscilloscope graph/plot requires knowledge of the divison scaling. 
+
+\notebox{
+
+  In order to successfully interpret and analyze an oscilloscope picture, one has to know:\\
+  \begin{itemize}
+    \item[+]{Horizontal scaling including Units}
+    \item[+]{Vertical scaling including Units}
+    \item[+]{Domain (time or frequency)}\\
+
+    \small{Do the calculations first!}
+  \end{itemize}
+}
+
+\subsection*{ Layout }
+
+Scopes can have multiple channels to display multiple waveforms at the same
+time. There is a vertical group for each channel to scale the signals
+individually. There is a horizontal group to scale the horizontal axis. There is
+a Trigger Section. There is a function group, within which there is a selection option that can be pushed and rotated to
+make menu selections on the scope.\\
+
+There might be Test Points (PROBE COMP), square metal contacts with a hole,
+which continuously generate a test signal (i.e. a square wave).
+
+\subsection*{Probe Attenuation}
+Scope probes have a switch to change the \emph{attenuation}.\\
+
+\notebox{ Attenuation is the act of \emph{reducing something}}.
+
+Attenuation values:\\
+
+\textbf{1X} : Signal is not attenuated, the probe will deliver 1V to the scope for every
+1V experienced at the grabber.\\
+
+\textbf{10X}: Signal is attenuated 10 times, the probe will delive 1/10th of 1V to the
+scope for every 1V experienced at the grabber.\\
+
+\notebox{ 10X attenuation means dividing by 10, not multiplying }
+
+Attenuation is needed when the measured voltage exeeds the limits of the
+oscilloscope. Attenuation on the probe and on the scope both have to match for proper results.
+
+\subsection*{Couple}
+Coupling is a means of displaying the waveform with or without removing its DC
+Offset (and grounding it).\\
+
+There are:
+
+\begin{itemize}
+  \item[-]{ DC Coupling }
+    $\rightarrow $DC Offset included (AC and DC)
+  \item[-]{ AC Coupling }
+    $\rightarrow $DC Offset removed (\textbf{zero centered} -- Pure AC)
+  \item[-]{ Grounding (GND)}
+    $\rightarrow $flatlines the display
+\end{itemize}
+
+\subsection*{Positioning}
+Positioning knob in the vertical group:\\
+
+changing the vertical axis position of the waveform
+indicated by arrow with the channel number on the left.
+
+\subsection*{Trigger}
+The trigger value will tell the oscilloscope when to measure / to trigger the
+measurement of the channel, i.e. when set to 1.2V, the oscilloscope will wait
+until the triggering event (1.2V value) is reached and will then sample the
+waveform for the set amount of time. The trigger is indicated by an arrow on the
+right of the screen.
+A regularily occuring trigger event will result in regular occuring data.
+
+\notebox{
+
+  The trigger basically tells the scope when to start on the left side.
+  
+}
+
+Waveforms are not always periodic though, so there is a button on the
+oscilloscope:\\
+\textbf{ RUN/STOP }\\
+that captures a momentary picture of the waveform \\
+
+Triggering also works horizontally, shifting the measured waveform left or right.
+
+\holine
+
+You should set the oscilloscope up with proper settings before measuring the
+waveform. Try to get as much information about the waveform(s) under inspection
+as possible and \emph{then} set up the oscilloscope.
+
+\notebox{\textbf{Do the calculations first!}}
+
+\pagebreak
+
+\end{document}

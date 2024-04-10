@@ -1,0 +1,98 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'zweikind_woche_tab.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{338.00598992bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.748932)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.18049055,0.62136683){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mo\end{tabular}}}}%
+    \put(0.24524836,0.62045517){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Di\end{tabular}}}}%
+    \put(0.28984462,0.62029115){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mi\end{tabular}}}}%
+    \put(0.33742089,0.62130749){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Do\end{tabular}}}}%
+    \put(0.3919525,0.62048371){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fr\end{tabular}}}}%
+    \put(0.44044821,0.62035107){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sa\end{tabular}}}}%
+    \put(0.49432501,0.62009056){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}So\end{tabular}}}}%
+    \put(0.6078653,0.62184267){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mo\end{tabular}}}}%
+    \put(0.67262312,0.62093101){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Di\end{tabular}}}}%
+    \put(0.71721925,0.62076699){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mi\end{tabular}}}}%
+    \put(0.76479559,0.62178333){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Do\end{tabular}}}}%
+    \put(0.81932713,0.62095955){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fr\end{tabular}}}}%
+    \put(0.8678229,0.62082691){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sa\end{tabular}}}}%
+    \put(0.92169964,0.6205664){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}So\end{tabular}}}}%
+    \put(0.13437161,0.64923471){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1. Kind\end{tabular}}}}}%
+    \put(0.0059961,0.61812133){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2. Kind\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{zweikind_woche_tab.pdf}}%
+    \put(0.28002349,0.69089614){\color[rgb]{0.94117647,0.39607843,0.58431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mädchen\end{tabular}}}}%
+    \put(0.7460798,0.69130333){\color[rgb]{0.45490196,0.56078431,0.98823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Junge\end{tabular}}}}%
+    \put(0.04474439,0.39152746){\color[rgb]{0.96862745,0.51372549,0.6745098}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mädchen\end{tabular}}}}}%
+    \put(0.04692109,0.12881028){\color[rgb]{0.45490196,0.56078431,0.98823529}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Junge\end{tabular}}}}}%
+    \put(0.08544198,0.5629816){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mo\end{tabular}}}}%
+    \put(0.09841472,0.52591885){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Di\end{tabular}}}}%
+    \put(0.09425531,0.48765811){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mi\end{tabular}}}}%
+    \put(0.08945486,0.4513939){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Do\end{tabular}}}}%
+    \put(0.09918533,0.41136033){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fr\end{tabular}}}}%
+    \put(0.09305544,0.36982712){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sa\end{tabular}}}}%
+    \put(0.09291039,0.33285686){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}So\end{tabular}}}}%
+    \put(0.08884312,0.2661166){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mo\end{tabular}}}}%
+    \put(0.10181586,0.22905382){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Di\end{tabular}}}}%
+    \put(0.09765645,0.19079309){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Mi\end{tabular}}}}%
+    \put(0.092856,0.15452888){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Do\end{tabular}}}}%
+    \put(0.10258647,0.1144953){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Fr\end{tabular}}}}%
+    \put(0.09645658,0.0729621){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sa\end{tabular}}}}%
+    \put(0.09631153,0.0359919){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}So\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{zweikind_woche_tab.pdf}}%
+    \put(0.66253697,0.1938523){\color[rgb]{0.45490196,0.56078431,0.98823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Nicht erlaubt\\laut Zusatzinformation\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{zweikind_woche_tab.pdf}}%
+    \put(0.18859789,0.00049261){\color[rgb]{0.69411765,0.59215686,0.98823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Erlaubte Fälle\end{tabular}}}}%
+    \put(0.23173816,0.47959651){\color[rgb]{0.21960784,0.85098039,0.6627451}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Günstige Fälle,\\M-M und eines davon\\am Montag geboren\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{zweikind_woche_tab.pdf}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,35 @@
+\documentclass[a4paper, 12pt]{article}
+
+\input{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\section{Regelungstechnik Notes}
+
+\begin{itemize}
+  \item Führungsgröße $w(t)$ (soll wert)
+  \item Regeldifferenz $e(t)$
+  \item $u(t)$ (Regler)
+  \item $x(t)$ (ist wert, Regelstrecke)
+  \item $z(t)$ Störgröße
+  \item Rückführgröße $r(t)$ 
+\end{itemize}
+
+Die Rückführgröße $r(t)$ ist der durch einen Sensor/Wandler erfasste und an den Eingang
+rückgekoppelte Wert der Regelgröße $x(t)$ \\
+
+\noindent Die Regeldifferenz $e(t)$ ergibt sich als:
+$$e(t) = \textrm{Führungsgröße} - \textrm{Rückführgröße} = w(t)-r(t)$$
+
+
+\noindent Eine Steuerung ist wie eine Regelung aufgebaut, nur ohne
+Führungsgröße, Rückführgröße, Regeldifferenz und Regler. Sie besteht lediglich aus
+Stellgröße, Störgröße und 'Regelgröße'.\\
+Bei einer Steuerung werden keine Toleranzen und Störgrößen ausgeglichen.
+Regelungen sind dagegen aufwendiger und teurer.
+
+\holine{\textwidth}
+
+\end{document}

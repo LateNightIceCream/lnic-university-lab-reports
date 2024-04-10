@@ -1,0 +1,10 @@
+For this, the the spectral representation of the received data is first computed using the FFT. Under the assumption that the absolute value of the received spectrum shows a gaussian shape, parameters of this shape (amplitude, mean, standard deviation) are estimated using two different methods. One is the Method of Moments and the other a curve fitting approach. The means of these distributions is then taken to be the doppler shifts.
+
+
+\subsection{Method of Moments}
+The Method of Moments (MoM) is a mathematical technique for evaluating and describing random processes such as noise or signal waveforms. It entails calculating multiple statistical moments of the random process in order to get insight into its characteristics such as form, distribution and various other aspects. The MoM approach allows us to compare and study various random processes based on their moments. The moments of a random process are calculated by taking weighted averages of the signal levels at distinct time instants. The instant order determines the weighting components. The moment order specifies the degree to which the signal values are raised during the averaging process.
+
+
+\subsection{Curve Fitting}
+To fit the doppler spectrum to a normal/gaussian/bell curve shape, first the noise level is calculated as the mean value of the averaged spectrum of the first five range gates and then subtracted from all spectra. Then, using the python function \inlinecodee{scipy.optimize.curve\_fit} with a gaussian model, the parameters amplitude, mean (doppler shift) and standard deviation are determined.
+

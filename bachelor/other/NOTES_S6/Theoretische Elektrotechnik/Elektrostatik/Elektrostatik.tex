@@ -1,0 +1,243 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\begin{document}
+
+\begin{center}
+  \Large{Theoretische Elektrotechnik: \textbf{Elektrostatik}}\\
+  \small{Elektrische Felder ruhender Ladungen}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\minisec{Ausgangsbedingungen der Elektrostatik:}
+\begin{itemize}
+  \item[$\vartriangleright$]$\divv \vec{D} = \rho$
+  \item[$\vartriangleright$]$\divv \vec{B} = 0$ (sowieso)
+  \item[$\vartriangleright$]$\rot \vec{E} = -\dfrac{\partial \vec{B}}{\partial t} \color{red-8}= 0 $ \\(Statik, das elektrische Feld ist wirbelfrei, da keine Magnetfelder und erst recht keine zeitlich änderlichen Felder betrachtet werden. Das elektrische Feld ist ein reines Quellenfeld)
+  \item[$\vartriangleright$] $\rot \vec{B} = \vec{S} + \dfrac{\partial \vec{D}}{\partial t} \color{red-8}=0$\\
+  (Statik, keine Stromdichten bzw. keine bewegten Ladungen und erst recht keine zeitliche Änderung dieser)
+\end{itemize}
+
+\section{Potentialgleichung}
+\subsection{Vorbetrachtung:}
+\[\rot \vec{E} = 0\]
+Bildung des elektrischen Feldes aus dem Gradienten über eine skalare Potentialfunktion $T$ sollte möglich sein:
+\[\vec{E} = -\grad T\]
+$\rightarrow$ Das heißt die Rotation des Gradienten des Skalarfeldes (=Vektorfeld) muss 0 sein. Es gibt keine Wirbel im Gradientenfeld.
+\[\rot \grad T {\color{red-8}=} 0\]
+\[\vecnabla \times (\vecnabla \cdot T) = \underbrace{\vecnabla \times \vecnabla}_{=0}\cdot T\]
+(Note: T ist ein skalar, also nur ein Faktor für die Vektoren, daher kann die Reihenfolge getauscht werden)\\
+\notebox{Wirbelfreiheit von Quellenfeldern}{
+  Quellenfelder (und das \emph{statische} elektrische Feld ist so eines) sind wirbelfrei!\\
+
+  Ein wirbelfreies Feld kann aus dem Gradienten einer skalaren Potentialfunktion abgeleitet werden!
+}
+
+\subsection{Herleitung der Potentialgleichung}
+\[\divD = \rho\]
+Mit der Materialgleichung wird daraus:
+\[\divv \epsilon \vec{E} = \rho\]
+\[\divE = \frac{\rho}{\epsilon}\]
+wobei $\epsilon$ konstant ist (nicht Orts- oder Feldstärkeabhängig).\\
+Mit $\vec{E} = -\grad \phi$ gilt:
+\[\divv \grad \varphi = -\frac{\rho}{\epsilon}\]
+Man kann es auch über den Laplace-Operator ausdrücken:
+\[\vecnabla \cdot (\vecnabla \cdot \varphi) = \vecnabla \vecnabla \varphi = -\frac{\rho}{\epsilon}\]
+\[\vecnabla^{2}=-\frac{\rho}{\epsilon}\]
+
+\notebox{Die Potentialfunktion}{
+  \[\Delta \varphi = -\dfrac{\rho}{\epsilon}\]
+}
+
+\subsection{Zwei Sonderfälle der Gleichung}
+\minisec{1. Fall: $\rho = 0$:}
+Keine \emph{Ladungsdichte} in dem Gebiet $\rightarrow$ Laplacegleichung.
+\notebox{Laplace-Gleichung}{
+  \[\Delta \varphi = 0\]
+}
+
+\minisec{2. Fall: $\rho \ne 0$:}
+\notebox{Poisson-Gleichung}{
+  \[\Delta \varphi = -\frac{\rho}{\epsilon}\]
+}
+
+\section{Lösung der Potentialgleichung für eine Punktquelle}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{potgleichung_pq.pdf_tex}}
+\end{figure}
+
+Hier trifft bereits die Laplace-Gleichung zu, da sich außerhalb der Punktquelle keine Ladungsdichten $\rho$ befinden. Geht man vom diskreten Punkt weg, findet man keine weiteren Ladungen. Daher ist die Raumladungsdichte und somit die Potentialgleichung gleich 0.
+
+\[\Delta \, \varphi = 0\]
+
+Am einfachsten lässt sich die Potentialgleichung mithilfe von Kugelkoordinaten lösen. Für die Anwendung des Laplaceoperators in Kugelkoordinaten (und anderen Systemen) gibt es eine Tabelle.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{kugelkoord.pdf_tex}}
+\end{figure}
+
+\[\Delta \varphi = \frac{1}{r^{2}} \cdot \frac{\partial}{\partial r} \left(r^{2}\cdot \frac{\partial \varphi}{\partial r} \right) + \frac{1}{r^{2} \cdot \sin\theta}\cdot \frac{\partial}{\partial \theta} \left(\sin\theta \cdot \frac{\partial\varphi}{\partial\theta}\right)+\frac{1}{r^{2}\cdot \sin^{2}\theta}\cdot \frac{\partial^{2}\varphi}{\partial \alpha^{2}}\]
+
+\[\hastobe 0\]
+
+\[\Delta \varphi = \frac{1}{r^{2}} \cdot \frac{\partial}{\partial r} \left(r^{2}\cdot \frac{\partial \varphi}{\partial r} \right) + \color{gray-4}\underbrace{\frac{1}{r^{2} \cdot \sin\theta}\cdot \frac{\partial}{\partial \theta} \left(\sin\theta \cdot \frac{\partial\varphi}{\partial\theta}\right)+\frac{1}{r^{2}\cdot \sin^{2}\theta}\cdot \frac{\partial^{2}\varphi}{\partial \alpha^{2}}}_{\text{entfällt}}\]
+
+Die Anteile/Ableitungen nach den Winkeln $\alpha$ und $\theta$ entfallen aufgrund der Kugelsymmetrie der Anordnung / des Feldes. \textbf{Das Potential $\varphi$ hängt nicht vom Winkel $\alpha$ oder vom Winkel $\theta$ ab. Es hängt nur vom Abstand $r$ vom Ursprung ab!}. Dadurch werden die Ableitungen nach den Winkeln (die ja die Änderungen des Potentials mit der Winkeländerung beschreiben) zu 0, da eine Winkeländerung keine Potentialänderung zu Folge hat.
+
+\begin{align*}
+\frac{1}{r^{2}} \cdot \frac{\partial}{\partial r} \cdot (r^{2}\cdot \frac{\partial \varphi}{\partial r}) &= 0 && \text{Multiplikation mit } r^{2}\\
+\frac{\partial}{\partial r} \cdot (r^{2}\cdot \frac{\partial \varphi}{\partial r}) &= 0 && \text{1. Integration nach } r\\
+r^{2}\cdot \frac{\partial \varphi}{\partial r} &= C_{1}\\
+\frac{\partial \varphi}{\partial r} &= \frac{C_{1}}{r^{2}} && \text{2. Integration nach }r\\
+\Aboxed{\varphi&=-\frac{C_{1}}{r} + C_{2}}
+\end{align*}
+Nach dieser Gleichung verläuft das Potential im Abstand r von der Punktladung.\\
+
+\minisec{Bestimmung der Konstanten}
+
+Zur Bestimmung der Integrationskonstanten müssen Raningungen festgelegt werden. Wir wissen, dass, wenn $r$ gegen $\infty$ läuft, dass $\varphi$ im unendlichen dann 0 sein muss. Das ist der phyiskalische Zusammenhang, der uns zur Konstante $C_{2}$ führt. denn $\frac{C_{1}}{r}$ läuft von alleine gegen 0 und damit $\varphi$ insgesamt 0 wird, muss somit $C_{2}$ gleich 0 sein.
+\[C_{2} = 0\]
+
+Es bleibt noch $C_{1}$.
+\[\varphi = -\frac{C_{1}}{r}\]
+aus dem Satz von Gauss:
+\[\oiint{\vec{D}\cdot d\vec{A}} = Q = \oiint{\epsilon\vec{E} \cdot d\vec{A}}\]
+Mit der zusätzlichen Information, dass es sich hierbei um ein kugelsymmetrisches, also radiales, Feld handelt und damit $\vec{E} = \vec{E}_{r}$ immer senkrecht auf $d\vec{A}$ steht, für ein gegebenes $r$ auf der Hüllfläche konstant und dadurch unabhängig von der Fläche $d\vec{A}$ ist, erhält man
+\[Q = \epsilon E_{r} \cdot \oiint{d\vec{A}}\]
+
+Da die Hüllfläche eine Kugelschale ist ergibt sich
+\[Q = \epsilon E_{r} \cdot 4 \pi r^{2}\]
+\[\boxed{E_{r} = \frac{Q}{4 \pi \epsilon r^{2}}}\]
+
+Damit haben wir aber immer noch nicht die fehlende Konstante oder das Potential ermittelt. Das Potential ergibt sich aus der Feldstärke über den Gradienten
+\[\vec{E}_{r} = -\grad \varphi\]
+Im Kugelkoordinatensystem bildet man den Gradienten über
+\[\vec{E} = - \left( \unitv_{r} \cdot \partialdev{\varphi}{r} + \unitv_{\theta} \cdot \frac{1}{r} \cdot \partialdev{\varphi}{\theta} \cdot \unitv_{\alpha} \cdot \frac{1}{r \sin\theta} \cdot \partialdev{\varphi}{\alpha}\right )\]
+\[\vec{E} = - \left( \unitv_{r} \cdot \partialdev{\varphi}{r} + \color{gray-4}\underbrace{\unitv_{\theta} \cdot \frac{1}{r} \cdot \partialdev{\varphi}{\theta} \cdot \unitv_{\alpha} \cdot \frac{1}{r \sin\theta} \cdot \partialdev{\varphi}{\alpha}}_{\text{entfällt}}\right )\]
+
+Wieder entfallen augrund der Kugelsymmetrie bzw. der Unempfindlichkeit des Potentials gegenüber Winkeländerungen die beiden hinteren Terme mit den Ableitungen nach den Winkeln. Es bleibt ein Vektor(feld) mit reiner Radialkomponente.
+
+\[E_{r} = - \partialdev{\varphi}{r}\]
+$\varphi$ wird eingesetzt aus der allgemeinen Lösung der Potentialgleichung ($\Delta \varphi = 0$, $C_{2}$ = 0).
+\[E_{r} = - \frac{\partial}{\partial r}\left(-\frac{C_{1}}{r}\right)\]
+\[E_{r} = -\frac{C_{1}}{r^{2}}\]
+Diese Gleichung wird nun mit dem Ergebnis aus dem Gausschen Satz verglichen.
+\[C_{1} = -\frac{Q}{4\pi\epsilon}\]
+dadurch wird
+\[\boxed{\varphi = \frac{Q}{4 \pi \epsilon \cdot r}}\]
+Was aus der Schulphysik bekannt ist.
+
+\section{Superpositionsprinzip}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{superpositionsprinzip.pdf_tex}}
+\end{figure}
+
+\paragraph{Frage:} Wie groß ist das Potential im Punkt P bei mehreren gegebenen Ladungen? \paragraph{Lösung:} Superposition der Teilbeiträge (Einzelpotentiale im Punkt P)
+diskret, N Punktladungen:
+\[\varphi_{P} = \sum_{i=1}^{N}{ \frac{Q_{i}}{4\pi \epsilon \cdot r_{i}} }\]
+
+Mit $Q_{i} = \rho_{i} \cdot dV_{i}$
+
+\[\varphi_{P} = \sum_{i=1}^{N}{ \frac{\rho_{i} \cdot dV_{i}}{4\pi \epsilon \cdot r_{i}} }\]
+
+Übergang Summe $\rightarrow$ Integral:
+\[\varphi_{P} = \frac{1}{4\pi\epsilon} \iiint{\frac{\overbrace{\rho \cdot dV}^{\text{Punktladungsbeiträge}}}{r}}\]
+
+\notebox{Superposition von Raumladungen}{
+\[\varphi_{P} = \frac{1}{4\pi\epsilon} \iiint{\frac{\rho \cdot dV}{r}}\]
+}
+
+\notebox{Superposition von Flächenladungen}{
+\[\varphi_{P} = \frac{1}{4\pi\epsilon} \iiint{\frac{\sigma \cdot dA}{r}}\]
+}
+
+\notebox{Superposition von Linienladungen}{
+\[\varphi_{P} = \frac{1}{4\pi\epsilon} \iiint{\frac{\lambda \cdot ds}{r}}\]
+}
+
+\section{Spiegelungsmethode}
+\paragraph{Prinzip}
+\begin{itemize}
+  \item[$\vartriangleright$] Leiteroberflächen sind gleichzeitig \emph{Äquipotentialflächen}
+  \item[$\vartriangleright$] Das innere eines Leiters ist \emph{feldfrei}
+  \item[$\vartriangleright$] Aus einer Leiteroberfläche treten die Feldlinien immer \emph{senkrecht} ein oder aus (siehe Gradient)
+  \item[$\vartriangleright$] Die Verteilung einer Ladung ergibt die Flächenladungsdichte \[\sigma  = \frac{dQ}{dA} \rightarrow Q = \iint{\sigma dA}\]
+  \item[$\vartriangleright$] Da an der Oberfläche nur die Normalkomponente von $\vec{E}$, $\vec{E}_{n}$, vorhanden ist und $\vec{D} = \epsilon \vec{E}$ gilt, ist auch nur die Normalkomponente von $\vec{D}$, $\vec{D}_{n}$ vorhanden und dadurch ist
+  \[Q = \iint{D_{n} \cdot dA}\]
+  aus dem Vergleich folgt
+  \[D_{n} = \sigma\]
+\end{itemize}
+
+
+Angenommen man hat eine Punktladung, deren Feldlinien auf eine Äquipotentialfläche treffen und gesucht ist das Potential $\varphi_{P}$, das durch die Ladung an einem Punkt $P$ (oder halt in jedem Raumpunkt) verursacht wird.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{spiegel0.pdf_tex}}
+\end{figure}
+
+Um diese Problemstellung zu vereinfachen, kann man sich eine entgegengesetzt geladene Ladung $Q'$ vorstellen, die sich im selben Abstand $r$ wie die Ladung $Q$ zur Äquipotentialfläche befindet. Die Ladung $Q'$ vervollständigt das bekannte Feldbild zweier Punktladungen im Abstand $2 r$. Durch die Superposition des Potentials beider Ladungen im Punkt $P$ ergibt sich dann das gesuchte Gesamtpotential $\varphi_{P}$
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{spiegel1.pdf_tex}}
+\end{figure}
+
+Die Superposition ergibt
+\[\varphi_{P} = \frac{1}{4\pi\epsilon} \left( \frac{Q}{r_{1}} {\color{red-8}{-}} \frac{Q}{r_{2}}\right)\]
+\[\boxed{\varphi_{P} = \frac{Q}{4\pi\epsilon} \left( \frac{1}{r_{1}} {\color{red-8}{-}} \frac{1}{r_{2}}\right)}\]
+
+\section{Erweiterte Spiegelmethode}
+Es stellt sich die Frage, wie man das Potential einer Punktladung bei andersgeformten Äquipotentialflächen, in diesem Fall einer \emph{Kugel}, berechnen kann. Beispielsweise ist eine Punktladung $q$ vor einer leitfähigen Kugel gegeben.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{kugel_punktladung.pdf_tex}}
+\end{figure}
+
+Gesucht sind hierbei der Ort der Ersatzladung $q'$, d.h. ihr Abstand vom Mittelpunkt, sowie ihr Betrag.
+Kennt man beide Werte, kann man wie bei der einfachen Spiegelmethode beide Felder überlagern, um das Gesamtfeld zu erhalten.
+Es ist also die virtuelle Ladung $q'$ gesucht, die das Feld der Ladung $q$ zu der Kugel simuliert.\\
+
+Betrachtet man einen Punkt $P$ auf der Oberfläche der Kugel ergibt sich
+\[\phi_{P} = \frac{1}{4\pi\epsilon} \cdot \left( \frac{q}{r_{2}} - \frac{q'}{r_{1}}\right ) \hastobe 0\]
+Diese Überlagerung muss null ergeben, denn hier ist das Potential der Kugel zu Null definiert (geerdete Kugel).\\
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{kugel_punktladung2.pdf_tex}}
+\end{figure}
+
+\subsection{Ort der Spiegelladung}
+Zuerst einige Geometriedefinitionen:
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{kugel_punktladung3.pdf_tex}}
+\end{figure}
+
+Der Mittelpunkt $M$ ist dabei als Ursprung definiert.
+
+Zur Lösung wird der $\emph{Satz des Apollonios}$ angewandt. Dieser bringt hervor, dass das Verhältnis
+\[\frac{r_{2}}{r_{1}}\]
+\emph{konstant} sein muss, unabhängig davon, wo der Punkt $P$ auf dem Kreis / der Kugel liegt.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{apollonios.pdf_tex}}
+\end{figure}
+\[b^{2} + c^{2} = 2 \cdot m^{2} + \frac{a^{2}}{2}\]
+
+
+%\notebox{hey}{\blindtext}
+\end{document}

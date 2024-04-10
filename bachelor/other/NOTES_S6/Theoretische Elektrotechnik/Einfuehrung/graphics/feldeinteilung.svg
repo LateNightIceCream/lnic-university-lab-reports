@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1000"
+   height="618"
+   viewBox="0 0 264.58332 163.5125"
+   version="1.1"
+   id="svg8"
+   inkscape:export-filename="/home/zamza/Documents/HS/Notes Template/general_graphic_template.svg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="feldeinteilung.svg">
+  <defs
+     id="defs2">
+    <rect
+       x="174.2515"
+       y="82.752674"
+       width="27.482049"
+       height="8.0123926"
+       id="rect976" />
+    <rect
+       x="174.72561"
+       y="83.153301"
+       width="45.850622"
+       height="12.39327"
+       id="rect970" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="359.18127"
+     inkscape:cy="249.30489"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     width="1000px"
+     inkscape:window-width="1310"
+     inkscape:window-height="1096"
+     inkscape:window-x="135"
+     inkscape:window-y="84"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <rect
+       style="fill:#c3fae8;stroke:#c3fae8;stroke-width:0.327552"
+       id="rect835"
+       width="152.67349"
+       height="33.870522"
+       x="24.338337"
+       y="41.400497" />
+    <rect
+       style="fill:#ffe3e3;stroke:#ffe3e3;stroke-width:0.147105"
+       id="rect835-3"
+       width="152.85394"
+       height="6.8233752"
+       x="24.248114"
+       y="34.631866" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 35.121815,71.351745 V 109.68923"
+       id="path900" />
+    <circle
+       id="path902"
+       style="fill:#000000;stroke:none;stroke-width:0.264583"
+       cx="35.121815"
+       cy="109.68922"
+       r="0.39687499" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="42.264515"
+       y="81.236053"
+       id="text908"><tspan
+         sodipodi:role="line"
+         id="tspan906"
+         x="42.264515"
+         y="81.236053"
+         style="stroke-width:0.264583">elektrostatisches Feld</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="42.403545"
+       y="93.460884"
+       id="text908-5"><tspan
+         sodipodi:role="line"
+         id="tspan906-6"
+         x="42.403545"
+         y="93.460884"
+         style="stroke-width:0.264583">magnetostatisches Feld (DC)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="42.055267"
+       y="103.76333"
+       id="text908-5-2"><tspan
+         sodipodi:role="line"
+         id="tspan906-6-9"
+         x="42.055267"
+         y="103.76333"
+         style="stroke-width:0.264583">stationäres Strömungsfeld</tspan><tspan
+         sodipodi:role="line"
+         x="42.055267"
+         y="108.61403"
+         style="stroke-width:0.264583"
+         id="tspan946">(konst. Geschwindigkeit der</tspan><tspan
+         sodipodi:role="line"
+         x="42.055267"
+         y="113.46473"
+         style="stroke-width:0.264583"
+         id="tspan948">Ladungsträger)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 35.131494,79.948716 h 6.443733"
+       id="path950" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 35.131584,92.235937 h 6.58922"
+       id="path952" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 35.235097,102.46833 h 6.235398"
+       id="path954" />
+    <rect
+       style="fill:#d0ebff;stroke:#d0ebff;stroke-width:0.103581"
+       id="rect956"
+       width="80.212624"
+       height="19.134615"
+       x="96.825912"
+       y="75.244308" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#20c997;stroke-width:0.264583"
+       x="150.11752"
+       y="46.897686"
+       id="text960"><tspan
+         sodipodi:role="line"
+         id="tspan958"
+         x="150.11752"
+         y="46.897686"
+         style="fill:#20c997;stroke-width:0.264583">zeitl. Änderung</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;fill:#4dabf7;stroke-width:0.264583"
+       x="148.63936"
+       y="78.708191"
+       id="text964"><tspan
+         sodipodi:role="line"
+         id="tspan962"
+         x="148.63936"
+         y="78.708191"
+         style="fill:#4dabf7;stroke-width:0.264583">Geschwindigkeit</tspan><tspan
+         sodipodi:role="line"
+         x="148.63936"
+         y="83.558891"
+         style="fill:#4dabf7;stroke-width:0.264583"
+         id="tspan966">der Änderung</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text968"
+       style="line-height:1.25;font-family:sans-serif;font-size:3.88055556px;white-space:pre;shape-inside:url(#rect970);" />
+    <text
+       xml:space="preserve"
+       id="text974"
+       style="line-height:1.25;font-family:sans-serif;font-size:3.88055556px;white-space:pre;shape-inside:url(#rect976);" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 127.64692,71.421545 110.77483,81.805073"
+       id="path982" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="101.19789"
+       y="88.021202"
+       id="text986"><tspan
+         sodipodi:role="line"
+         id="tspan984"
+         x="101.19789"
+         y="88.021202"
+         style="stroke-width:0.264583">langsam</tspan><tspan
+         sodipodi:role="line"
+         x="101.19789"
+         y="92.871902"
+         style="stroke-width:0.264583"
+         id="tspan988">veränderlich</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 135.09543,71.453774 13.90662,12.997754"
+       id="path990" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="146.77415"
+       y="87.86647"
+       id="text994"><tspan
+         sodipodi:role="line"
+         id="tspan992"
+         x="146.77415"
+         y="87.86647"
+         style="stroke-width:0.264583">schnell</tspan><tspan
+         sodipodi:role="line"
+         x="146.77415"
+         y="92.717171"
+         style="stroke-width:0.264583"
+         id="tspan996">veränderlich</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 100.88369,94.307275 V 123.66767"
+       id="path998" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 144.29862,93.575581 V 125.08804"
+       id="path1000" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.87106,98.913369 h 5.00801"
+       id="path1002" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="105.99597"
+       y="100.0955"
+       id="text1006"><tspan
+         sodipodi:role="line"
+         id="tspan1004"
+         x="105.99597"
+         y="100.0955"
+         style="stroke-width:0.264583">quasistat. E-Feld</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="106.3649"
+       y="109.10347"
+       id="text1010"><tspan
+         sodipodi:role="line"
+         id="tspan1008"
+         x="106.3649"
+         y="109.10347"
+         style="stroke-width:0.264583">quasistat. H-Feld</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.89763,108.2585 h 5.03013"
+       id="path1012" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="106.00071"
+       y="118.45763"
+       id="text1016"><tspan
+         sodipodi:role="line"
+         id="tspan1014"
+         x="106.00071"
+         y="118.45763"
+         style="stroke-width:0.264583">quasistat. S-Feld</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.85422,117.6618 h 4.66268"
+       id="path1018" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="148.74362"
+       y="99.630615"
+       id="text1022"><tspan
+         sodipodi:role="line"
+         id="tspan1020"
+         x="148.74362"
+         y="99.630615"
+         style="stroke-width:0.264583">Wellen auf </tspan><tspan
+         sodipodi:role="line"
+         x="148.74362"
+         y="104.48132"
+         style="stroke-width:0.264583"
+         id="tspan1024">Leitungen</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 144.30649,98.430907 H 148.301"
+       id="path1026" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="148.99699"
+       y="114.34448"
+       id="text1030"><tspan
+         sodipodi:role="line"
+         id="tspan1028"
+         x="148.99699"
+         y="114.34448"
+         style="stroke-width:0.264583">Wellen im </tspan><tspan
+         sodipodi:role="line"
+         x="148.99699"
+         y="119.19518"
+         style="stroke-width:0.264583"
+         id="tspan1032">freien Raum</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 144.16299,113.2 h 4.04202"
+       id="path1034" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="87.193916"
+       y="38.828312"
+       id="text833"><tspan
+         sodipodi:role="line"
+         id="tspan831"
+         x="87.193916"
+         y="38.828312"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:0.264583">EM-FELDER</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 89.418556,41.346273 71.390414,59.374415"
+       id="path837" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 103.60655,41.699395 16.95884,16.958839"
+       id="path839" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="41.518642"
+       y="63.283962"
+       id="text843"><tspan
+         sodipodi:role="line"
+         id="tspan841"
+         x="41.518642"
+         y="63.283962"
+         style="stroke-width:0.264583">zeitlich konstante</tspan><tspan
+         sodipodi:role="line"
+         x="41.518642"
+         y="68.134659"
+         style="stroke-width:0.264583"
+         id="tspan845">Felder $\frac{\delta}{\delta t} = 0$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="110.55882"
+       y="63.372036"
+       id="text843-3"><tspan
+         sodipodi:role="line"
+         id="tspan841-6"
+         x="110.55882"
+         y="63.372036"
+         style="stroke-width:0.264583">zeitlich veränderliche</tspan><tspan
+         sodipodi:role="line"
+         x="110.55882"
+         y="68.222733"
+         style="stroke-width:0.264583"
+         id="tspan845-7">Felder $\frac{\delta}{\delta t} \neq 0$</tspan></text>
+  </g>
+</svg>

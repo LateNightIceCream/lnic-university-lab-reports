@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{xcolor}
+
+\usepackage[ngerman]{babel}
+\usepackage{datetime}
+
+%\newdateformat{myformat}{}
+
+
+\definecolor{hsblue}{HTML}{00b1db}%0cb5df
+\definecolor{blue-6}{HTML}{228be6}%0cb5df
+\definecolor{mat-gray}{HTML}{868e96}%0cb5df
+\usepackage[a4paper,
+            left=1.5in,
+            right=1.5in,
+            top=0\paperheight,
+            bottom=0in]
+            {geometry}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------
+
+%\textsc{\LARGE Hochschule Wismar}\\[1.5cm]
+\noindent\begin{minipage}[t][0.3819660112501052\paperheight][t]{\textwidth}
+\centering
+\vspace{0.09016994374947421\paperheight}
+\includegraphics[scale=0.382]{logo.jpg}
+\end{minipage}
+
+%\begin{tabular}{C}
+%\end{tabular}\\
+%\begin{minipage}[c]{.618\columnwidth}
+%\includegraphics[scale=0.14591]{logo.jpg}\\
+%end{minipage}\\
+%\vspace{0.14591\columnwidth}
+\textsc{\Large Communications Project}\\[0.5cm] % Major heading such as course name
+
+%----------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------
+
+%\rule[0.618cm]{0.618\columnwidth}{1pt}\\
+{ \huge \bfseries Doppler Shift Estimation}\\ % Title of your document
+\vspace{0.034441853748633004\paperheight}
+\large Homework Results\\
+\vspace{0.1458980337503154\paperheight}
+
+%----------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------
+
+%\begin{flushleft} \large
+  \begin{tabular}{lrr}
+    \emph{Authors:} & Saqib {\color{blue-6}\textsc{Faraz}} & {\color{mat-gray}458317}\\
+                    & Ankita Kannan {\color{blue-6}\textsc{Iyer}} & {\color{mat-gray}457620}\\
+                    & Harsh {\color{blue-6}\textsc{Godhani}} & {\color{mat-gray}461986}\\
+                    & Richard {\color{blue-6}\textsc{Grünert}} & {\color{mat-gray}289427}\\
+                    & Kanaiyalal {\color{blue-6}\textsc{Thummar}} & {\color{mat-gray}435534}\\
+
+   \end{tabular}\\[0.05572809000084118\paperheight]
+
+{\large {\the\day.\the\month.\the\year}}\\
+%\end{flushleft}
+
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\end{document}

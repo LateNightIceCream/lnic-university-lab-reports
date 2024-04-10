@@ -1,0 +1,62 @@
+\begin{taskspec}
+Nachrichtentechnisches Projekt - 2023\\
+
+Tasks for the final project report\\
+version June 23th\\
+
+> RAW data analysis and signal processing <\\
+
+> to be done in groups of about 5 students,\\
+> either you work together on all tasks, or you split them and explicitely mention who was working on which tasks.\\
+
+
+Select the data files according to your group number.\\
+
+Saura - array beam, 4x individual antennas\\
+
+1) Plot the spectra for receiver 1 and one of the other four for all ranges for magnitude and phase (use e.g. pcolor). Maintain a proper frequency axis scaling... (also for the latter plots)\\
+
+2) Compare the spectra for:\\
+a) superposition of the time series of receiver channels 2-5\\
+b) combination of the individual spectra of receiver channels 2-5\\
+
+3) Apply a suitable number of coherent and/or incoherent integrations (CI/NCI) to the data and show the spectra for the receiver 1 and one of the other four for all ranges for magnitude and phase (use e.g. pcolor). Compare with 1) !\\
+
+4) Derive and show the cross-spectra for receiver channel 2-5 in magnitude and phase. Use the integrated data as CI/NCI applied in 3).\\
+
+
+MAARSY - array beam, 3x subarray\\
+1st RAW (vertical beam, 30s?)\\
+5) Get the 1st MAARSY RAW file and Apply a suitable number of coherent and/or incoherent integrations to the data and show the spectra for the receiver 1 and one of the other three for all ranges for magnitude and phase (use e.g. pcolor).\\
+Also derive and show the cross-spectra in magnitude and phase for receiver 2-4.\\
+
+2nd RAW (vertical beam, 1day)\\
+6) Get the 2nd MAARSY RAW file and \\
+a) plot the echo power for all ranges for receiver 1 and the superposition of the other three.\\
+b) Derive the Angle-of-Arrival for the receiver channel 2-4 for each time sample (e.g. pcolor plots for phi, theta).\\
+
+
+7) Interferometry - the shared RAW is NOT used HERE! -> SYNTHETIC !\\
+Create your own sensor layout (circular (ring), spiral, random) in x-y-plane.\\
+Use 6 sensors and test those for 2 different distributions (distances/spacing ~1 WL) between the sensors.\\
+First, assume equal phasing for all sensors and verify the vertical looking angle. (show corresponding plot)\\
+Simulate the coverage area (possible AOA-positions), by e.g. test MANY random phases for the sensors and derive the positions.\\\\
+
+Solve the given tasks in Python, use any library or source you like, but mention/cite it!\\
+
+
+Present your results in a report (PDF) with some explanations, findings,..., don't put the Python scripts in the PDF! Add a ZIP file to your PDF, that contains your Python scripts - name the scripts according your group and the task numbers!\\
+
+Beautify the report as well as your plots - e.g. apply a reasonable SNR-threshold in the plots and scaling to beautify them.\\
+
+Use proper English!\\
+
+
+->>>\\
+End of examination period: July 14\\
+
+submission of the report by July 9 23:59LT\\
+
+online defense - depends on students preferrence\\
+->>>
+\end{taskspec}

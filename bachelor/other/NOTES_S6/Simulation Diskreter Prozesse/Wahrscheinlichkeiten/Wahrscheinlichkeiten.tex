@@ -1,0 +1,249 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\begin{document}
+
+\begin{center}
+  \Large{Simulation Diskreter Prozesse: Wahrscheinlichkeiten}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\section{Zwei-Kinder-Problem}
+\begin{zitat}{Aufgabe}
+Jemand sagt, er hat 2 Kinder und eines davon ist ein Mädchen. Wie hoch ist die Wahrscheinlichkeit, dass beide Kinder Mädchen sind?
+\end{zitat}
+
+\subsection{Bedingte Wahrscheinlichkeiten}
+
+Der Schlüsselbegriff für diese Art von Problemen ist \emph{Bedingte Wahrscheinlichkeit}. Sie ist zu unterscheiden von der nichtbedingten Wahrscheinlichkeit (die ganz normale Wahrscheinlichkeit). Bei der bedingten Wahrscheinlichkeit sucht man die Wahrscheinlichkeit eines Ereignisses $A$ \emph{unter der Bedingung, dass das Ereigniss $B$ eintritt}. Man schreibt
+\[P(A | B)\]
+
+Der Unterschied zu $P(A)$ ist, dass man eine \emph{Zusatzinformation} erhält, nämlich das Ereignis $B$. Im allgemeinen wird durch die Berücksichtigung dieser Zusatzinformation die Wahrschienlichkeit für das Eintreten von $A$ größer sein als ohne die Zusatzinformation.
+
+\subsection{Lösung}
+Zur Lösung eignet sich ein Baumdiagramm oder auch ein KV-Diagramm.
+
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweikind_baum0.pdf_tex}}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zweikind_baum.pdf_tex}}
+\end{figure}
+
+
+Die bedingte Wahrscheinlichkeit ist:
+\[P(\text{Mädchen, Mädchen} | \text{min. 1 Mädchen}) = \frac{1}{3}\]
+\notebox{Bedingte Wahrscheinlichkeiten}{
+Durch die \emph{zusätzliche Information}, dass mindestens 1 Mädchen vorliegt, erhöht sich die Chance, zwei Mädchen zu haben von $\frac{1}{4} = 25 \%$ (unbedingt) auf $\frac{1}{3} = 33 \%$ (bedingt).}
+
+\notebox{Zusatzinformationen}{
+  Wichtig für Modelle ist es, zu prüfen, ob alle nötigen Zusatzinformationen vorliegen, um präzise Aussagen treffen zu können bzw. ob solche Zusatzinformationen noch fehlen.
+}
+
+\subsection{Verteilungen}
+Das vorherige Beispiel nimmt an, dass die Wahrscheinlicheit für Jungen und Mädchen \emph{genau gleich groß} ist ($50\%$). In der Realität könnte das anders aussehen. Man sollte also auch bei anderen Fragestellungen und vor allem nach der Simulation eines Modells die angenommene mit der tatsächlichen Verteilung vergleichen (Vielleicht Normalvert. obwohl GV angenommen).
+
+\section{Zwei-Kinder + Wochentag}
+\begin{zitat}{Aufgabe}
+  Jemand mit zwei Kindern sagt, eines seiner Kinder ist ein Mädchen, \emph{das an einem Montag geboren wurde}. Über das andere Kind ist nichts bekannt. Wie groß ist die Wahrscheinlichkeit, dass beide seiner Kinder Mädchen sind?
+\end{zitat}
+
+Zur Lösung eignet sich eine Tabelle.
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{zweikind_woche_tab.pdf_tex}}
+\end{figure}
+
+\[P = \frac{7 + 7}{14 + 14} = \frac{1}{2} = 50 \%\]
+
+\section{\glqq Leeres Geschäft\grqq}
+\begin{zitat}{Aufgabe}
+Gegeben ist ein Geschäft mit im Schnitt $30 \frac{\text{Kunden}}{\text{Stunde}}$. Wie groß ist die Wahrscheinlichkeit, dass in der nächsten Stunde niemand kommt?
+\end{zitat}
+
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{geschaeft_baum.pdf_tex}}
+\end{figure}
+
+\[P(\text{in der nächsten Stunde kommt niemand}) = (1-p)^{N}\]
+
+$\rightarrow$ Wahrscheinlichkeit für das Erscheinen $p$?\\
+
+Dazu Beispiel: Annahme: $N=1000$.\\
+Der Erwartungswert an Kunden in einer Stunde ist $30$\\
+Dieser Erwartungswert muss sich ergeben aus der Anzahl der Kunden $N$ multipliziert mit der Wahrscheinlichkeit für das Erscheinen eines Kundens innerhalb einer Stunde $p$.
+
+\[30 = 1000 \text{ Kunden} \cdot \frac{30}{1000} = N \cdot p\]
+\[\rightarrow p = \frac{30}{N}\]
+
+\[P = (1-p)^{N} = (1-\frac{30}{N})^{N}\]
+Erinnerung: $\lim_{n\rightarrow \infty}{(1+\frac{1}{n})^{n} = e^{1}}$\\
+
+Für eine große Anzahl an Kunden (N sehr groß) trifft also zu, dass
+\[P = e^{-30} \approx 0\]
+
+In diesem vereinfachten Modell wurde vereinfacht angenommen, dass die Kundenrate konstant ist. Es kann jedoch sein, dass sie selbst mit der Zeit variiert (z.B. Mittags weniger Kunden) und dadurch doch Zeiträume entstehen, in denen die Wahrscheinlichkeit, dass in einer Stunde kein Kunde kommt, ansteigt.
+
+\section{Warteschlangen, \glqq Markov-Prozesse\grqq}
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{warteschlange_illu.pdf_tex}}
+\end{figure}
+
+\subsection{Mathematisch-analytisches Modell}
+\[X = \text{Wie viele Leute stehen aktuell (zu einem bestimmten Zeitpunkt) in der Schlange?}\]
+
+\subsubsection{Annahmen}
+\begin{description}
+        \item[Ankunftsrate:] Jemand kommt in der nächsten Sekunde (fester Zeitabschnitt) dazu,\\ WSK: $\lambda = 3 \%$ (Zufall)
+        \item[Bedienrate:] Jemand ist in der nächsten Sekunde fertig, \\WSK: $\mu = 5 \%$ (Zufall)
+\end{description}
+
+Erwartungswert der Menschen in der Schlange: $E(X) = ?$
+
+\subsubsection{Baumdiagramm?}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{warteschlange_baum.pdf_tex}}
+\end{figure}
+
+Würde sehr kompliziert werden.
+
+\subsubsection{Zustandsdiagramm}
+Das Zustandsdiagramm geht vom zeitbasierten Ansatz in den eventbasierten. In ihm sind die jeweiligen Übergangswahrscheinlichkeiten. Die Summe aller Übergangswahrscheinlichkeiten, die aus dem Zustand herauskommen, muss $100 \%$ sein.
+
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{zustandsdiagramm.pdf_tex}}
+\end{figure}
+
+Man ist mit diesem Aufbau nicht mehr zeitabhängig. Es stellt sich ein Gleichgewicht ein (Bilanzgleichung):
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zust12.pdf_tex}}
+\end{figure}
+
+\[\text{raus = rein}\]
+\[0.03 \cdot P_{0} = 0.05 \cdot P_{1}\]
+\[P1 = \frac{\lambda}{\mu} \cdot P_{0} = \frac{3}{5} P_{0}\]
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{zust23.pdf_tex}}
+\end{figure}
+
+\[(0.03 + 0.05) \cdot P_{1} = 0.03 \cdot P_{0} + 0.5 \cdot P_{2}\]
+\[P_{2} = \frac{(0.03 + 0.05) \cdot P_{1} - 0.03 P_{0}}{0.05}\]
+$P_{1} = \frac{3}{5}P_{0}$ einsetzen
+Wahrscheinlichkeit, dass 2 Leute stehen:
+\[P_{2} = \left(\frac{\lambda}{\mu}\right)^{2}\cdot P_{0}\]
+wobei $P_{0}$ hier unbekannt ist.\\
+Allgemein: Wahrscheinlichkeit, dass $n$ Kunden anstehen
+\[P_{2} = \left(\frac{0.03}{0.05}\right)^{n}\cdot P_{0}\]
+
+Zum Beispiel für die Annahme, dass die Wahrscheinlichkeit, dass keine Kunden in der Schlange sind $50 \si{\percent}$ ist:
+\begin{table}[H]
+  \begin{center}
+  \begin{tabular}{rr}
+    Kunden &Wahrscheinlichkeit\\
+    \hline
+    0&50\si{\percent}\\
+    1&13\si{\percent}\\
+    2&18\si{\percent}\\
+    ...&...\\
+    N&...\si{\percent}\\
+    \hline
+    Summe: &100 \si{\percent}
+  \end{tabular}
+  \end{center}
+\end{table}
+
+Wichtig ist, dass die Summe aller Wahrscheinlichkeiten $100\si{\percent}$ ergeben muss. Daraus lässt sich eine Gleichung formulieren.
+\[1 \hastobe P_{0} + P_{0} \cdot \left(\frac{0.03}{0.05}\right)^{1} + P_{0} \cdot\left( \frac{0.03}{0.05}\right)^{2} + ...\]
+
+\[1 = P_{0} \cdot \left( \left(\frac{0.03}{0.05}\right)^{1} + \left( \frac{0.03}{0.05}\right)^{2} + ...\right)\]
+
+Der rechte Term stellt eine Geometrische Reihe dar.
+\[\sum_{n=0}^{\infty}{x^{n}}\]
+
+Die Lösung der geometrischen Reihe ist:
+\[\sum_{n=0}^{\infty}{x^{n}} = \frac{1}{1-x}\]
+
+Dadurch wird
+\[1 = P_{0} \cdot \frac{1}{1-\frac{0.03}{0.05}}\]
+
+Nach $P_{0}$ umgestellt ergibt sich
+\[P_{0} = 1- \frac{0.03}{0.05} = 0.4 \rightarrow 40 \si{\percent}\]
+
+Also etwas daneben.
+\notebox{WSK für keinen Kunden}{
+  \[P_{0} = 1-\frac{\lambda}{\mu}\]
+}
+
+Wobei zu beachten ist, dass die Lösung der geometrischen Reihe nur gilt, wenn $|x| < 1$.
+\notebo{Interpretation der Einschränkung}{
+  Wenn die Bedienrate kleiner ist als die Ankunftsrate (bzw. deren Wahrscheinlichkteiten), läuft das System irgendwann über, also wenn
+  \[\frac{\lambda}{\mu} > 1\]
+}
+
+\subsubsection{Erwartungswert}
+Der Erwartungswert $E(X)$ ($X$...irgendein Ergeinis) des obigen Beispiels beschreibt, mit wie vielen Kunden im Mittel in der Schlange zu rechnen ist. Ein Erwartungswert ergibt sich immer aus \glqq Wahrscheinlichkeit $\cdot$ Wert\grqq{}. Der Wert kann irgendetwas sein, z.B. ein Messwert oder die Anzahl der Kunden in einer Schlange. Für das obige Beispiel:
+
+\[E(X) = 0.4 \cdot 0 + 0.24 \cdot 1 + ...\]
+Im Kontinuierlichen erhält man dann ein Integral
+\[E(X) = \int{x \cdot p(x) \cdot dx}\]
+
+Nun werden die beiden Gleichungen, die vorher ermittelt wurden zusammengeführt. In die Gleichung für $P_{n}$ wird $P_{0}$ eingesetzt.
+\[P_{0} = 1-\frac{\lambda}{\mu}\]
+\[P_{n} = P_{0} \cdot \left(\frac{\lambda}{\mu}\right)^{n} = \left(1 - \frac{\lambda}{\mu}\right) \cdot \left(\frac{\lambda}{\mu}\right)^{n}\]
+
+Jetzt: Erwartungswert
+\[E(X) = \sum_{n}^{\infty}{\text{Wahrscheinlichkeit} \cdot \text{Wert}}\]
+\[E(X) = \sum_{n=0}^{\infty}{(\frac{\lambda}{\mu})^{n} (1-\frac{\lambda}{\mu}) \cdot n}\]
+
+\[\boxed{E(X) = \left(1-\frac{\lambda}{\mu}\right) \sum_{n=0}^{\infty}{(\frac{\lambda}{\mu})^{n} \cdot n}}\]
+
+Mit einem Ableitungstrick lässt sich das ganze noch umformen.
+\[x^{n} \cdot n = x \cdot \frac{dx^{n}}{dx}\]
+Rückrechnung:
+\[ x \cdot \frac{dx^{n}}{dx} = x^{1} \cdot n \cdot x^{n-1} = n \cdot x^{n}\]
+Damit wird die Summe zu
+\[\sum_{n=0}^{\infty}{x \cdot \frac{dx^{n}}{dx}} = x \cdot \frac{dx^{0}}{dx} + x \cdot \frac{dx^{1}}{dx} + x \cdot \frac{dx^{2}}{dx} + ...=
+  x \cdot \frac{d}{dx}\underbrace{\left(x^{0} +x^{1} + x^{2}+ ...\right)}_{\text{geometrische Reihe}}\]
+
+Man erhält wieder eine geometrische Reihe, die ersetzt werden kann.
+\[...=x\cdot \frac{d}{dx}{\frac{1}{1-x}} = ... = \frac{x}{(1-x)^{2}}\]
+Nun die Rücksubstitution, mit $x = \dfrac{\lambda}{\mu}$
+\[E(X) = {\color{gray-5}\left(1-\frac{\lambda}{\mu}\right)} \cdot \frac{\frac{\lambda}{\mu}}{(1-\frac{\lambda}{\mu})^{\color{gray-5}2}}\]
+\[E(X) = \frac{\frac{\lambda}{\mu}}{1-\frac{\lambda}{\mu}}\]
+Das ist sozusagen der \glqq stabile Zustand\grqq{} auf den sich das System einschwingt, der Mittelwert halt; die Anzahl der Kunden, die im Mittel an der Kasse stehen.
+Mit den Werten aus dem Beispiel erhält man:
+\[E(X) = \frac{3}{2} = 1.5 \, \si{Kunden}\]
+
+Oder mithilfe von $P_{0} = 1 - \frac{\lambda}{\mu}$ ausgedrückt:
+\[E(X) = \frac{1}{P_{0}} - 1\]
+
+Man kann natürlich auch umstellen, um von einem Erwartungswert, der in der Realität z.B. aus Tests oder Statistiken hervorgeht, zur Wahrscheinlichkeit $P_{0}$ zu kommen
+\[P_{0} = \frac{1}{E(X) + 1}\]
+Sind zum Beispiel im Mittel 4 Kunden in der Schlange, ist
+\[P_{0} = \frac{1}{4+1} \rightarrow 20 \si{\percent}\]
+
+%\notebox{hey}{\blindtext}
+\end{document}

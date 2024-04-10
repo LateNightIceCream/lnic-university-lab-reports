@@ -1,0 +1,39 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{preamble.tex}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\addbibresource{sources.bib}
+
+\begin{document}
+
+\includepdf{./titlepage/titlepage.pdf}
+\pagebreak
+
+\newpage
+  \tableofcontents
+\newpage
+
+\section{Einführung}
+\input{chapters/einfuehrung.tex}
+
+\section{Setup}
+\input{chapters/setup.tex}
+
+\section{NIDS-Konfiguration und Angriffe}
+\input{chapters/attacks.tex}
+
+\section{Wireshark}
+\input{chapters/wireshark.tex}
+
+\section{Zusammenfassung}
+\input{chapters/conclusion.tex}
+
+\begin{refsection}[sources.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Referenzen}]
+\end{refsection}
+
+
+\end{document}

@@ -1,0 +1,103 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{preamble.tex}
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+
+\begin{document}
+
+\includepdf{./titlepage/titlepage.pdf}
+
+\section*{Homework Tasks}
+\input{task.tex}
+\pagebreak
+
+\section{Some Definitions}
+\input{chapters/definitions.tex}
+
+\pagebreak
+\section{Antenna Types}
+
+The following table \ref{tab:ant1} shows a few antenna examples with characteristic numbers.
+Some radiation patterns for can also be seen in the figures below. Most of these characteristics are dependent upon the antenna geometry and are therefore only rough typical values.\\
+
+\input{chapters/table.tex}
+\input{chapters/table2.tex}
+
+\begin{figure}[H]
+  \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphics/dipole_theta.pdf}
+    \caption{$\lambda/4$ Dipole characteristic in the elevation plane. Antenna axis lies vertically.}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphics/helical_theta.pdf}
+    \caption{Helical characteristic in the elevation plane. Separation: $0.22\,\si{\meter}$, Number of turns: $10$, Frequency: $500\,\si{\mega\hertz}$ ($\lambda=0.6\,\si{\meter}$)}
+  \end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[H]
+  \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphics/patch_theta.pdf}
+    \caption{Single Patch characteristic in the elevation plane for two different $\phi$ angles. $W=L=0.5\,\si{\lambda}$.}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphics/dipole_array_theta.pdf}
+    \caption{Characteristic of equally spaced linear dipole array in the elevation plane. $N=8$, Separation: $\lambda/2$}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \begin{minipage}[t]{0.45\textwidth}
+ \centering
+  \includegraphics[width=\textwidth]{graphics/yagi.png}
+  \caption{Example of a Yagi-Uda characterisitic. Taken from \url{https://www.researchgate.net/figure/Radiation-patterns-of-two-Yagi-Uda-antennas-a-with-high-gain-and-b-with-low-gain_fig2_363745716} under CC BY-NC-ND 4.0}
+
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{graphics/yagi2.png}
+  \caption{Drawing of a typical Yagi-Uda antenna.}
+  \end{minipage}
+\end{figure}
+
+
+\begin{figure}[H]
+  \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphics/parabolic_theta.pdf}
+    \caption{Example of Parabolic characteristic for $D=10\lambda$.}
+  \end{minipage}\hfill
+  \begin{minipage}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{graphics/parab.jpg}
+    \caption{Satellite communications parabolic antenna. Taken from \url{https://en.wikipedia.org/wiki/Parabolic_antenna\#/media/File:Erdfunkstelle_Raisting_2.jpg} under CC BY-SA 2.5}
+   \end{minipage}
+\end{figure}
+
+
+
+% ------------------------------------------------------------------------------
+
+\printbibheading
+\begin{refsection}[sources.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Literature}]
+\end{refsection}
+
+\begin{refsection}[web.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Web}]
+\end{refsection}
+
+% \begin{refsection}[software.bib]
+% \nocite{*}
+% \printbibliography[heading=subbibliography,title={Software Used}]
+% \end{refsection}
+
+\end{document}

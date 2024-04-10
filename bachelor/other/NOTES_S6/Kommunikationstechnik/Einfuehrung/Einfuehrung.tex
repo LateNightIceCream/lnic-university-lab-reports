@@ -1,0 +1,89 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\begin{document}
+
+\begin{center}
+  \Large{Kommunikationstechnik: Einführung?}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\section{Aufgaben von Protokollen}
+\subsection{Aufgabe 1: Fehlerkontrolle}
+Bei Datenübertragungen können Fehler auftreten. Diese Fehlerfälle müssen erkannt und behandelt werden. Die erste Maßnahme ist, jedes Datenpaket mit einer \emph{Quittung} zu bestätigen (positive Quittung) oder einen Fehlerfall zu kennzeichnen (negative Quittung).\\
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{quitti1.pdf_tex}}
+\end{figure}
+
+Die Daten werden solange am Sender bereitgehalten, bis eine positive Quittierung zurückkommt. Erscheint eine negative Quittierung, können die Daten dann einfach erneut gesendet werden.\\
+
+Wenn die Quittung selbst bei der Übertragung verfälscht wird, können zwei Fälle auftreten:
+\begin{enumerate}
+  \item Daten gehen verloren aber man erhält eine positive Quittung
+  \item Daten werden empfangen, aber man erhält eine negative Quittung
+\end{enumerate}
+
+\begin{figure}[!tbp]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \centering
+    \resizebox{\textwidth}{!}{\import{graphics/}{quitti2.pdf_tex}}
+    \caption{Pos. Quittung trotz Datenverlust}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.4\textwidth}
+    \centering
+    \resizebox{\textwidth}{!}{\import{graphics/}{quitti3.pdf_tex}}
+    \caption{Neg. Quittung trotz richtiger Übertragung}
+  \end{minipage}
+\end{figure}
+
+Im ersten Fall kann es also dazu kommen, dass dem Empfänger Daten fehlen, diese Daten aber nicht erneut gesendet werden können, da der Sender eine positive Quittung erhielt und die vorherigen Daten bereits entfernt hat.
+Um dieses Problem zu beheben, müssen auch für Datenblöcke oder auch ganze Dateien Quittierungen gesendet werden, sodass diese im zweifelsfall komplett erneut gesendet werden.\\
+
+Im zweiten Fall würde der Empfänger ein Datenpaket doppelt erhalten, da der Sender es aufgrund der empfangenen negativen Quittung erneut sendet. Um die Datenverdopplung zu umgehen, wird jedes Datenpaket nummeriert. Der Empfänger zählt einfach hoch und wenn die Nummer des empfangenen Paketes der momentanen Zählernummer entspricht, wird es weggeworfen. Natürlich kann man nicht unendlich hochzählen, daher werden Modulo-Zählverfahren, also einfach Rücksetzungen nach einer bestimmten Anzahl, verwendet (z.B. Modulo-8 oder Modulo-128).\\
+
+Neben der Verfälschung von Daten oder Quittungen können auch \textbf{Verluste} auftreten, z.B. können Daten oder Quittungen aufgrund einer beschädigten Leitung oder eines verfälschten Headers nicht ankommen. Daher gibt es nur eine \emph{begrenzte Zeit}, die maximal auf eine Quittung gewartet wird (Timeout). Nach dem Timeout kann der Empfänger die Daten dann erneut senden.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{verlusti1.pdf_tex}}
+\end{figure}
+
+Es gibt zwei \glqq{} Eiserne Regeln\grqq{}:
+\notebox{Eiserne Regel Nr. 1} {
+  Datenblöcke können \textbf{verfälscht} werden. Deshalb muss nach dem Absenden eines Datenblockes, dieser im Speicher gehalten werden für den Fall, dass eine erneute Übertragung notwendig ist.
+}
+
+\notebox{Eiserne Regel Nr. 2} {
+  Datenblöcke können \textbf{verloren} gehen. Deshalb sollte man nur eine begrenzte Zeit (Timeout) auf die Quittung des Datenblockes warten.
+}
+
+
+
+\subsection{Aufgabe 2: Flusskontrolle}
+Oft werden Daten beim Sender schneller produziert als sie vom Empfänger verarbeitet werden können. Der Sender muss dann seine Übertragung auf die Aufnahmefähigkeit des Empfängers anpassen.\\
+
+Die Einfachste Lösung ist, dass der Empfänger dem Sender mitteilt, wann er keine Daten mehr aufnehmen kann (Halt) und wann er wieder in der Lage ist, welche aufzunehmen (Weitersenden). Das Problem hierbei ist, dass wenn einer dieser Befehle verfälscht wird oder verloren geht, die Übertragung fortgeführt oder komplett angehalten wird.\\
+
+Eine weitere Lösung ist, dass der Empfänger dem Sender \emph{Credits} verteilt, die er dann zum Senden von Datenblöcken aufbrauchen kann. Ein Credit definiert die Anzahl an Datenblöcken, die der Sender senden kann, ohne auf eine Quittung warten zu müssen. Auch hier muss darauf geachtet werden, dass der Sender die Credit-Mitteilungen erhält bzw. dass er keine doppelten Credits erhält.\\
+
+Noch eine Möglichkeit ist der \emph{Fenstermechanismus}. Vor der Übertragung sprechen sich Sender und Empfänger über eine \emph{Fensterbreite} innerhalb des Wertebereiches der Sequenznummern (Nummerierung der Pakete) ab. Diese Breite sei $W$.\\
+
+Das heißt, der Sender darf \textbf{maximal} $W$ Datenblöcke senden, ohne auf eine Quittung warten zu müssen (maximal, es gehen auch weniger). $W$ ist also am Sender wie die Zahl der Credits zu interpretieren und am Empfänger als die Größe des Empfangspuffers.\\
+
+
+
+
+\subsection{Aufgabe 3:}
+
+
+%\notebox{hey}{\blindtext}
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\begin{document}
+
+\begin{center}
+  \Large{Echtzeit- und Netzwerkprogrammierung: Einführung}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\section{Betriebssysteme}
+Das Betriebssystem ist eine Schicht unterhalb der Anwendungssoftware (Browser, Editor, Explorer, Terminal, etc.), die dessen Ablauf steuert (CPU Scheduling, Speicherverwaltung) und die Kommunikation mit der Hardware verwaltet (Treiber, etc.).\\
+
+Das Betriebssystem muss den Anwendungen \glqq Abstraktionen\grqq{} zur Verfügung stellen, die den Zugriff auf die Hardware für die Anwendungssoftware \emph{abstrahieren}.
+
+\subsection{Prozessverwaltung}
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{prozessverwaltung.pdf_tex}}
+\end{figure}
+
+Für jedes Programm (besser: jeder Prozess: Prozess ist ein Programm in Ausführung), das vom Betriebssystem verwaltet wird gibt es einen \emph{Kontext}, welcher die für das Programm zugewiesenen Speicherbereiche (boundaries Lo, Hi), Instructionpointer (IP) und Stackpointer (SP) speichert, um den Mehrprogrammbetrieb zu ermöglichen.
+
+Für die Prozessorzuweisung können Prozesse die Zustände Running, Ready und Blocked (z.B. wenn gerade auf I/O Interrupt gewartet wird) vom OS zugewiesen werden.
+
+\section{Speicherbelegung eines Prozesses}
+Jedem Prozess wird Speicher idR. wie folgt zugewiesen:
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{prozessspeicher.pdf_tex}}
+\end{figure}
+
+Indem man die \emph{Program Break} hoch- oder herunterbewegt, ändert man den Speicher der dem Prozess zugewiesen ist. Der syscall unter Linux dafür ist \emph{brk()} (wird auch von \emph{malloc()} verwendet!).
+
+
+%\notebox{hey}{\blindtext}
+\end{document}

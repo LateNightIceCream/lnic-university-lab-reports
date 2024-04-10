@@ -1,0 +1,113 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\begin{document}
+
+\begin{center}
+  \Large{Simulation Diskreter Prozesse: Einführung}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\section{Einführung}
+\begin{zitat}{Simulationen}
+  Alle Modelle sind falsch aber manche sind nützlich.
+\end{zitat}
+
+Für Simulationen eignen sich \emph{analoge} oder auch \emph{digitale/diskrete} Modelle. Analoge Modelle sind reale/phsyische Modelle, wie Miniaturen. Bspw. Flugzeugmodelle im Windkanal.
+Digitale Modelle nutzen rechnergestützte Verfahren, wie z.B. die \emph{FEM}. Bei der FEM werden Geometrie und Randbeingungen am Computer vorgegeben. Die Geometrie wird in Grundblöcke, \glqq Finite Elemente\grqq, eingeteilt, für welche dann jeweils bestimmte Gleichungen, z.B. die Maxwellschen Gleichungen, ausgewertet werden.\\
+
+Häufig auftretende Probleme sind sogenannte \glqq Queuing Probleme \grqq, also Warteschlangenprobleme, die durch die Diskrete Simulation gelöst werden können (z.B. mithilfe von MATLAB Simulink). In diese Kategorie fallen z.B. die Übertragung von Datenpaketen, Flugzverkehr, Transport, Verkehrskreuzungen, Arztwarteschlangen ($\rightarrow$ Markov-Prozesse).\\
+
+Weiterhin bedient man sich oft dem Zufall und wendet stochastische Simulationsmethoden, wie z. B. \glqq Monte Carlo \grqq Methoden an.
+
+\notebox{Simulation}{
+\begin{description}
+  \item[Simulation:] Verfahren, bei dem für ein reales \emph{oder} imaginäres System ein Modell erstellt wird, das experimentell untersucht werden kann.\\
+\end{description}
+}
+
+\emph{Ziel} von Simulationen ist es, neue Erkenntnisse über ein System zu gewinnen und aus diesen Erkenntnissen Handlungsanweisungen, also reale Maßnahmen oder technische Umsetzungen, abzuleiten.
+
+\notebox{Simulation}{
+\begin{description}
+\item[Diskrete Simulation:] Ein System wird in einem Computermodell in Form von Software abgebildet.
+\item[Stochastische Simulation:] Nachbildung eines Systems ($rightarrow$ Zufall) auf einen Computer zwecks Untersuchung der Eigenschaften dieses Systems, z.B. \grqq Monte-Carlo-Methode\glqq.
+\end{description}
+}
+
+
+\begin{figure}[H]
+\centering
+\resizebox{0.75\textwidth}{!}{\import{graphics/}{stochastik.pdf_tex}}
+\end{figure}
+
+\notebo{Simulation}{
+  Eine Simulation ist nicht das gleiche wie ein Experiment oder eine mathematisch-analytische Methode.
+}
+
+\begin{description}
+\item[Gemeinsamkeit mit empirischem Experiment:]
+        Der empirische Ansatz (d.h. das Zählen, Mesen, usw.)
+  \item[Gemeinsamkeit mit mathematischer Untersuchung:]
+        Ein mathematisches Modell (= (fehlerhaftes) Abbild der Wirklichkeit)
+\end{description}
+
+\noindent\textbf{Vorteile}
+\begin{description}
+  \item[ggü. Experiment:]
+        \begin{itemize}
+        \item z.B. Simulationszeit 1 Jahr $\rightarrow$ Rechenzeit 1ms
+        \item man spart sich die Kosten für den Versuchsaufbau
+        \end{itemize}
+  \item[ggü. math. Methode:]
+        analytisch nicht lösbare Probleme werden numerisch lösbar
+\end{description}
+
+\section{Modell und Wirklichkeit}
+\subsection{Geozentrisches Weltbild, Aristoteles}
+Aristoteles begann mit dem Geozentrischen Weltbild. Die Erde steht im Zentrum, um sie herum sind konzentrische Bahnen von Planeten/Sternen, etc.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{aristot.pdf_tex}}
+\end{figure}
+
+Man sollte sich immer die Fragen stellen: \glqq Welches Ziel hat mein Modell?\grqq und \glqq Reicht mein Modell für seine Anwendungen?\grqq
+
+\subsection{Epizyklen, Ptolemaeus}
+Das aristotelische Modell machte einige Vorhersagen nicht präzise und war somit ungeeignet für Berechnungen. Ptolemaeus erfand sein Modell, das immer noch geozentrisch war, jedoch trotzdem exakte Vorhersagen lieferte.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{ptoli.pdf_tex}}
+\end{figure}
+
+\subsection{Heliozentrik, Kopernikus}
+Kopernikus brachte ein realitäts\emph{näheres} Modell, die Sonne steht im Zentrum und alles andere fliegt in Kreisen darum. Allerdings sind die Vorhersagen bei diesem Modell noch schlechter als beim ptolemaeischen.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{kopi.pdf_tex}}
+\end{figure}
+
+\subsection{Gallileo, Einstein, usw...}
+\notebo{Modell und Wirklichkeit}{
+  \textbf{Es ist egal, ob das Modell der Realität exakt entspricht. Wichtig ist, dass es \glqq richtige\grqq        Vorhersagen trifft.}\\
+  {\small Realitätsnähe ist je nach Anwendung möglicherweise ungewollt, siehe die verschiedenen Modelle von Licht (Teilchenmodell, Wellenmodell, Maxwellsche oder Einsteinsche Gleichungen (u.U. overkill))}
+}
+
+\notebo{Modell und Wirklichkeit}{
+  Modelle sind nicht die Wirklichkeit. Es gibt kein exaktes Modell der Wirklichkeit (denn sonst bräuchten wir die Wirklichkeit nicht).
+}
+
+Ziel ist, die richtige Stufe von Modellen zu finden.
+\glqq Nur so gut wie nötig\grqq.
+
+
+%\notebox{hey}{\blindtext}
+\end{document}

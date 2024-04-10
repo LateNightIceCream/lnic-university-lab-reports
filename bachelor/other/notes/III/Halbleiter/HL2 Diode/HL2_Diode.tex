@@ -1,0 +1,145 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{titlesec}
+\titleformat{\section}{
+    \usefont{T1}{qhv}{b}{n}\selectfont} % "qhv" - TeX Gyre Heros, "b" - bold
+    {} 
+    {0em}
+    {\Huge}
+
+\titleformat{\subsection}{
+    \usefont{T1}{qhv}{b}{n}\selectfont} % "qhv" - TeX Gyre Heros, "b" - bold
+    {} 
+    {0em}
+    {\large}
+
+ \titleformat{\subsubsection}{
+    \usefont{T1}{qhv}{b}{n}\selectfont} % "qhv" - TeX Gyre Heros, "b" - bold
+    {} 
+    {0em}
+    {\normalsize}
+
+\input{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\section*{Halbleiter Notes II: Diode}
+gr. diodos -  'Übergang'
+\subsection*{Entstehung/ Einstellung des TGG}
+\begin{itemize}
+\item p und n Halbleiter verbunden
+  \item Diffusionsbewegung aufgrund der Konzentrationsunterschiede (mangel an
+    Elektronen im p-HL, Überschuss and Elektronen im n-Leiter etc)
+  \item Ladungsträger hinterlassen ionisierte, ortsfeste Atomrümpfe der
+    Akzeptor-(p-Gebiet) bzw. Donatoratome (n-Gebiet), also ortsfeste Ladungen
+    \item rechter Rand des p Gebiets ist negativ geladen
+      \item linker Rand des n Gebiets ist positiv geladen
+    \item $\rightarrow$ Es entsteht ein elektrisches Feld durch die ionisierten
+      und nicht kompensierten Donator- und Akzeptoratome über den
+      Übergangsbereich/Grenze 
+    \item Dieses Feld (DRIFT) kompensiert/verhindert die weitere Diffusionsbewegung der
+      Elektronen aus dem n in das p-Gebiet und der Löcher aus dem p- in das n-Gebiet
+    \item Im pn-Übergang entsteht ein Bereich, in dem kein freien Ladungsträger
+      (e- oder Löcher) vorhanden sind. In diesem Bereich sind nur die
+      ionisierten und ortsfesten Dotieratome vorhanden
+    \item Dieser Bereich heißt \emph{Raumladungszone}
+\end{itemize}
+
+Über dem pn-Übergang/der Raumladungszone liegt eine Spannung ($\int E \cdot \dif
+x$), das \textbf{Diffusionspotential}. Typischerweise im Bereich von $0.6...0.7$ V
+\[\phi_i = \underbrace{\frac{k T}{q} \cdot }_{\textrm{Temp.sp.}\, U_T}  \ln{ \frac{N_A \cdot N_D}{n_i^2} }\]
+
+Bei Raumtemperatur: $U_T \approx 26 \, \si{\milli\volt}$
+
+\holine{\textwidth}
+\subsection*{Äußere Spannung}
+\subsubsection*{Positive Spannung (Durchlass)}
+Durch die von Außen angelegte Spannung entsteht ein elektrisches Feld über dem
+pn-Übergang, das in
+die entgegengesetzte Richtung zum Feld, das durch die ionisierten Dotieratome
+entstanden ist, zeigt. Das äußere Feld wirkt also dem inneren entgegen und hebt
+damit den Einfluss des inneren auf die Driftbewegung/ die Verhinderung der
+Diffusion auf. Die Diffusionsbewegung kann dann wieder stattfinden. Die Löcher
+des p-Gebiets können in das n-Gebiet und die Elektronen des n- in das p-Gebiet
+diffundieren und dort rekombinieren, 'neue' Ladungsträger kommen dann aus den
+neutralen Gebieten. Es fließt ein Strom.
+
+\notebox{
+
+  Bei in Durchlassrichtung angelegter Diodenspannung verringert sich das (innere)
+  elektrische Feld über dem pn-Übergang und die Diffusion von Ladungsträgern
+  wird nicht mehr durch das elektrische Feld kompensiert.
+
+}
+\subsubsection*{Negative Spannung (Sperrung)}
+Da das von außen angelegte elektrische Feld in die gleiche Richtung wie das
+innere Feld, das die Diffusionsbewegung aufhält, zeigt, verstärkt es dieses und
+damit die Driftbewegung und
+die Diffusion wird weiter verhindert. Es fließt ein \textbf{Driftstrom aus
+  Minoritätsladunsträgern}. Die Elektronen des p-Gebiets und die Löcher des
+n-Gebiets driften in das jeweils andere Gebiet. Der resultierende Strom ist
+aufgrund der geringen Minoritätsträgerdichten jedoch sehr gering.
+
+\notebox{
+In beiden Fällen ändert sich die Breite der Raumladungszone
+}
+
+\holine{\textwidth}
+\subsection*{Diodengleichung}
+\notebox{
+  \[ I_D = I_S \cdot (e^{\dfrac{U_{pn}}{U_T}} - 1)  \]
+}
+
+Der Diodenstrom ist Temperaturabhängig, der Sperrstrom auch
+
+Die theoretische Kennlinie der Diode weicht für sehr geringe Ströme von der
+realen Kennlinie ab, da die Rekombination der Ladungsträger in der
+Raumladungszone berücksichtigt werden muss. Führ sehr große Ströme weicht sie
+ab, da die Annahme/Vorraussetzung der Schwachen Injektion nicht mehr gegeben ist.
+Abhilfe schafft der \emph{Emissionskoeffizient}. Die Funktion wird dann
+bereichsweise beschrieben.
+
+\subsection*{Kapazität}
+\subsubsection*{Sperrschichtkapazität}
+Durch Anlegen einer Spannung ändert sich die Breite der Raumladungszone und
+damit die Menge der eingeschlossenen Ladung (unkompensierte Dotieratome).
+
+Ladungsänderung durch Spannungsänderung = Kapazität
+
+\[C_j = \frac{\dif Q_j}{\dif U_{pn}}\]
+
+Diese ist Spannungsabhängig! (Steigt mit zunehmender Spannung $U_{pn}$)
+Die Sperrschichtkapazität dominiert im Sperrbereich
+
+\subsubsection*{Diffusionskapazität}
+dominiert im Durchlassbereich
+
+\subsection*{Großsignalersatzschaltung}
+Spannungsgesteuerte Stromquelle parallel Kapazität (Diffusionskapazität + Sperrschichtkapazität)
+
+\subsubsection*{Transitzeit}
+Dioden schalten nicht unendlich schnell von Durchlass in Sperrichtung, da bei
+Umpolung zuerst die in der Diode befindliche Ladung (Kapazität, Diff.
+oder Sperrschicht) ausgeräumt werden muss. Ein Maß dafür ist die \emph{Transitzeit}.
+
+\subsection*{Kleinsignalersatzschaltung}
+
+Beschreibt das Verhalten bei \textbf{kleinen Aussteuerungen um einen festen Arbeitspunkt}
+Dazu annäherung der Werte um den Arbeitspunkt durch eine Gerade, dessen Steigung
+der Leitwert $$g_D = \frac{\dif I_D}{\dif U_{pn}}$$ an der Stelle des
+Arbeitspunktes ist. Damit ist $$i_D = g_D \cdot u_{pn}$$
+
+\subsubsection*{Me-HL-Kontakte}
+Metall-Halbleiterkontakte können Shottky-Kontakte sein, wenn die Austrittsarbeit
+der Elektronen im Halbleiter geringer ist als die im Metall oder Ohmsche
+Kontakte sein, wenn die Austrittsarbeit der Elektronen im Halbleiter höher ist
+als die im Metall. Vom Material mit der geringeren Austrittsarbeit gelangen
+Elektronen einfacher in das Material mit höherer Austrittsarbeit.
+Ohmsche Kontakte können an Metall-Halbleiter-Kontaktstellen erreicht werden,
+indem man den Halbleiter an den Kontaktstellen sehr hoch dotiert, da so die
+Raumladungszone der Metall-HL-Diode sehr klein wird und Elektronen diese einfach
+durchtunneln können. Dadurch entsteht ein ohmscher Charakter des Übergangs.
+
+\end{document}

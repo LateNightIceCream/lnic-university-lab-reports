@@ -1,0 +1,4 @@
+* Kaufland :store:
+** TODO Magnesium
+** TODO Früchte
+** TODO Was zum grillen

@@ -1,0 +1,56 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{preamble.tex}
+
+\addbibresource{sources.bib}
+
+\begin{document}
+
+\includepdf{./titlepage/titlepage.pdf}
+
+\section*{Homework Tasks}
+\input{task.tex}
+\pagebreak
+
+\section{Introduction}
+\input{chapters/introduction.tex}
+
+\section{Test Signals}
+\input{chapters/test_signal.tex}
+
+\section{Coherent Integration}
+\input{chapters/coherent_integration.tex}
+
+\section{Incoherent Integration}
+\input{chapters/incoherent_integration.tex}
+
+\section{Conclusions}
+\input{chapters/conclusions.tex}
+
+% ------------------------------------------------------------------------------
+
+\printbibheading
+\begin{refsection}[sources.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Literature}]
+\end{refsection}
+
+\begin{refsection}[software.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Software Used}]
+\end{refsection}
+
+\pagebreak
+\appendix
+\section{Python Code}\label{app:script}
+
+\subsection{Constellation}\label{app:constellation}
+\inputminted{python}{./code/constellation.py}
+
+\subsection{Coherent Integration}\label{app:ci}
+\inputminted{python}{./code/coherent_integration.py}
+
+\subsection{Incoherent Integration}\label{app:nci}
+\inputminted{python}{./code/incoherent_integration.py}
+
+\end{document}

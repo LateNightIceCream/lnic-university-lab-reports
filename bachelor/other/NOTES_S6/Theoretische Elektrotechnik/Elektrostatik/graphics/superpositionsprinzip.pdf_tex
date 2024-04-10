@@ -1,0 +1,72 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'superpositionsprinzip.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{338.90395703bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.50026983)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{superpositionsprinzip.pdf}}%
+    \put(0.0968029,0.14111611){\color[rgb]{0.5254902,0.55686275,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$dV_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{superpositionsprinzip.pdf}}%
+    \put(-0.00275763,0.23496304){\color[rgb]{1,0.41960784,0.41960784}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\rho_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{superpositionsprinzip.pdf}}%
+    \put(0.49403249,0.0040572){\color[rgb]{0.5254902,0.55686275,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$dV_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{superpositionsprinzip.pdf}}%
+    \put(0.65738331,0.09392){\color[rgb]{1,0.41960784,0.41960784}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\rho_2$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{superpositionsprinzip.pdf}}%
+    \put(0.70713916,0.19716531){\color[rgb]{0.5254902,0.55686275,0.58823529}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$dV_1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{superpositionsprinzip.pdf}}%
+    \put(0.86202346,0.29040116){\color[rgb]{1,0.41960784,0.41960784}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\rho_3$\end{tabular}}}}%
+    \put(0.36202391,0.47787598){\color[rgb]{0.07058824,0.72156863,0.5254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$P$\end{tabular}}}}%
+    \put(0.43497506,0.46555625){\color[rgb]{0.04705882,0.65098039,0.47058824}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\varphi_P$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{superpositionsprinzip.pdf}}%
+  \end{picture}%
+\endgroup%

@@ -1,0 +1,130 @@
+\documentclass[a4paper, 12pt]{article}
+
+\setlength\parindent{0pt}
+
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{tikz}
+
+\newcommand{\holine}{
+  \noindent\rule{\textwidth}{0.618pt}\\[0.021286\paperheight]
+}
+
+\newcommand{\minisec}[1]{ \underline{\textit {#1} } \\[0.021286\paperheight]}
+
+\newcommand{\plotfun}[3]{
+  \vspace{0.021286\paperheight}
+  \begin{center}
+    \begin{tikzpicture}
+      \definecolor{plotcol}{HTML}{3c3d47}
+      \begin{axis}[
+        axis x line=center,
+        axis y line=center,
+        ]
+        \addplot[draw=plotcol][domain=#2:#3]{#1};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+}
+
+
+\begin{document}
+
+\section*{Laplace Transformation}
+
+
+\subsection*{Ausgangslage}
+Die Fourieranalyse stellt die Konvergenzbedingung:
+
+\[ \int_{-\infty}^{\infty}{\mid{x(t)\mid} \cdot dt} < \infty\]
+
+Das bedeutet, dass Signale im undendlichen konvergieren / beschränkt sein
+müssen, um eine Fouriertransformation auf ihnen anwenden zu können. Beispiele
+sind $\cos{t}$, $e^{-t}$, $\delta({t})$.\\
+
+Sind die zu analysierenden Signale jedoch unbeschränkt/(über alle Grenzen
+wachsend), ist die Konvergenzbedingung der FT nicht mehr gegeben. Dies gilt z.B. für $e^t$, $1(t)$\\
+
+\plotfun{exp(x)}{-2}{2}
+
+Eine Rechenhilfe bietet die \emph{Laplace Transformation}. Eingeführt wird die
+\emph{komplexe Frequenz}:
+
+\[ j \omega \rightarrow p = \sigma + j\omega \]
+
+\pagebreak
+\holine
+\minisec{Hinweis}
+Es gilt die Darstellung des Cosinus mithilfe zweier, entgegengesetzt
+rotierender, komplexer Zeiger:
+\[ x(t) = X_0 \cdot \cos{\omega_0 t} = \frac{X_0}{2}\left( e^{j\omega t} + e^{-j
+      \omega t}\right) \]
+
+Wird außer der Rotation der Drehzeiger noch eine \emph{zeitliche Änderung der
+  Zeigerlänge} (Amplitude) zugelassen, so folgt für die komplexe Frequenz:
+
+\[ p = \sigma + j \omega \]
+
+\holine
+
+Die LT erfasst somit eine wesentlich größere Klasse von Zeitfunktionen /
+Signalen und löst somit das Ausgangsproblem
+
+\subsection*{Mathematisches Konzept}
+
+Die Laplacetransformation bildet, wie die Fouriertransformation, ein Bindeglied
+zwischen Zeit und Frequenzbereich, mit dem Unterschied, dass hier die komplexe
+Frequenz p verwendet wird.
+
+\begin{align*}
+  \text{Eingang:  } x(t) \leftrightarrow X(p) = \text{LT}\{x(t)\}\\
+  \text{Übertragung:  } g(t) \leftrightarrow G(p) = \text{LT}\{g(t)\}\\
+  \text{Ausgang:  } y(t) \leftrightarrow Y(p) = \text{LT}\{y(t)\}\\
+\end{align*}
+
+\minisec{Forderung}
+\[ \lim_{t\rightarrow \infty}{ x(t) } = 0\]
+Bedeutet also, dass die Funktion x(t) abklingen muss!
+Dies ist jedoch bei vielen technischen Systemen (sin-, cos-, Sprung-,
+Rampenfunktion) nicht erfüllt und führt zu \emph{Konvergenzschwierigkeiten}.
+
+\minisec{Ausweg}
+anstatt $x(t) \rightarrow x(t) \cdot e^{-\sigma t}$, wobei $\sigma > 0$\\
+Die Forderung wird dann durch geeignete Wahl von $\sigma$ herstellbar!\\
+
+\\$\Rightarrow e^{-\sigma t}$ ist ein \emph{konvergenzerzwingender Faktor} für
+rationale Funktionen.\\
+
+Aus dem Fourierintegral:
+
+\[ \int_{-\infty}^{+\infty}{ x(t) \cdot e^{-j\omega t} dt }\]
+wird dann mit $x(t) = x(t) \cdot e^{-\sigma t}$:
+
+\[ \int_{-\infty}^{+\infty}{ x(t) \cdot e^{-\sigma t} \cdot e^{-j\omega t} dt }\
+  = \int_{-\infty}^{+\infty}{ x(t) \cdot e^{-p\cdot t}dt }\]
+
+
+Dies entspricht der Fouriertransformation einer \emph{exponentiell gedämpften
+  Zeitfunktion}! Es lässt sich außerdem erkennen, dass für den Fall $\sigma = 0$ das Integral zum
+regulären Fourierintegral wird.
+
+\holine
+Das Integral der Laplacetransformation, bei der die untere Grenze $-\infty$ ist,
+bezeichnet man als \emph{bilaterale Laplacetransformation}. Ist diese Grenze
+gleich 0, spricht man von der \emph{unilateralen Laplacetransformation}, bei
+welcher die Anfangsbedingungen berücksichtigt werden.\\
+Für Signale, deren Funktionswerte zu Zeiten $t < 0$ gleich 0 sind, ist die unilaterale gleich der
+bilateralen Laplacetransformation. Dies gilt insbesondere für \emph{kausale Systeme}.
+
+\holine
+Die Konvergenz des Laplace\emph{integrals} muss gegeben sein. Diese ist vom Wert
+von $p$ abhängig, es muss also
+herausgefunden werden, für welche werte von $p$ das Integral nicht
+unendlich groß wird sondern konvergiert.\\
+Diese Analyse führt zum {\bf{Konvergenzbereich}} der Laplacetransformation/des Integrals.\\
+
+
+Real- und Imaginärteil von $p$, also $\sigma$ und $\omega$, lassen sich in einer
+komplexen Ebene darstellen.
+
+\end{document}

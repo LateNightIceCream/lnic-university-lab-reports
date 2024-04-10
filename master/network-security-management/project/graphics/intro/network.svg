@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="179.8447mm"
+   height="83.960136mm"
+   viewBox="0 0 179.8447 83.960136"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="network.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="297.27746"
+     inkscape:cy="393.59535"
+     inkscape:window-width="1832"
+     inkscape:window-height="1130"
+     inkscape:window-x="254"
+     inkscape:window-y="49"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.6534583,-27.565781)">
+    <g
+       id="g635"
+       transform="translate(0.29185178)">
+      <circle
+         style="fill:none;stroke:#212529;stroke-width:1.9;stroke-dasharray:none"
+         id="path648"
+         cx="91.510704"
+         cy="72.405579"
+         r="6.4796195" />
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#212529;stroke-width:0.264583"
+         x="103.785"
+         y="70.281677"
+         id="text1206"><tspan
+           sodipodi:role="line"
+           style="fill:#212529;stroke-width:0.264583"
+           x="103.785"
+           y="70.281677"
+           id="tspan1208">VBox Network</tspan><tspan
+           sodipodi:role="line"
+           style="fill:#212529;stroke-width:0.264583"
+           x="103.785"
+           y="78.219177"
+           id="tspan477">192.168.56.1/24</tspan></text>
+    </g>
+    <g
+       id="g618"
+       transform="translate(0,-2.5497131)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2092px;line-height:1.25;font-family:lucide;-inkscape-font-specification:'lucide, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;word-spacing:0px;fill:#20c997;stroke-width:0.264583"
+         x="114.80437"
+         y="112.94117"
+         id="text418-6-1"><tspan
+           sodipodi:role="line"
+           id="tspan416-1-9"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2092px;font-family:lucide;-inkscape-font-specification:'lucide, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#20c997;stroke-width:0.264583"
+           x="114.80437"
+           y="112.94117"></tspan></text>
+      <g
+         id="g501"
+         transform="translate(-26.830702,-0.22199477)">
+        <g
+           id="g555"
+           transform="translate(-0.26390405)">
+          <text
+             xml:space="preserve"
+             style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;white-space:pre;inline-size:0;fill:#20c997;stroke-width:0.264583"
+             x="40.99136"
+             y="104.02864"
+             id="text422-2-4"
+             transform="translate(129.82697,2.1526741)"><tspan
+               id="tspan420-9-7"
+               style="fill:#20c997;stroke-width:0.264583"
+               x="40.99136"
+               y="104.02864">Opfer</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#212529;stroke-width:0.264583"
+             x="170.31602"
+             y="114.20771"
+             id="text1212"><tspan
+               sodipodi:role="line"
+               id="tspan1210"
+               style="fill:#212529;stroke-width:0.264583"
+               x="170.31602"
+               y="114.20771">192.168.56.3</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#212529;stroke-width:0.264583"
+             x="171.02916"
+             y="99.00293"
+             id="text1220"><tspan
+               sodipodi:role="line"
+               id="tspan1218"
+               style="fill:#212529;stroke-width:0.264583"
+               x="171.02916"
+               y="99.00293">VM2</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g629"
+       transform="translate(0.87161971,-0.9251124)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2092px;line-height:1.25;font-family:lucide;-inkscape-font-specification:'lucide, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;word-spacing:0px;fill:#fa5252;stroke-width:0.264583"
+         x="79.461319"
+         y="47.034901"
+         id="text418-6"><tspan
+           sodipodi:role="line"
+           id="tspan416-1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2092px;font-family:lucide;-inkscape-font-specification:'lucide, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fa5252;stroke-width:0.264583"
+           x="79.461319"
+           y="47.034901"></tspan></text>
+      <g
+         id="g493"
+         transform="translate(0.92353937,11.386253)">
+        <text
+           xml:space="preserve"
+           style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;white-space:pre;inline-size:0;fill:#fa5252;stroke-width:0.264583"
+           x="40.99136"
+           y="104.02864"
+           id="text422-2"
+           transform="translate(66.326504,-75.384322)"><tspan
+             id="tspan420-9"
+             style="fill:#fa5252;stroke-width:0.264583"
+             x="40.99136"
+             y="104.02864">Angreifer</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#212529;stroke-width:0.264583"
+           x="107.31786"
+           y="21.395851"
+           id="text1224"><tspan
+             sodipodi:role="line"
+             id="tspan1222"
+             style="fill:#212529;stroke-width:0.264583"
+             x="107.31786"
+             y="21.395851">VM1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#212529;stroke-width:0.264583"
+           x="106.60473"
+           y="36.695839"
+           id="text425"><tspan
+             sodipodi:role="line"
+             id="tspan423"
+             style="fill:#212529;stroke-width:0.264583"
+             x="106.60473"
+             y="36.695839">192.168.56.2</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g606"
+       transform="translate(-3.1713037)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2092px;line-height:1.25;font-family:lucide;-inkscape-font-specification:'lucide, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;word-spacing:0px;fill:#5c7cfa;stroke-width:0.264583"
+         x="48.562874"
+         y="110.39146"
+         id="text418"><tspan
+           sodipodi:role="line"
+           id="tspan416"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.2092px;font-family:lucide;-inkscape-font-specification:'lucide, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#5c7cfa;stroke-width:0.264583"
+           x="48.562874"
+           y="110.39146"></tspan></text>
+      <g
+         id="g509"
+         transform="translate(28.07456,-0.56387219)">
+        <text
+           xml:space="preserve"
+           style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#5c7cfa;stroke-width:0.264583"
+           x="-14.651873"
+           y="104.39439"
+           id="text422"><tspan
+             sodipodi:role="line"
+             id="tspan420"
+             style="fill:#5c7cfa;stroke-width:0.264583"
+             x="-14.651873"
+             y="104.39439">NIDS Host</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#212529;stroke-width:0.264583"
+           x="2.6245921"
+           y="97.398407"
+           id="text1216"><tspan
+             sodipodi:role="line"
+             id="tspan1214"
+             style="fill:#212529;stroke-width:0.264583"
+             x="2.6245921"
+             y="97.398407">VM3</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;white-space:pre;inline-size:43.9289;display:inline;fill:#212529;stroke-width:0.264583"
+           x="13.584653"
+           y="133.97969"
+           id="text439"
+           transform="translate(-37.705047,-22.583129)"><tspan
+             x="13.584653"
+             y="133.97969"
+             id="tspan909">192.168.56.4</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:#212529;stroke:#212529;stroke-width:1.9"
+       d="m 96.347676,77.226395 16.382614,16.38261"
+       id="path752" />
+    <path
+       style="fill:#212529;stroke:#212529;stroke-width:1.9"
+       d="M 87.274024,77.226395 70.89141,93.609005"
+       id="path817" />
+    <path
+       style="fill:#212529;stroke:#212529;stroke-width:1.9"
+       d="M 91.889399,49.37165 V 65.752133"
+       id="path819" />
+  </g>
+</svg>

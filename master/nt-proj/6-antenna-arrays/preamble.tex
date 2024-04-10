@@ -1,0 +1,316 @@
+%
+%   PACKAGES
+%
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[binary-units=true]{siunitx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+%\usepackage[english,german]{babel}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{import}
+\usepackage{float}
+\usepackage{varwidth}
+\usepackage{esint}
+\usepackage{subfig}
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage[
+    backend=biber,
+]{biblatex}
+\usepackage{todonotes}
+
+%
+%   GEOMETRY
+%
+
+\geometry{
+  a4paper,
+  %total={0.618\paperwidth,0.7639\paperheight},
+  %left=0.190962\paperwidth,
+  total={0.764\paperwidth,0.7639\paperheight},
+  left=0.118\paperwidth,
+}
+
+
+%
+%   FONT
+%
+
+%s\renewcommand{\familydefault}{\sfdefault}
+
+%
+%   COLORS
+%
+
+% \input{"/home/zamza/Documents/HS/Master/lnic-masters-protocols/preamble/colors.tex"}
+\input{"colors.tex"}
+\definecolor{yucky}{HTML}{dee2e6}
+\definecolor{yuckytext}{HTML}{343a40}
+
+%
+%   HIGHLIGHTING
+%
+\newcommand{\minisec}[1]{\noindent\underline{\textbf{#1}}\\}
+
+%
+%   MATH
+%
+
+\newcommand\equalhat{\mathrel{\stackon[1.5pt]{=}{\stretchto{%
+    \scalerel*[\widthof{=}]{\wedge}{\rule{1ex}{3ex}}}{0.5ex}}}}
+
+\newcommand{\vecnabla}{\vec{\nabla}}
+\newcommand{\rot}{\text{rot}\,}
+\newcommand{\divv}{\text{div}\,}
+\newcommand{\grad}{\text{grad}\,}
+\newcommand{\divD}{\divv\vec{D}}
+\newcommand{\divB}{\divv\vec{B}}
+\newcommand{\divE}{\divv\vec{E}}
+\newcommand{\rotD}{\rot\vec{D}}
+\newcommand{\rotB}{\rot\vec{B}}
+\newcommand{\rotE}{\rot\vec{E}}
+\newcommand{\unitv}{\vec{e}}
+\newcommand{\partialdev}[2]{\frac{\partial #1}{\partial #2}}
+
+% ! equals
+\newcommand{\hastobe}{\stackrel{!}{=}}
+
+% dBm
+
+
+%
+%   HYPERLINKS
+%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue-6,
+    citecolor=blue-8,
+    urlcolor=blue-6
+}
+
+
+%
+%   FLOWCHART
+%
+
+\usetikzlibrary{shapes,arrows}
+
+\tikzstyle{decision} = [diamond, draw, fill=blue!20,
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw=yucky, fill=yucky, text=yuckytext,
+    text width=10em, text centered, rounded corners, minimum height=4em, minimum width=10em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+
+%
+%   NOTE BOX
+%
+
+\colorlet{tcb_content_bg}{green-0}
+\colorlet{tcb_title_bg}{green-0}
+%\tcbset{colback=tcb_content_bg, colbacktitle=tcb_title_bg, colframe=tcb_content_bg, boxrule=0pt, bottomrule=0pt, frame hidden, sharp corners}
+
+\tcbset{
+  enhanced,
+  sharp corners,
+}
+
+\newcommand{\notebox}[2]{
+  \vspace{\baselineskip}
+  \begin{tcolorbox}[title=#1]{#2}\end{tcolorbox}
+  \vspace{\baselineskip}
+}
+
+\colorlet{zitat_bg}{gray-0}
+\colorlet{zitat_strip}{gray-3}
+
+\newtcolorbox{taskspec}[1][]{%
+    colback=gray-1,
+    fontupper=\selectfont\ttfamily,
+    %grow to right by=-10mm,
+    %grow to left by=-10mm,
+    boxrule=0pt,
+    boxsep=0pt,
+    breakable,
+    enhanced jigsaw,
+    borderline west={1pt}{0pt}{gray-2},
+    borderline east={1pt}{0pt}{gray-2},
+    borderline north={1pt}{0pt}{gray-2},
+    borderline south={1pt}{0pt}{gray-2},
+    %colbacktitle={gray-2},
+    %coltitle={gray-8},
+    %fonttitle={\large\bfseries},
+    attach title to upper={},
+    #1,
+}
+
+\newtcolorbox{zitat}[2][]{%
+    colback=zitat_bg,
+    grow to right by=-10mm,
+    grow to left by=-10mm,
+    boxrule=0pt,
+    boxsep=0pt,
+    breakable,
+    enhanced jigsaw,
+    borderline west={4pt}{0pt}{zitat_strip},
+    title={#2\par},
+    colbacktitle={zitat_bg},
+    coltitle={gray-8},
+    fonttitle={\large\bfseries},
+    attach title to upper={},
+    #1,
+}
+
+\newcommand{\notebo}[2]{
+  \vspace{\baselineskip}
+  \begin{tcolorbox}[enhanced,
+  sharp corners,
+  boxrule=0pt,
+  toptitle=0.1cm+1pt,%
+  bottomtitle=-0.1cm+0.5em,%
+  colframe=red-0,colback=red-0,coltitle=red-7,
+  title style=red-0,
+  fonttitle=\bfseries,fontupper=\normalsize,title=#1]{#2}\end{tcolorbox}
+  \vspace{\baselineskip}
+}
+
+\newtcbtheorem[number within=chapter]{thm}{Theorem}{
+  theorem style=change apart,
+  enhanced,
+  frame hidden,interior hidden,
+  sharp corners,
+  boxrule=0pt,
+  left=0.2cm,right=0.2cm,top=0.2cm,
+  toptitle=0.1cm+1pt,%        <-- I used your values here
+  bottomtitle=-0.1cm+0.5em,%  <-- I used your values here
+  colframe=white!25!black,colback=white,coltitle=white,
+  title style=white!25!black,
+  bottomrule=1pt,%  <-- reserve space
+  borderline south={1pt}{0pt}{white!25!black},%---- draw line
+  fonttitle=\bfseries,fontupper=\normalsize}{thm}
+
+
+%
+%   CODE
+%
+
+\definecolor{commentColor}{HTML}{adb5bd}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{stringColor}{HTML}{7048e8}
+\definecolor{keywordColor}{HTML}{228be6}
+\definecolor{backgroundColor}{HTML}{f1f3f5}
+\definecolor{borderColor}{HTML}{f1f3f5}
+\definecolor{inlineTextColor}{HTML}{495057}
+\definecolor{leftRuleColor}{HTML}{868e96}
+\definecolor{numbackgroundColor}{HTML}{f1f3f5}
+\definecolor{numColor}{HTML}{adb5bd}
+
+\newtcbox{\inlinebox}{enhanced,nobeforeafter,tcbox raise base,boxrule=0pt,top=0.062em,bottom=0.062em,
+  right=0.382em,left=0.382em,arc=0.382em,boxsep=0.1em,before upper={\vphantom{dlg}},
+  colframe=white,colback=backgroundColor}
+
+\newcommand{\inlinecode}[1] {
+  \inlinebox{\lstinline[language=Python, identifierstyle=\color{inlineTextColor}, basicstyle=\color{inlineTextColor}\ttfamily, keywordstyle=\color{inlineTextColor}]{#1}}
+}
+
+%\setmonofont{JetBrainsMono NF}[
+%    Contextuals = Alternate,
+%    Ligatures = TeX,
+%]
+
+\lstset{
+  backgroundcolor=\color{backgroundColor},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\small\ttfamily,        % the size of the fonts that are used for the code
+  breaklines=true,                 % sets automatic line breaking
+  commentstyle=\color{commentColor},    % comment style
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  frameshape={RYR}{Y}{Y}{RYR},
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{keywordColor}\textbf,       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=1.5em,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{commentColor}, % the style that is used for the line-numbers
+  rulecolor=\color{borderColor},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{stringColor},     % string literal style
+  tabsize=2,
+  frame=l,
+  framesep=2.12em,
+  framexleftmargin=0em,
+  fillcolor=\color{numbackgroundColor},
+  rulecolor=\color{leftRuleColor},
+  numberstyle=\ttfamily\tiny\color{numColor},
+}
+
+\newtcolorbox{codebg}[2][]{%
+    colback=gray-1,
+    %grow to right by=-10mm,
+    %grow to left by=-10mm,
+    boxrule=0pt,
+    boxsep=0pt,
+    breakable,
+    enhanced jigsaw,
+    rounded corners=east,
+    arc=8pt,
+    borderline west={1pt}{0pt}{gray-3},
+    %title={#2\par},
+    %colbacktitle={zitat_bg},
+    bottomrule=0pt,
+}
+
+
+\newtcbox{\inlinecodee}{on line, boxrule=0pt, boxsep=0pt, top=2pt, left=2pt, bottom=2pt, right=2pt, colback=gray-2, colframe=white, fontupper={\ttfamily \footnotesize}}
+
+\BeforeBeginEnvironment{minted}{\begin{codebg}}%
+\AfterEndEnvironment{minted}{\end{codebg}}%
+
+\BeforeBeginEnvironment{inputminted}{\begin{codebg}}%
+\AfterEndEnvironment{inputminted}{\end{codebg}}%
+
+\usepackage{minted}
+\setminted{
+  autogobble=true,
+  breakautoindent=true,
+  breaklines=true,
+  escapeinside=§§,
+  fontfamily=tt,
+  fontsize=\footnotesize,
+  frame=leftline,
+  framerule=0pt,
+  framesep=0.2em, % sufficient for up to 4 digits
+  numbers=left,
+  numbersep=0.2em,
+  showspaces=false,
+  showtabs=false,
+  style=vs, % see: https://pygments.org/styles/
+  tabsize=2,
+  xleftmargin=1.5em,
+  % colors
+  bgcolor=gray-1,
+}
+\usemintedstyle{myown}
+
+\tcbuselibrary{minted}
+
+% minted line numbers
+\renewcommand{\theFancyVerbLine}{\sffamily
+\textcolor{gray-4}{\scriptsize
+\oldstylenums{\arabic{FancyVerbLine}}}}

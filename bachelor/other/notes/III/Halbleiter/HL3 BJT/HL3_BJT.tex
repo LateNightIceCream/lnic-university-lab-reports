@@ -1,0 +1,204 @@
+\documentclass[a4paper, 12pt]{article}
+
+\input{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\section*{Halbleiter Notes III: Bipolartransistor}
+
+en. Transistor ... \textbf{Trans}fer-re\textbf{sistor}\\
+
+$\rightarrow$ Durch Anlegen einer Spannung steuerbarer Widerstand\\
+
+\noindent \textbf{Bipolar}: Funktion durch \textbf{beide Ladungsträgerarten}\\
+
+\noindent 3 Halbleitergebiete, dotierfolge entweder \textbf{NPN} oder \textbf{PNP}
+
+\begin{itemize}
+  \item Der Pfeil im Schaltsymbol gibt die \emph{technische Stromrichtung im
+      Normalbetrieb} an
+\end{itemize}
+
+\subsection*{Funktion}
+
+Am Beispiel der \emph{npn-Dotierfolge}
+\begin{itemize}
+  \item Ist die von außen anliegende Spannung $U_{BE} = 0$, ist sind alle
+    pn-Übergänge gesperrt und es fließt kein Strom durch den Transistor.
+  \item Spannung von etwa $U_{BE} = 0.7 \si{\volt}$ an den Basis-Emitter
+    Übergang
+    \item Basis-Emitter-Übergang ist in Durchlassbetrieb
+  \item Diffusion von Löchern aus dem p- (basis) in das n- (Emitter) Gebiet
+    (vgl. Diode: Verringerung der Breite der Raumladungszone durch äußeres Feld,
+    Diffusionsspannung wird kompensiert, Diffusion überwiegt ggü
+    entgegengesetztem Drift, etc.)
+  \item \emph{Rekombination} der Löcher aus der Basis mit den Elektronen im Emitter 
+  \item  \textbf{Elektronen des Emitters} diffundieren ebenfalls in die Basis,
+    \emph{rekombinieren jedoch nicht}, da die Basis sehr kurz ist
+  \item Durch äußere Spannung ist das Elektrische Feld der Raumladungszone vom
+    Basis-Kollektorübergang so gerichtet, dass die Elektronen des Emitters sich
+    in Richtung Kollektor bewegen (\textbf{Drift})
+  \item Es fließt ein \emph{Elektronenstrom} zwischen Kollektor und Emitter
+  \item Normalbetrieb: Basis-Emitter-Übergang in Durchlass,
+    Basis-Kollektor-Übergang in Sperrichtung
+  \end{itemize}
+
+\subsection*{Gleichungen}
+Annahmen: Vom Kollektor in die Basis injizierten Löcher werden vernachlässigt;
+Die Elektronen die nicht von der Basis in den Kollektor abgesaugt werden sondern
+in der Basis rekombinieren werden vernachlässigt
+
+\subsubsection*{Kollektorstrom:}
+\eqbox{
+  I_C = I_S \cdot (e^{\dfrac{U_{BE}}{U_T}}-1)
+}{0.618\textwidth}
+
+Transfersättigungsstrom:
+\eqbox{
+  I_S = \frac{A \cdot q \cdot D_{nB} \cdot n_{B0}}{x_B}
+}{0.618\textwidth}
+
+($I_S$ typ. $10^{-17} \, \si{\ampere}$)
+
+\subsubsection*{Basisstrom:}
+Die Eingangskennlinie ($I_B=f(U_{BE})$) ergibt sich als einfache Diodenkennlinie
+
+\eqbox{
+  I_B = \frac{A \cdot q \cdot D_{pE} \cdot p_{E0}}{L_{pE}} \cdot (e^{\dfrac{U_{BE}}{U_T}}-1)
+}{0.618\textwidth}
+
+Durchlass ungefähr bei $U_{BE} \approx 0.7 \, \si{\volt}$
+
+\minisec{Mit Stromverstärkung unten:}
+\eqbox{
+  I_B = \frac{I_S}{B_N}\cdot (e^{\dfrac{U_{BE}}{U_T}}-1)
+}{0.618\textwidth}
+
+\subsubsection*{Emitterstrom}
+$\rightarrow$ Kirchhoff
+
+\subsubsection*{Stromverstärkung}
+Verhältnis von \emph{Kollektor- zu Basisstrom}
+\[ B_N = \frac{I_C}{I_B} \] (Index N für Normalbetrieb)
+
+\eqbox{
+  B_N = \frac{D_{nB} \cdot N_{DE} \cdot L_{pE}}{D_{pE} \cdot N_{AB} \cdot x_B}
+}{0.618 \textwidth}
+
+$N_{DE}, N_{AB}$...Dotierungsdichten\\
+$L_{pE}$...Diffusionslänge\\
+
+
+Der Stromverstärkungsfaktor ist nicht konstant sondern für sehr kleine und sehr
+große Kollektorströme vom \textbf{Kollektorstrom abhängig}
+
+\subsection*{Inversbetrieb}
+Vertauschen von Kollektor und Emitter.\\
+Basis-Kollektor-Übergang ist in Durchlassrichtung, Basis-Emitter-Übergang ist in Sperrrichtung.
+
+Die unterschiedliche Verhaltensweise im inversbetrieb ist auf die
+unterschiedlichen Dotierungen/Weiten der einzelnen Bereiche zurückzuf+hren.
+Dadurch ändert sich die Stromverstärkung.
+
+$$B_I = \frac{I_E}{I_B} = \textrm{siehe oben}$$
+
+Die Stromverstärkung im Inversbetrieb ist geringer als im Normalbetrieb
+
+\subsection*{Sättigungsbetrieb}
+Beide pn-Übergänge in Durchlassrichtung\\
+\textbf{Langsameres Schaltverhalten}
+
+Näherung: $U_{CE,sat} \approx 0.1 \, \si{\volt}$
+
+\subsection*{Ausgangskennlinienfeld}
+Darstellung des Kollektorstroms in Abhängigkeit von der
+Kollektor-Emitter-Spannung für verschiedene Werte des Basisstroms.\\
+
+Das Kennlininenfeld beginnt bei fortlaufender Kollektorspannung mit dem
+Transistor im Sättigungsbetrieb, da die Basis-Emitter-Spannung $> 0V$ und die
+Basis-Kollektorspannung ebenfalls $> 0V$ ist; Beide pn-Übergänge sind in
+Durchlassrichtung gepolt, dadurch Abnahme des Kollektorstroms mit kleiner
+werdender CE-Spannung; Dies ist nicht der Normalbetriebsfall und die
+Stromverstärkung $B_N$ gilt daher nicht. Da gilt
+\[U_{BC} = U_{BE} - U_{CE}\],
+sinkt die Basis-Kollektorspannung bei gleichbleibender Basis-Emitter-Spannung
+mit sinkender Kollektor-Emitter-Spannung, wodurch der Transistor in Sättigung
+geht, wenn $U_{BC}$ positiv wird (i guess)\\
+
+Der andere Bereich heißt \emph{aktiver Vorwärtsbetrieb}
+
+
+\subsection*{Basisweitenmodulation (Early-Effekt)}
+Im theoretischen Ausgangskennlinienfeld ist der Kollektorstrom im aktiven
+Vorwärtsbetrieb unabhängig von der Kollektor-Emitter-Spannung (waagerechte). In
+der Praxis steigt der Strom jedoch mit steigender Kollektorspannung\\
+
+\minisec{Ursache:}
+Die Änderung der Kollektor-Emitter-Spannung und damit die \textbf{Änderung der
+Basis-Kollektor-Spannung} (Sperrspannung) führt zu einer \textbf{Änderung der Weite der
+Basis-Kollektor-Raumladungszone}. Die effektive Basisweite ändert sich und damit
+ändert sich der Kollektorstrom. \\
+
+Es ergibt sich eine Gerade im aktiven
+Vorwärtsbetrieb, dessen Nullstelle die \emph{Early-Spannung $U_{AN}$} ist. Die
+Steigung der Geraden ist
+\[\frac{I_C|_{U_{BC} = 0}}{U_{AN}}\]
+
+\subsection*{Modellierung}
+\subsubsection*{Großsignalersatzschaltbild}
+Eingangskreis: Diode\\
+Ausgangskreis: Gesteuerte Stromquelle\\
+
+Transportmodell: Zusammenfassung von Normal- und Inversbetrieb $\rightarrow$
+zwei Dioden/pn-Übergänge (BC, BE) und zwei Basisströme\\
+
+Für das dynamische Verhalten können noch die Kapazitäten hinzugefügt werden\\
+
+\subsubsection*{Schaltverhalten}
+Da der Basis-Emitter-Übergang eine Diode darstellt, muss zuerst die in der Basis
+befindliche Ladung ausgeräumt werden, bevor die Diode in Sperrrichtung gerät.\\
+
+Trennt man die Basis-Spannungsquelle ab, kann die in der Basis befindliche
+Ladung nur durch Rekombination entfernt werden, wodurch der Ausschaltvorgang
+deutlich verlängert wird.\\
+
+Schaltzeitverlängerung im Sättigungsbetrieb.\\
+
+\minisec{Schottky-Transistor}
+Durch parallelschalten einer Schottkydiode (Me-HL-Übergang) zum
+Basis-Kollektorübergang können der Sättigungsbetrieb 
+und die Schaltzeit beim Ausschalten verringert werden  
+
+\subsubsection*{Kleinsignalersatzschaltbild}
+Linearisierung der Großsignalersatzschaltung um den Arbeitspunkt (Wie bei der
+Diode!)\\
+
+\notebox{
+  Das Kleinsignalersatzschaltbild gilt nur für den angegebenen, festen
+  Arbeitspunkt herum bei Aussteuerung mit kleinen Signalen. 
+}
+
+Abhängigkeit des Kollektorstroms von der Eingangsspannung: Steigung der gerade:
+Leitwert 'Steilheit' $g_m = \frac{q}{k \cdot T} \cdot I_{C,A}$\\
+
+Abhängigkeit des Kollektorstroms von der Kollektor-Emitter-Spannung:
+Ausgangsleitwert: $g_0 = \frac{I_{C,A}}{U_{AN} + U_{CE,A}}$\\
+
+Änderung des Kollektorstroms durch Änderung des Basisstroms:
+Kleinsignalstromverstärkung $\beta_N = \frac{i_C}{i_B} = \frac{\dif I_C}{\dif
+  I_B}$\\
+
+Änderung des Basisstroms bei Änderung der BE-Spannung: Eingangsleitwert $g_\pi =
+\frac{I_{C,A}}{\beta_N \cdot U_T}$\\
+
+Änderung des Basisstroms bei Änderung der CE-Spannung: Rückwärtssteilheit: ist
+vernachlässigbar! = 0, für Rest siehe buch
+
+\subsubsection*{Frequenzverhalten}
+Stromverstärkung ist frequenzabhängig! Die \textbf{Transitfrequenz} gibt die
+Frequenz an, bei der die Stromverstärkung nur noch 1 ist.
+Die parasitären Kapazitäten führen zu einer Abnhame der Transitfrequenz
+
+\end{document}

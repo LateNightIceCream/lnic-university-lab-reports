@@ -1,0 +1,48 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{preamble.tex}
+
+\addbibresource{sources.bib}
+
+\begin{document}
+
+\includepdf{./titlepage/titlepage.pdf}
+
+\section*{Homework Tasks}
+\input{task.tex}
+\pagebreak
+
+\section{Introduction}
+\input{chapters/introduction.tex}
+
+\section{Square 5x5 Array}
+\input{chapters/square_array.tex}
+
+\section{Equilateral Array}
+\input{chapters/equilat_array.tex}
+
+\pagebreak
+% ------------------------------------------------------------------------------
+
+\printbibheading
+\begin{refsection}[sources.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Literature}]
+\end{refsection}
+
+\begin{refsection}[software.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Software Used}]
+\end{refsection}
+
+\begin{refsection}[web.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Web}]
+\end{refsection}
+
+\pagebreak
+\appendix
+\section{Python Code}\label{app:script}
+\inputminted{python}{./code/square-array.py}
+
+\end{document}

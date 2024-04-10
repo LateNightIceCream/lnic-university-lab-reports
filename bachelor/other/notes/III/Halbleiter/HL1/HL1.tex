@@ -1,0 +1,135 @@
+\documentclass[a4paper, 12pt]{article}
+
+\input{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\section*{Halbleiter Notes}
+
+\subsection*{Dotierung}
+\textbf{ n-Dotierung},z.B. Phosphor (5-wertig) in Silizium:
+\begin{itemize} 
+\item Donatoratome:
+\item Ein Elektron mehr als in den Bindungen zu den Siliziumatomen notwendig:
+\item 5tes Elektron der Phosphoratome hat Ionisierungsenergie leicht unterhalb des Leitungsbandes des Gitters:
+\item Elektron geht bereits bei Raumtemperatur in das LB über und trägt zur (Elektronen-)Leitfähigkeit bei:
+\item Eigenleitungsdichte wird erst bei höheren Temperaturen ausgelöst, die Dichte der durch die Ionisierung entstandenen Elektronen überwiegt daher:
+\item Dichte der Dotieratome ist daher etwa der Dichte der Freien Elektronen.z.B. Phosphor (5-wertig) in Silizium:
+ \item Thermodyn. Gleichgewicht .. Generierungsrate = Rekombinationsrate..Massenwirkungsgesetz
+\end{itemize}
+
+\noindent \textbf{ p-Dotierung}, z.B. Bor (3-wertig) in Silizium:
+\begin{itemize}
+\item Akzeptoratome:
+\item Ein Elektron weniger als in den Bindungen zu den Siliziumatomen notwendig:
+\item Ionisierungsenergie der Boratome leicht überhalb des Valenzbandes des
+  Halbleitergitters
+\item Elektron des Valenzbandes kann bereits bei Raumtemperatur (Energiezufuhr)
+  zum Elektron des Boratoms werden und es damit negativ ionisieren
+\item Es bleibt ein Loch im Valenzband übrig
+\item Loch trägt im Valenzband wie ein Elektron im Leitungsband zur
+  Leitfähigkeit des Halbleiters bei
+\item Rest siehe n-Dotierung
+\end{itemize}
+
+\subsection*{Massenwirkungsgesetz}
+
+Im thermodynamischen Gleichgewicht (Rekombinationsrate = Generierungsrate) gilt:
+$$ n_i^2 = p_0 \cdot n_0  $$
+
+Da die Zunahme der Anzahl von z.B. Elektronen im Halbleiter (über die
+Gleichgewichtslage hinaus) eine Erhöhung der Rekombinationsrate nach
+\[ R(T) = r(T) \cdot n \cdot p\]
+hervorruft, die Löcherdichte jedoch nicht geändert wurde, wird auch die Anzahl
+der Löcher/ Die Löcherdichte geringer (Rekombinationsrate steigt durch Erhöhung der einen
+Ladungsträgerart $\rightarrow$ andere Ladungsträgerart wird stärker 'verbraucht' )
+
+\notebox{Massenwirkungsgesetz: Eine Zunahme der einen Ladungsträgerart/dichte
+  führt zur Abnahme der anderen (im thermodyn. Gleichgewicht)}
+
+\subsection*{Ferminiveau}
+
+Lage des Ferminiveaus (relativ zum Intrinsien-Niveau/ Mitte zwischen beiden Bandkanten)
+
+\noindent \textbf{n-Leiter}:
+\[ W_F = kT\cdot \ln{\frac{N_D}{n_i}}\]
+\textbf{p-Leiter}:
+\[ W_F = -kT\cdot \ln{\frac{N_A}{n_i}}\]
+
+\notebox{Das Ferminiveau liegt umso näher an der Leitungsbandkante, je stärker
+  der HL mit Donatoratomen dotiert ist (analog für p-Dotierung)}
+
+Der Begriff des Ferminiveaus ist nur im thermodynamischen Gleichgewicht
+sinnvoll, jedoch kann man auch bei Störungen des Gleichgewichts das Ferminiveau
+als Bezugspunkt verwenden. Das anlegen einer Spannung führt demnach zu einer
+Verschiebung des Ferminiveaus. Liegt dieses nicht waagerecht, so fließt ein Strom
+durch den Halbleiter.
+
+\subsection*{Elektronen- und Löcherstrom}
+
+Die Gesamtstromdichte im HL setzt sich aus Elektronen- und Löcherstromdichte
+zusammen
+\[ j = j_n + j_p \]
+
+Elektronen- und Löcherstrom bestehen im HL aus dem \emph{Drift-} und dem
+\emph{Diffusionsstrom}.\\
+
+\textbf{Driftstrom}:
+\[ j_{Drift, n} = -q \cdot n \cdot v_n\]
+\[ j_{Drift, p} = q \cdot n \cdot v_p\]
+\[ j_{Drift, gesamt} = \sigma \cdot E\]
+\[\sigma = q [\mu_n\cdot n + \mu_p \cdot p]\]
+
+\textbf{Diffusionsstrom}:\\
+Durch \textbf{thermische} Konzentrationsausgleichsvorgänge von Teilchen. Diese
+Teilchen sind im HL Löcher oder Elektronen, somit also bewegte Ladung und damit
+ein el. Strom. Dieser Diffusionsstrom ist proportional zum Gradienten der Ladungsträgerkonzentration
+\[ j_{Diff, n} = q \cdot D_n \cdot \frac{\dif n}{\dif x}\]
+
+Wobei $D_n$ der Diffusionskoeffizient (Eisteinbeziehung) ist. (analog für Löcher
+mit umgekehrten Vorzeichen)\\
+
+Die gesamten Stromdichten sind damit:
+\eqbox{
+ j_n = q \cdot E \cdot \mu_n \cdot n + q \cdot D_n \cdot \frac{\dif n}{\dif x}\\
+ j_p = q \cdot E \cdot \mu_p \cdot p - q \cdot D_p \cdot \frac{\dif p}{\dif x}
+}{0.618\textwidth}
+
+
+\notebox{
+\noindent {\bf Driftstrom:} Durch el. Feld verursacht, steigt mit der Größe des
+el. Feldes und der Ladungsträgerdichte\\ \\
+{\bf Diffusionsstrom:} Durch Konzentrationsunterschiede der Ladungsträgerdichte
+verursacht, vom el. Feld unabhängig.\\
+}
+
+\holine{\textwidth}
+
+\subsection*{Beweglichkeit}
+Die Beweglichkeit $\mu$ beschreibt das Streuverhalten bzw. die \emph{Ungehindertheit
+driftender Ladungsträger}.
+\notebox{
+\[ v_D = \mu \cdot E \]
+}
+Für Elektronen und Löcher gibt es im HL unterschiedliche Beweglichkeiten
+($\mu_n, \mu_p$). Die Beweglichkeit ist temperatur- und feldstärkeabhängig.
+Die Driftgeschwindigkeit geht bei hohen Feldstärken in Sättigung, weshalb die
+Beweglichkeit nicht konstant ist.
+
+\subsection*{Injektionen}
+Betrachtet wird der Fall der Störung des thermodynamischen Gleichgewichts des Halbleiters
+
+\subsubsection*{Schwache Injektion}
+(Mit Beispiel eines n-Leiters)
+Die Minoritätsträgerdichte ($p_n$) ist gegenüber der Majoritätsträgerdichte
+($n_n$) sehr gering. Die Majoritätsträgerdichte ist nur leicht höher als die
+Majoritätsträgerdichte im Gleichgewichtszustand ($n_0$)
+$$n_n \approx n_0,\,\, n_n > > p_n$$
+
+\subsubsection*{Starke Injektion}
+Majoritätsträgerdichte und Minoritätsträgerdichte liegen deutlich über den Gleichgewichtswerten.
+$$n_n \approx p_n, \,\, n_n > > N_D$$
+
+\end{document}

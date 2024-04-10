@@ -1,0 +1,111 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Master/lnic-masters-protocols/preamble/preamble.tex"}
+
+\begin{document}
+
+\includepdf{./titlepage/titlepage.pdf}
+
+\section{Teil A: 2-Phasen-Scheduler}
+
+\subsection{Prototyp 2-Phasen-Scheduler sched2p}
+
+\lstinputlisting[title={sched2p.py}]{code/2phase.py}%[language=Python]
+
+\begin{lstlisting}[title={Ausgabe sched2p bei Simulationszeit von 10 Minuten}]
+time,state
+0.0,TrafficLightStates.RED
+180.12345,TrafficLightStates.GREEN
+240.69134,TrafficLightStates.RED
+420.81479,TrafficLightStates.GREEN
+481.38268,TrafficLightStates.RED
+\end{lstlisting}
+
+\subsection{Zeitgetriebener Simulator (sched2p\_timedriven)}
+
+\lstinputlisting[title={sched2p\_timedriven.py}]{code/2phase_timedriven.py}%[language=Python]
+
+\begin{lstlisting}[title={Teil der Ausgabe sched2p\_timedriven bei Simulationszeit von 10 Minuten. Schrittweite = $1\,\si{\second}$}]
+time,state
+...
+422.0,TrafficLightStates.RED
+423.0,TrafficLightStates.RED
+424.0,TrafficLightStates.RED
+425.0,TrafficLightStates.GREEN
+426.0,TrafficLightStates.GREEN
+427.0,TrafficLightStates.GREEN
+...
+483.0,TrafficLightStates.GREEN
+484.0,TrafficLightStates.GREEN
+485.0,TrafficLightStates.GREEN
+486.0,TrafficLightStates.RED
+487.0,TrafficLightStates.RED
+488.0,TrafficLightStates.RED
+...
+599.0,TrafficLightStates.RED
+600.0,TrafficLightStates.RED
+601.0,TrafficLightStates.RED
+terminated
+\end{lstlisting}
+
+Die Ausgabe bei $601$ Sekunden liegt daran, dass im Simulationsschritt die Zeit nach dem Ausführen des Ereignisses erhöht wird. Die eigentliche Zeit bei Eintreten des Ereignisses liegt also immer $1\,\si{s}$ früher als es die Ausgabe zeigt.
+
+
+\subsection{Vergleich von sched2p und sched2p\_timedriven}
+
+Man erkennt gut aus der Ausgabe von \inlinecode{sched2p_timedriven}, dass die Zeitpunkte der Ereigniswechsel nicht genau getroffen werden können und die Genauigkeit immer von der Zeitauflösung / Schrittweite abhängt. Höhere Genauigkeit bringt allerdings auch eine erhöhte Anzahl an Iterationen mit sich, wodurch die Simulationszeit (Echtzeit) verlängert wird.
+
+Eine Ausgabe der Anzahl der Iterationen zeigt $600$, wie erwartet ($\frac{600\,\si{\second}}{1\,\si{\second}/\text{step}}$). Im Gegensatz zum Ereignisbasierten Scheduler mit $5$ Iterationen liegt der Unterschied also bei einem Faktor von $120$.
+
+Außerdem zeigt der zeitbasierte Ansatz (in diesem Fall), dass die meisten Iterationen keine Zustandsänderungen herbeiführen und damit nutzlos sind.
+
+\paragraph{Simulationszeit von $1$ Woche:}
+Eine Woche entspricht $604800$ Sekunden. Mittels \inlinecode{time()}-Funktion aus der \inlinecode{time} library in Python konnten die Ausführungszeiten beider Programme geprüft werden.
+
+\[t_{\text{sched2p}} = 0.00652\,\si{\second}\]
+\[t_{\text{timedriven}} = 0.182 \,\si{\second}\]
+\[\frac{t_{\text{timedriven}}}{t_{\text{sched2p}}} \approx 30\]
+
+\section{Teil B: 3-Phasen Scheduler}
+\lstinputlisting[title={sched3p.py}]{code/3phase.py}
+
+\begin{table}[H]
+  \centering
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Simulationslauf} & \multicolumn{1}{l|}{Rot-Rot-Übergänge} & \multicolumn{1}{l|}{Rot-Grün-Übergänge} & Zustandsverlauf \\ \hline
+1                                     & 1                                      & 1                                       & R-R-G-R         \\ \hline
+2                                     & 0                                      & 2                                       & R-G-R-G-R       \\ \hline
+3                                     & 1                                      & 1                                       & R-G-R-R         \\ \hline
+4                                     & 1                                      & 1                                       & R-R-G-R         \\ \hline
+5                                     & 2                                      & 0                                       & R-R-R-G         \\ \hline
+6                                     & 1                                      & 1                                       & R-R-G-R         \\ \hline
+7                                     & 1                                      & 1                                       & R-R-G-R         \\ \hline
+8                                     & 3                                      & 0                                       & R-R-R-R         \\ \hline
+9                                     & 0                                      & 2                                       & R-G-R-G-R       \\ \hline
+10                                    & 1                                      & 1                                       & R-G-R-R         \\ \hline
+\end{tabular}
+\caption{Simulationsergebnis sched3p bei 10 Druchläufen mit Simulationszeit von $10\,\si{\minute}$}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{cc|c|c|}
+\hline
+\multicolumn{1}{|l|}{Simulationslauf} & \multicolumn{1}{l|}{Rot-Rot-Übergänge} & \multicolumn{1}{l|}{Rot-Grün-Übergänge} & \multicolumn{1}{l|}{Verhältnis (R-R/R-G)} \\ \hline
+\multicolumn{1}{|c|}{1}               & 5851                                   & 5672                                    & 0.9694                                    \\ \hline
+\multicolumn{1}{|c|}{2}               & 5732                                   & 5761                                    & 1.0051                                    \\ \hline
+\multicolumn{1}{|c|}{3}               & 5695                                   & 5789                                    & 1.0165                                    \\ \hline
+\multicolumn{1}{|c|}{4}               & 5681                                   & 5799                                    & 1.0208                                    \\ \hline
+\multicolumn{1}{|c|}{5}               & 5749                                   & 5748                                    & 0.9998                                    \\ \hline
+\multicolumn{1}{|c|}{6}               & 5729                                   & 5763                                    & 1.0059                                    \\ \hline
+\multicolumn{1}{|c|}{7}               & 5743                                   & 5753                                    & 1.0017                                    \\ \hline
+\multicolumn{1}{|c|}{8}               & 5745                                   & 5751                                    & 1.0010                                    \\ \hline
+\multicolumn{1}{|c|}{9}               & 5733                                   & 5760                                    & 1.0047                                    \\ \hline
+\multicolumn{1}{|c|}{10}              & 5732                                   & 5761                                    & 1.0051                                    \\ \hline
+\multicolumn{1}{l}{}                  & \multicolumn{1}{l|}{}                  & Mittelwert                              & 1.003                                     \\ \cline{3-4}
+\end{tabular}
+\caption{Simulationsergebnis sched3p bei 10 Druchläufen mit Simulationszeit von $4$ Wochen}
+\end{table}
+
+\end{document}

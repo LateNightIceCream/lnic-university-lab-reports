@@ -1,0 +1,52 @@
+\documentclass[a4paper, 12pt]{article}
+
+\setlength\parindent{0pt}
+
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{tikz}
+
+% Inkscape
+% ----------------
+
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+
+\newcommand{\inklude}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+\pdfsuppresswarningpagegroup=1
+
+% ----------------
+
+\newcommand{\holine}{
+  \noindent\rule{\textwidth}{0.618pt}\\[0.021286\paperheight]
+}
+
+\newcommand{\minisec}[1]{ \underline{\textit {#1} } \\[0.021286\paperheight]}
+
+\newcommand{\plotfun}[3]{
+  \vspace{0.021286\paperheight}
+  \begin{center}
+    \begin{tikzpicture}
+      \definecolor{plotcol}{HTML}{3c3d47}
+      \begin{axis}[
+        axis x line=center,
+        axis y line=center,
+        ]
+        \addplot[draw=plotcol][domain=#2:#3]{#1};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+}
+
+\begin{document}
+
+\begin{center}
+  \inklude{Schnibibean}
+\end{center}
+
+\end{document}

@@ -1,0 +1,40 @@
+\begin{taskspec}
+HW4)\\
+
+due May 11th 23:59 LT\\
+
+1)\\
+- create a long complex valued time series signal, perhaps a 2 or 4 state QAM\\
+- the states should be persistent for 400 samples\\
+- add complex noise to the time series\\
+
+1a)\\
+- derive a "signal to noise ratio"\\
+- proposal: derive the deviation for each sample to the nominal QAM state position (e.g. 43+33j to 50+50j)\\
+	-> sum of those distances in respect to the magnitute of the I/Q state\\
+
+1b)\\
+- apply coherent integrations: 1, 5, 10, 25, 50, 100\\
+- plot the time series for 1, 25 and 100 CI (in one plot)\\
+
+1c)\\
+- investigate the effect of the diffent number of applied CI\\
+-> plot "SNR" over CI, any mathematical approximation visible?\\
+
+2) basically repeat the equivalent for incoherent integrations\\
+- create a gaussian-like signal in the spectral domain and add noise\\
+
+2a)\\
+- apply 1, 5, 10, 25, 50, 100 incoherent integration\\
+-> create different realisations of such spectra\\
+-> do not split just one time series\\
+
+2b)\\
+- derive a "signal to noise ratio"\\
+- proposal: sum the magnitudes of the spectra, first without noise, then for the 1..100 integrations\\
+- plot the integrated spectrum for 1, 25 and 100 NCI\\
+
+2c)\\
+- investigate and plot the dependence of "SNR" to the number of integrated spectra (NCI)\\
+-> any mathematical approximation visible?\\
+\end{taskspec}

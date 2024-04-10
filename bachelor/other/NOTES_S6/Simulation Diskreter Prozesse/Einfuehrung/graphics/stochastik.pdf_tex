@@ -1,0 +1,66 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'stochastik.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{361.84103251bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.47636844)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.25969432,0.45426601){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Stochastik}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{stochastik.pdf}}%
+    \put(-0.00069766,0.25343315){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Wahrscheinlichkeits-\\theorie\end{tabular}}}}%
+    \put(0.46378842,0.25561938){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Statistik\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{stochastik.pdf}}%
+    \put(0.48425465,0.11416839){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$...$\end{tabular}}}}%
+    \put(0.35156348,0.12320494){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$...$\end{tabular}}}}%
+    \put(0.59678536,0.11859191){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Induktive Stat.\end{tabular}}}}%
+    \put(0.64026024,0.08186362){\color[rgb]{0.67843137,0.70980392,0.74117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}ist das Modell ausreichend\\an die Wirklichkeit\\angepasst?\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

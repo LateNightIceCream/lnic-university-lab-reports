@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="218.34636mm"
+   height="5.9376221mm"
+   viewBox="0 0 218.34636 5.9376221"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="rule-syntax.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="548.17963"
+     inkscape:cy="33.295075"
+     inkscape:window-width="2012"
+     inkscape:window-height="952"
+     inkscape:window-x="33"
+     inkscape:window-y="107"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.94959159,-31.879047)">
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583"
+       x="34.522469"
+       y="47.402622"
+       id="text272"><tspan
+         sodipodi:role="line"
+         id="tspan270"
+         style="stroke-width:0.264583"
+         x="34.522469"
+         y="47.402622"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583"
+       x="-1.2875555"
+       y="36.591938"
+       id="text476"><tspan
+         sodipodi:role="line"
+         id="tspan474"
+         style="stroke-width:0.264583"
+         x="-1.2875555"
+         y="36.591938">alert icmp any any -&gt; 192.168.56.0 any (msg &quot;ICMP erkannt!&quot;; sid: 100001)</tspan></text>
+    <path
+       style="fill:none;stroke:#343a40;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       d="m -0.73610116,39.054701 c 0,0 21.75106816,12.946958 53.53312116,12.847718 l 2.226348,2.226348"
+       id="path551" />
+    <path
+       style="fill:none;stroke:#343a40;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 113.11108,39.054701 c 0,0 -22.822627,12.946958 -56.170407,12.847718 l -2.336028,2.226348"
+       id="path627" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583;fill:#343a40"
+       x="38.039112"
+       y="59.924496"
+       id="text1185"><tspan
+         sodipodi:role="line"
+         id="tspan1183"
+         style="stroke-width:0.264583;fill:#343a40"
+         x="38.039112"
+         y="59.924496">Rule Header</tspan></text>
+    <path
+       style="fill:none;stroke:#343a40;stroke-width:0.6;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 116.65604,39.054701 c 0,0 18.89593,12.946958 46.50613,12.847718 l 1.9341,2.226348"
+       id="path1187" />
+    <path
+       style="fill:none;stroke:#343a40;stroke-width:0.600001;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 217.055,39.054701 c 0,0 -20.43162,12.946958 -50.28572,12.847718 l -2.0913,2.226348"
+       id="path1189" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583;fill:#343a40"
+       x="147.30464"
+       y="59.924496"
+       id="text1203"><tspan
+         sodipodi:role="line"
+         id="tspan1201"
+         style="stroke-width:0.264583;fill:#343a40"
+         x="147.30464"
+         y="59.924496">Rule Options</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;fill:#343a40;stroke-width:0.264583"
+       x="-3.0585074"
+       y="17.2957"
+       id="text1209"><tspan
+         sodipodi:role="line"
+         id="tspan1207"
+         style="fill:#343a40;stroke-width:0.264583"
+         x="-3.0585074"
+         y="17.2957">Aktion</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583;fill:#343a40"
+       x="5.4698844"
+       y="3.8353043"
+       id="text1227"><tspan
+         sodipodi:role="line"
+         id="tspan1225"
+         style="stroke-width:0.264583;fill:#343a40"
+         x="5.4698844"
+         y="3.8353043">Protokoll</tspan></text>
+    <path
+       style="fill:#212529;stroke:#343a40;stroke-width:0.600001;stroke-dasharray:none;stroke-opacity:1"
+       d="M 19.096564,5.915837 V 30.343764"
+       id="path1292" />
+    <path
+       style="fill:#212529;stroke:#343a40;stroke-width:0.600001;stroke-dasharray:none;stroke-opacity:1"
+       d="M 34.000009,30.131679 V -7.377515"
+       id="path1294" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583;fill:#343a40"
+       x="15.608901"
+       y="-10.210635"
+       id="text1298"><tspan
+         sodipodi:role="line"
+         id="tspan1296"
+         style="stroke-width:0.264583;fill:#343a40"
+         x="15.608901"
+         y="-10.210635">Quelladresse</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583;fill:#343a40"
+       x="36.09201"
+       y="3.9917099"
+       id="text1304"><tspan
+         sodipodi:role="line"
+         id="tspan1302"
+         style="stroke-width:0.264583;fill:#343a40"
+         x="36.09201"
+         y="3.9917099">Quellport</tspan></text>
+    <path
+       style="fill:#212529;stroke:#343a40;stroke-width:0.600001;stroke-dasharray:none;stroke-opacity:1"
+       d="M 46.397955,5.915837 V 30.343764"
+       id="path1306" />
+    <path
+       style="fill:#212529;stroke:#343a40;stroke-width:0.600001;stroke-dasharray:none;stroke-opacity:1"
+       d="M 85.030039,5.915837 V 30.343764"
+       id="path1308" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583;fill:#343a40"
+       x="69.0271"
+       y="3.9917099"
+       id="text1312"><tspan
+         sodipodi:role="line"
+         id="tspan1310"
+         style="stroke-width:0.264583;fill:#343a40"
+         x="69.0271"
+         y="3.9917099">Zieladresse</tspan></text>
+    <path
+       style="fill:#212529;stroke:#343a40;stroke-width:0.600001;stroke-dasharray:none;stroke-opacity:1"
+       d="M 107.93295,30.131679 V -7.377515"
+       id="path1314" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:none;word-spacing:0px;stroke-width:0.264583;fill:#343a40"
+       x="96.574013"
+       y="-10.287197"
+       id="text1318"><tspan
+         sodipodi:role="line"
+         id="tspan1316"
+         style="stroke-width:0.264583;fill:#343a40"
+         x="96.574013"
+         y="-10.287197">Zielport</tspan></text>
+    <path
+       style="fill:#343a40;stroke:#343a40;stroke-width:0.600001;stroke-dasharray:none;stroke-opacity:1"
+       d="M 5.6770204,30.226915 V 18.922425"
+       id="path1383" />
+  </g>
+</svg>

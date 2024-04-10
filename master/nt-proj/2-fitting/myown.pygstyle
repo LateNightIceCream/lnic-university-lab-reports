@@ -1,0 +1,99 @@
+
+\makeatletter
+\def\PYGmyown@reset{\let\PYGmyown@it=\relax \let\PYGmyown@bf=\relax%
+    \let\PYGmyown@ul=\relax \let\PYGmyown@tc=\relax%
+    \let\PYGmyown@bc=\relax \let\PYGmyown@ff=\relax}
+\def\PYGmyown@tok#1{\csname PYGmyown@tok@#1\endcsname}
+\def\PYGmyown@toks#1+{\ifx\relax#1\empty\else%
+    \PYGmyown@tok{#1}\expandafter\PYGmyown@toks\fi}
+\def\PYGmyown@do#1{\PYGmyown@bc{\PYGmyown@tc{\PYGmyown@ul{%
+    \PYGmyown@it{\PYGmyown@bf{\PYGmyown@ff{#1}}}}}}}
+\def\PYGmyown#1#2{\PYGmyown@reset\PYGmyown@toks#1+\relax+\PYGmyown@do{#2}}
+
+\@namedef{PYGmyown@tok@w}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\@namedef{PYGmyown@tok@c}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\@namedef{PYGmyown@tok@cp}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{0.80,0.00,0.00}{##1}}}
+\@namedef{PYGmyown@tok@cs}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{0.80,0.00,0.00}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1.00,0.94,0.94}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@s}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.87,0.13,0.00}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1.00,0.94,0.94}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@sr}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1.00,0.94,1.00}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@sx}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.13,0.73,0.13}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.94,1.00,0.94}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@ss}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.67,0.40,0.00}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1.00,0.94,0.94}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@si}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.20,0.20,0.73}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1.00,0.94,0.94}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@se}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1.00,0.94,0.94}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@ow}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}}
+\@namedef{PYGmyown@tok@k}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{blue-8}{##1}}} % def, return and as
+\@namedef{PYGmyown@tok@kp}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}}
+\@namedef{PYGmyown@tok@kt}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\@namedef{PYGmyown@tok@nc}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{blue-8}{##1}}}
+\@namedef{PYGmyown@tok@ne}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{blue-8}{##1}}}
+\@namedef{PYGmyown@tok@nf}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{gray-8}{##1}}} % function names
+\@namedef{PYGmyown@tok@py}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{0.20,0.40,0.60}{##1}}}
+\@namedef{PYGmyown@tok@nn}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{gray-9}{##1}}} % import module color
+\@namedef{PYGmyown@tok@nb}{\def\PYGmyown@tc##1{\textcolor{blue-8}{##1}}} % internal function call
+\@namedef{PYGmyown@tok@nv}{\def\PYGmyown@tc##1{\textcolor[rgb]{0.20,0.40,0.60}{##1}}}
+\@namedef{PYGmyown@tok@vc}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@vi}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@vg}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@no}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@nt}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{blue-8}{##1}}}
+\@namedef{PYGmyown@tok@na}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@nd}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@nl}{\let\PYGmyown@it=\textit\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@m}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@gh}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@gu}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@gd}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1, 0, 1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@gi}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1, 0, 1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@gr}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@ge}{\let\PYGmyown@it=\textit}
+\@namedef{PYGmyown@tok@gs}{\let\PYGmyown@bf=\textbf}
+\@namedef{PYGmyown@tok@gp}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@go}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@gt}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@err}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1, 0, 1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@kc}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}} % boolean True False and None
+\@namedef{PYGmyown@tok@kd}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@kn}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{blue-8}{##1}}}% import, from
+\@namedef{PYGmyown@tok@kr}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@bp}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@fm}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}}
+\@namedef{PYGmyown@tok@vm}{\def\PYGmyown@tc##1{\textcolor{gray-9}{##1}}} % functions / keywords like __name__ or maybe conditions dunno
+\@namedef{PYGmyown@tok@sa}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1, 0, 1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@sb}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1, 0, 1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@sc}{\def\PYGmyown@tc##1{\textcolor[rgb]{1, 0, 1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1,0,1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@dl}{\def\PYGmyown@tc##1{\textcolor[rgb]{1,0,1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1,0,1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@sd}{\def\PYGmyown@tc##1{\textcolor[rgb]{1,0,1}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{1,0,1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@s2}{\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox{gray-1}{\strut ##1}}}} % strings
+\@namedef{PYGmyown@tok@sh}{\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox{gray-1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@s1}{\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}\def\PYGmyown@bc##1{{\setlength{\fboxsep}{0pt}\colorbox{gray-1}{\strut ##1}}}}
+\@namedef{PYGmyown@tok@mb}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}} % numbers
+\@namedef{PYGmyown@tok@mf}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}}
+\@namedef{PYGmyown@tok@mh}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}}
+\@namedef{PYGmyown@tok@mi}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}}
+\@namedef{PYGmyown@tok@il}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}}
+\@namedef{PYGmyown@tok@mo}{\let\PYGmyown@bf=\textbf\def\PYGmyown@tc##1{\textcolor{violet-8}{##1}}}
+\@namedef{PYGmyown@tok@ch}{\def\PYGmyown@tc##1{\textcolor{gray-6}{##1}}} % comments
+\@namedef{PYGmyown@tok@cm}{\def\PYGmyown@tc##1{\textcolor{gray-6}{##1}}}
+\@namedef{PYGmyown@tok@cpf}{\def\PYGmyown@tc##1{\textcolor{gray-6}{##1}}}
+\@namedef{PYGmyown@tok@c1}{\def\PYGmyown@tc##1{\textcolor{gray-6}{##1}}}
+
+\def\PYGmyownZbs{\char`\\}
+\def\PYGmyownZus{\char`\_}
+\def\PYGmyownZob{\char`\{}
+\def\PYGmyownZcb{\char`\}}
+\def\PYGmyownZca{\char`\^}
+\def\PYGmyownZam{\char`\&}
+\def\PYGmyownZlt{\char`\<}
+\def\PYGmyownZgt{\char`\>}
+\def\PYGmyownZsh{\char`\#}
+\def\PYGmyownZpc{\char`\%}
+\def\PYGmyownZdl{\char`\$}
+\def\PYGmyownZhy{\char`\-}
+\def\PYGmyownZsq{\char`\'}
+\def\PYGmyownZdq{\char`\"}
+\def\PYGmyownZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYGmyownZat{@}
+\def\PYGmyownZlb{[}
+\def\PYGmyownZrb{]}
+\makeatother

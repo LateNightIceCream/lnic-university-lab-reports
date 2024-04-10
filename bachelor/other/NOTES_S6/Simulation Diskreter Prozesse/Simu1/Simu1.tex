@@ -1,0 +1,141 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\begin{document}
+
+\begin{center}
+  \Large{Simulation diskreter Prozesse: Simulation(?)}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\section{Simulation}
+\noindent Zufallsvariablen $Y$\\
+\noindent Funktion $h$\\
+\noindent Inputs $\vec{x} = (x_{1}, ..., x_{n})\rightarrow$ Zufallsvektor, Verteilung von $x$ ist meist bekannt\\
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{flowy.pdf_tex}}
+\end{figure}
+
+Aus $Y$ (Output) lassen sich dann statistische Kenngrößen, wie Mittelwert, Standardabweichung, etc. ermitteln.
+
+\section{Zufallszahlen mit Matlab}
+Mit Matlab soll das Gesetz der großen Zahlen überprüft werden. Es wird zum Vergleich eine Normalverteilung über die Funktion
+\[F(x) = \]
+generiert und grafisch ausgegeben.\\
+
+Danach wird eine Gleichverteilung mit dem \emph{rand}-Befehl erzeugt und in einem Histogramm dargestellt. Diese Gleichverteilung ist nur gut für eine große Anzahl an zufälligen Werten.\\
+
+Nun werden mehrere Gleichverteilungen überlagert mithilfe eines \emph{Averaging-Verfahrens} über eine einfache for-Schleife.\\
+
+
+Beispiel: Viele gleichverteilte Rauschprozesse überlagern sich $\rightarrow$ Normalverteilung.
+ROT: Bei mehr als 30 Überlagerungen kann man Tests auf Normalverteilungen anwenden.
+
+\section{}
+\section{Zustand eines diskreten dynamischen Systems}
+
+Zustandsänderungen nur zu diskreten Zeitpunkten möglich (innerhalb eines vorgegebenen Zeitrasters).
+
+BILD EINFÜGEN
+
+\begin{description}
+        \item[Zustand:] Ist die Menge der pronzipiell möglichen Zustände kontinueierlich, hat das System einen \textbf{kontinuierlichen Zustandsraum}. Sonst: \textbf{Diskreter oder endlicher Zustandsraum}.
+\end{description}
+
+\section{Ereignisse und Aktivitäten}
+$\rightarrow$ (sprunghafte) Änderung eines Systems. $\rightarrow$ Änderung ist ein Ereignis (event).
+Der Systemzustand ändert sich nur, wenn ein bestimmtes Ereignis (Zustandsänderung) stattfindet.
+
+\begin{description}
+\item[Ereignis:] ist ein Geschehen, das keine \emph{Realzeit} (Simulationszeit) in Anspruch nimmt (in der betrachteten Zeitebene), aber \emph{Rechenzeit} beansprucht!
+\item[Simulationszeit:] Die bei der Simulation eines Modells im Rechner durch die Software abgebildete Realzeit.
+\end{description}
+
+Ein Ereignis tritt in einem Zeitpunkt ein. Diesem Zeitpunkt kann man das Ereignis zuordnen $\rightarrow$ \emph{Zeitstempel} des Ereignisses.\\
+
+Bei der Simulation eines Modells im Rechner durch die Software abgebildete Realzeit wird als Simulationszeit bezeichnet.
+
+\begin{description}
+\item[Aktivitiät (activity):] Ein Vorgang, der zwischen einem Anfangsereignis und einem später folgenden Endereignis abläuft.
+\end{description}
+
+Die Aktivität beansprucht \textbf{Realzeit} ()da Zeitdauer vergeht).
+Sie ändert den Zustand eines Systems nicht.
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{activity.pdf_tex}}
+\end{figure}
+
+\begin{description}
+\item[Rechenzeit:] Zeitaufwand für die Ausführung eines Simulationsprogramms.
+  \item[Ereignisse] benötigen \emph{Rechenzeit} (Zustand wird geändert, Neuberechnung des Systemzustands).
+  \item[Aktivität:] Keine Änderung des Zustandes (keine Rechenleistung erforderlich, Zeiten werden nur zugeordnet).
+\end{description}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c|c}
+    & Realzeit==Simulationszeit & Rechenzeit\\
+    \hline
+    Ereignisse & Nein & Ja\\
+    Aktivitäten & Ja & Nein
+  \end{tabular}
+\end{table}
+
+\textbf{Aktivitäten} sind \emph{deterministisch}, falls ihre Dauern \emph{vorgegeben} sind. Sie sind \emph{stochastisch}, wenn das Ender der Aktivität vom \emph{Zufall} abhängt.
+
+\begin{description}
+  \item[Fahrt Auto von A nach B:] stochastische Aktivität
+        (abhängig von Wetter, Verkehrsdichte(t), ...)
+\end{description}
+
+\begin{description}
+  \item[Transport Werkstück auf Fließband mit $v=$const.:] deterministische Aktivität
+\end{description}
+
+\section{Nebenläufigkeit von Aktivitäten}
+\emph{Aktivitäten können zumindest teilweise gleichzeitig stattfinden} $\rightarrow$ \textbf{parallele Aktivitäten}.
+
+Besteht kein kausaler Zusammenhang, d.h. die Aktivitäten beeinflussen sich nicht gegenseitig, spricht man von \textbf{nebenläufigen Aktivitäten} (können parallel sein (immer nebenläufig) oder sequentiell).
+
+\begin{figure}[H]
+\centering
+\resizebox{0.382\textwidth}{!}{\import{graphics/}{paraleli.pdf_tex}}
+\end{figure}
+
+\section{Abhängige und unabhängige Ereignisse}
+\minisec{Kausale Abhängigkeit}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{abhgkg.pdf_tex}}
+\end{figure}
+
+\begin{description}
+\item[Abhängiges Ereignis (conditional event):] Wenn  sein Eintrittszeitpunkt vom Eintreffen eines anderen Ereignisses abhängt (das im gleichen Zeitpunkt stattfindet). Sonst: unabhängiges Ereignis (unconditional event).
+\end{description}
+
+\section{Prozesse}
+\begin{description}
+\item[Prozesse:] Ein Prozess ist ein \textbf{dynamisches System}, das mit einer \textbf{Ablauflogik} ausgestattet ist. Die Ablauflogik bestimmt die Menge der möglichen Verläufe der Prozessinstanzen. Spielt dabei der Zufall eine Rolle $\rightarrow$ stochastischer Prozess.
+\end{description}
+
+Kreuzung: Ablauflogik: Rechts vor Links.
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{kreuz.pdf_tex}}
+\end{figure}
+
+
+
+%\notebox{hey}{\blindtext}
+\end{document}

@@ -1,0 +1,77 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'distbitrate.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{536.36661067bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.41531488)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{distbitrate.pdf}}%
+    \put(0.58986495,0.00299414){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10000 MB/s\end{tabular}}}}%
+    \put(-0.00281389,0.3478305){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100km\end{tabular}}}}%
+    \put(0.01234537,0.24498802){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10km\end{tabular}}}}%
+    \put(0.02501634,0.1526722){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1km\end{tabular}}}}%
+    \put(0.0055162,0.06577064){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0.1km\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{distbitrate.pdf}}%
+    \put(0.66086955,0.2858838){\color[rgb]{0.29803922,0.43137255,0.96078431}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dispersionsbegrenzung\end{tabular}}}}%
+    \put(0.28376284,0.40009381){\color[rgb]{0.36078431,0.48627451,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dämpfungsbegrenzung\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{distbitrate.pdf}}%
+    \put(0.88845562,0.18259082){\color[rgb]{0.25882353,0.38823529,0.92156863}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Single Mode\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{distbitrate.pdf}}%
+    \put(0.69495749,0.10364895){\color[rgb]{0.07058824,0.72156863,0.5254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Gradient Index\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{distbitrate.pdf}}%
+    \put(0.42733644,0.00454459){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100\end{tabular}}}}%
+    \put(0.23623851,0.17424724){\color[rgb]{0.98039216,0.69019608,0.01960784}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Ethernet 10Base2\end{tabular}}}}%
+    \put(0.31013615,0.15582547){\color[rgb]{0.80784314,0.83137255,0.85490196}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(200m, 10Mbit/s)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{distbitrate.pdf}}%
+    \put(0.08995029,0.06574544){\color[rgb]{1,0.83137255,0.23137255}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}10Base2\end{tabular}}}}%
+    \put(0.21490487,0.04066037){\color[rgb]{1,0.83137255,0.23137255}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}100BaseT4\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

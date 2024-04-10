@@ -1,0 +1,84 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\begin{document}
+
+\begin{center}
+  \Large{Optische Kommunikationssysteme: Einführung}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\section{Gründe für Lichtwellenleiter}
+\small{Optical Fibres, nicht \glqq Glasfaser\grqq}\\
+
+\minisec{Beispiel}
+
+Als Beispiel betrachten wir einen amplitudenmodulierten Sinus. Bei der Amplitudenmodulation muss die Frequenz der Trägerschwingung, die durch das Signal moduliert wird, \emph{sehr viel größer sein} als das zu übertragene Signal.\\
+
+Beispielsweise benötigt man für ein Signal mit einer Bitrate von $1 \, \si{\giga\bit\per\second}$, welches sich oberhalb der Frequenzen der Größenordnung $10^{9}\,\si{\hertz}$ bewegt, eine Trägerfrequenz, welche 1000 mal größer ist (nur als Beispiel). Also im Bereich von $10^{12}\,\si{\hertz}$ oder $1\,\si{\tera\hertz}$.\\
+
+Um also solche hohen Datenübertragungsraten zu ermöglichen, sind konventionelle Übertragungswege (z.B. Kupferleitungen, Koaxialleitungen) nicht geeignet.
+Hier einmal die prinzipielle Dämpfung eines Koaxialkabels über der Frequenz:
+
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{coaxil.pdf_tex}}
+\end{figure}
+
+\subsection{Geringe Dämpfung}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{gerida.pdf_tex}}
+\end{figure}
+
+Die starke Dämpfung im Coax haben viele Ursachen, aber eine wichtige ist der \emph{Skineffekt}.
+
+\subsection{Distanz vs Bitrate}
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{distbitrate.pdf_tex}}
+\end{figure}
+Bei Kuper tradet man immer Übertragungsentfernung mit Bandbreite auf proportionale Art und Weise (siehe Bild).
+Bei LWL ist dies anders. Dort sind die Limitationen die \textbf{Dämpfungslimitation} und die \textbf{Dispersionslimitation}. Bei niedrigeren Frequenzen dominiert die Dämpfungslimitierung, während es bei hohen Frequenzen die Dispersionslimitierung ist. Die Dispersionslimiterung beschreibt die verschmierung des Signals bzw. einfach die Veränderung der Signalform von der ursprünglichen Signalform.
+
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{verschmieri.pdf_tex}}
+\end{figure}
+
+\pagebreak
+\subsection{Liste von Gründen (irgendwie nicht richtig strukturiert aber egaaaal)}
+Gründe für LWL:
+\begin{itemize}
+  \item[!] Geringe Signaldämpfung
+  \item[!] Hohe Bandbreite
+  \item[!] Sicher gegenüber Kurzschlüssen (Erdungsfestigkeit (kein Problem bei unterschiedlichen Erdpotentialen z.B. zwischen Gebäuden, bei Cu besteht ein Verbot der Verbindung zweier Gebäude mit zus Erdung (z.B. über Chassis)), Feuerfestigkeit, hohe Schmelztemperaturen)
+  \item[!] Keine EMI (Isolator), kein Übersprechen, kein Abhören
+  \item[!] Datenkabel und Leistungskabel in einem Schacht/nahe beieinander möglich
+  \item[!] Größe / Gewicht / Durchmesser (Haardünn) $\rightarrow$ Sensorikanwendungen, Medizinanwendungen
+  \item[!] Datensicherheit, kein Abhören Möglich, Leitungsfehler sind leicht erkennbar/analysierbar
+\end{itemize}
+
+Man sieht, dass insbesondere Sicherheitsaspekte nicht zu vernachlässigen sind. Bei brandgefährdeten Umgebungen oder auch in der nähe von Hochleistungsleitungen, z.B. in der Industrie, Chemieindustrie, auf Ölplattformen, etc. eignen sich LWL besonders.
+Es geht also nicht nur um Bandbreite und Übertragungsgeschwindigkeit!
+
+In der Praxis muss man abwägen, welches Medium man für eine gewisse Aufgabe am geeignetsten findet
+\begin{itemize}
+  \item[?] Funk
+  \item[?] LWL
+  \item[?] Cu
+  \item[?] Waveguide
+\end{itemize}
+$\rightarrow$ Kosten, Bitrate, Bandbreite, Sicherheit,...
+
+%\notebox{hey}{\blindtext}
+\end{document}

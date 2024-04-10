@@ -1,0 +1,25 @@
+Antenna arrays can be constructed from multiple similar antennas to increase the gain in comparison to a single of these antennas. \cite{hysell_radar} Under the assumption that every antenna has the same radiation pattern and that there is no coupling between the antennas, one can calculate an \textit{Array Factor} ($AF$) which is simply multiplied with the base field pattern $E(\phi, \theta)$ to yield the pattern of the total array $Y(\phi, \theta)$.
+\[Y(\phi, \theta) = E(\phi, \theta) \cdot AF\]
+
+The array factor can be calculated with knowledge of the positions of the elements, e.g. given as a complex numbers, and their input signals (magnitude and phase), which depend on the steering direction ($\theta_{d}, \phi_{d}$). It is independent of the fundamental radiation pattern used, which makes it so useful.
+\[AF(\hat{r}) = \sum_{n=0}^{N-1}{w_{n}\cdot e^{-jk\hat{r}r_{n}}}\]
+
+Where $N$ is the total number of antennas, $w_{n}$ are the weights, i.e. the phases required to steer the array factor in a certain direction, $r_{n}$ are the individual antenna positions, and $\hat{r}$ is the unit vector pointing to the observation location. For a planar (2D) array this turns out to be
+\[AF(\theta,\phi) = \sum_{n=0}^{N-1}{w_{n}\cdot e^{-jk\cdot\sin{\theta}(x_{n}\cdot\cos{\phi}+y_{n}\cdot\sin{\phi})}}\]
+with
+\[w_{n} = e^{jk\cdot\sin{\theta_{d}}(x_{n}\cdot\cos{\phi_{d}} + y_{n} \cdot \sin{\phi_{d}})}\]
+
+The array factor is commonly written in terms of the directional cosines $u, v$
+
+\[AF(\theta,\phi) = \sum_{n=0}^{N-1}{w_{n}\cdot e^{-jk\cdot(x_{n}u+y_{n}v)}}\]
+
+\[u = \sin{\theta}\cos{\phi}\]
+\[v = \sin{\theta}\sin{\phi}\]
+
+Additionally, one has to technically normalize this factor in order to not increase the power artificially when multiplying with the actual radiation pattern.
+
+
+% As a basic antenna element, a simple $\lambda / 2$-Dipole was chosen to construct the following arrays. This antenna has a normalized radiation pattern of \cite{hysell_radar}
+% \[F(\phi, \theta) = \left[\frac{\cos{(\dfrac{\pi}{2}\cdot\cos{(\theta)})}}{\sin{(\theta)}}\right]^{2}\]
+
+% which is independent of $\phi$. Figure \ref{fig:dipole_rad_pattern} shows this radiation pattern in the elevation plane.

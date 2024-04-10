@@ -1,0 +1,76 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'verlusti1.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{223.36988454bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.23018595)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{verlusti1.pdf}}%
+    \put(0.23339659,1.13307515){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sender\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{verlusti1.pdf}}%
+    \put(0.72317994,1.13570187){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Empfänger\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{verlusti1.pdf}}%
+    \put(0.25759137,0.00797641){\color[rgb]{0.87058824,0.88627451,0.90196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}t\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{verlusti1.pdf}}%
+    \put(0.37015399,0.95258671){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}DATEN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{verlusti1.pdf}}%
+    \put(0.50500491,0.65171643){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}DATEN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{verlusti1.pdf}}%
+    \put(0.69979989,0.49323489){\color[rgb]{0.1254902,0.78823529,0.59215686}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Q+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{verlusti1.pdf}}%
+    \put(0.0990926,0.89490146){\color[rgb]{0.93333333,0.74509804,0.98039216}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Timeout-\\zeit\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{verlusti1.pdf}}%
+    \put(0.53631247,0.26950202){\color[rgb]{0.1254902,0.78823529,0.59215686}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Q+\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{verlusti1.pdf}}%
+    \put(0.50355484,0.38053256){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}DATEN\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{verlusti1.pdf}}%
+  \end{picture}%
+\endgroup%

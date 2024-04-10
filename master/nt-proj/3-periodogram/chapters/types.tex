@@ -1,0 +1,20 @@
+\section{Types of Periodograms}
+
+The following will look at ``Welch'' and ``Lomb-Scargle'' periodograms and some python implementations with \inlinecodee{numpy} and \inlinecodee{scipy}.\\
+
+Two test signals, $A$ and $B$, are defined for this purpose:
+\[
+  A(t) = 1\,\si{\volt}\sin{(2\pi \cdot {\color{red-5}100.5}\,\si{\hertz}\cdot t) + 0.6\,\si{\volt}\cdot\sin{(2\pi\cdot {\color{red-5}199.5}\,\si{\hertz}\cdot t)}}
+\]
+
+\[
+  B(t) = 1\,\si{\volt}\sin{(2\pi \cdot {\color{red-5}{100.5}}\,\si{\hertz}\cdot t) + 0.6\,\si{\volt}\cdot\sin{(2\pi\cdot {\color{red-5}{109.5}}\,\si{\hertz}\cdot t)}}
+\]
+
+Gaussian noise with a standard deviation of $\sigma=1\,\si{\volt}$ is added to each of these signals and their standard periodograms will be compared with the Welch and Lomb-Scargle periodograms.
+
+\subsection{Welch Periodograms}
+\input{chapters/welch.tex}
+
+\subsection{Lomb-Scargle Periodograms}
+\input{chapters/lombscargle.tex}

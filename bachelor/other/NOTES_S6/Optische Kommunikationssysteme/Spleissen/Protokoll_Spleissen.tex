@@ -1,0 +1,187 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+\usepackage{pdfpages}
+
+\newcommand{\dBm}{\si{\deci\bel}\text{m}}
+
+\begin{document}
+
+% \includepdf{./titlepage/titlepage.pdf}
+% \clearpage
+% \setcounter{page}{1}
+
+% \section{Vorbereitungsaufgaben}
+
+% \subsection{Arten von Lichtwellenleitern}
+
+% Lichtwellenleiter werden primär unterschieden nach
+% \begin{itemize}
+%   \item der Anzahl der \emph{Moden}, die sie unterstützen sowie
+%   \item dem Profil ihrer optischen \emph{Brechungsindizes} (n).
+% \end{itemize}
+
+% Sie werden allgemein aufgebaut durch einen lichtführenden Kern (\emph{Core}) und einen koaxialen Mantel (\emph{Cladding}).
+
+% \subsubsection{Multimode-Fiber}
+
+
+% \paragraph{Step-Index-Fiber (SI)}
+% Bei Step-Index-Lichtwellenleitern ist der Brechungsindex des Kernes $n_{\text{Core}}$ größer als der des Mantels $n_{\text{Cladding}}$. Über die Distanz $x$ vom Zentrum aufgetragen, ergibt sich ein stufenartiges Profil des Brechungsindexes, daher die Benennung \glqq Step-Index\grqq{}.
+
+% \begin{figure}[H]
+% \centering
+% \resizebox{\textwidth}{!}{\import{graphics/}{stepindex_aufbau.pdf_tex}}
+% \caption{Schema eines Step-Index-Lichtwellenleiters, der Brechungsindex $n$ nimmt stufenförmig vom Kern aus ab.}
+% \end{figure}
+
+
+% \paragraph{Graded-Index-Fiber (GI)}
+% Bei Graded-Index-Lichtwellenleitern ist der Brechungsindex des Kernes ebenfalls größer als der des Mantels, jedoch nimmt er nicht stufenartig sondern gradientenartig mit dem Abstand vom Zentrum ab.
+
+% \begin{figure}[H]
+% \centering
+% \resizebox{\textwidth}{!}{\import{graphics/}{gradientindex_aufbau.pdf_tex}}
+% \caption{Schema eines Graded-Index-Lichtwellenleiters, der Brechungsindex $n$ nimmt gradientenartig vom Kern aus ab.}
+% \end{figure}
+
+% \subsubsection{Monomode-Fiber}
+% Moden höherer Ordnung enthalten meist viele Reflexionen und sind deshalb unerwünscht, da durch ihre Laufzeitunterschiede die Signalform verfälscht und die Bandbreite begrenzt wird (Dispersionsbegrenzung).
+% Monomode-Lichtwellenleiter unterstützen nur eine einzige Lichtmode, nämlich die in transversaler Richtung, bei welcher das Feld nur senkrecht zur Ausbreitungsrichtung schwingt.\\
+
+% Das wird erreicht, indem der Kerndurchmesser gegenüber den Multimode-Varianten deutlich verkleinert wird, mindestens auf die Größenordung der Wellenlänge des Lichtes.
+
+% \subsubsection{Eigenschaften}
+
+% \begin{minipage}[t]{.5\textwidth}
+%     \paragraph{Optische Eigenschaften:}
+%     \begin{itemize}
+%         \item Brechungsindizes von Kern und Mantel
+%         \item Dämpfung (Verluste durch Streuung und Absorption (wellenlängenabhängig) und Unreinheiten)
+%         \item Dispersionsbegrenzung (Impulsverbreiterung)
+%             \begin{itemize}
+%                     \item \emph{Intermodal-Dispersion} (Multi-Mode, Laufzeitunterschiede aufgrund unterschiedlicher Moden)
+%                     \item \emph{Chromatic-Dispersion} (Laufzeitunterschiede aufgrund Wellenlängenabhängigkeit der Brechungsindizes)
+%             \end{itemize}
+%         \item Numerische Apertur
+%     \end{itemize}
+% \end{minipage}%
+% \begin{minipage}[t]{.5\textwidth}
+
+%         \paragraph{Mechanische Eigenschaften:}
+%         \begin{itemize}
+%         \item Verbinderart
+%                 \begin{itemize}
+%                   \item SMA
+%                   \item ST
+%                   \item FC
+%                   \item SC
+%                 \end{itemize}
+%         \item Durchmesser von Kern und Mantel
+%         \item Faserfestigkeit
+%     \end{itemize}
+% \end{minipage}%
+
+
+
+% \subsection{Extrinsische und intrinsische Verluste}
+
+% Materialverluste bei Lichtwellenleitern können unterteilt werden in extrinsische und intrinsische Verluste.
+
+% \subsubsection{Intrinsische Verluste}
+% % Die intrinischen Verluste hängen mit dem Absorptions-, Dispersions- und Streuverhalten des lichtführenden Materials zusammen. Jedes Material hat bestimmte Absorptionslinien, welche über der Wellenlänge für Dämpfungsspitzen verantwortlich sind. Bei Siliziumdioxid, z.B., gibt es Peaks im infraroten und ultravioletten Bereich.
+% Intrinsische Verluste entstehen bei einer Spleißverbindung, wenn Fasern mit ungleichen optischen und mechanischen, wie Durchmesser und Brechzahlen, miteinander verbunden werden. Sie sind nicht vermeidbar.
+
+% \subsubsection{Extrinsische Verluste}
+% Extrinische Verluste sind Fehler beim Spleißvorgang sowie Makrobiegungen der Leitungen. Sie sind (nicht vollständig) vermeidbar.
+
+% % \begin{figure}[H]
+% %   \centering
+% %   \includegraphics[width=0.618\textwidth]{graphics/attenuation1}
+% % \caption{Wellenlängenabhängigkeit von Siliciumdioxid (\href{https://www.newport.com/medias/sys_master/images/images/he7/hee/8797643898910/Attenuation-Chart-J-3-S-400w.gif}{Quelle})}
+% % \end{figure}
+
+% \subsection{Verbindungstechnologien}
+% Steck- und Spleißverbindungen
+
+% \begin{table}[H]
+%   \centering
+%   \begin{tabular}{c|c|c}
+%     Typ & Dämpfung $/ \si{\deci\bel}$ & Bemerkung\\
+%     \hline
+%     Multimode-Fusion-Spleiß & $< 0.1$ & Permanente Verbindung\\
+%     Monomode-Fusion-Spleiß & $< 0.05$ & Permanente Verbindung\\
+%     SMA & & nur Multimode\\
+%     FC & $0.2$ & Multi+Monomode\\
+%     ST & $0.4$ & Mutli+Monomode\\
+%     SC & $0.2$ & Multi+Monomode\\
+%   \end{tabular}
+%   \caption{Typische Verbindungsarten und deren verursachte Dämpfung}
+% \end{table}
+
+% \subsubsection{Spleißen}
+% \paragraph{Fusion} ohne äußere Materialzufuhr, Dämpfungen im Bereich $0.02 .. 0.1 \, \si{\deci\bel}$
+% \paragraph{Crimp-Spleißen} mechanische Kraftausübung zur Verbindung (Crimp) Dämpfungen im Bereich
+% \paragraph{Klebe-Spleiß}
+% Ähnliche Schritte wie bei Fusion-Spleiß. Verbindung durch UV-aushärtenden Kleber, Dämpfungen im Bereich
+
+% \subsection{Lichtbogen-Spleißen}
+
+% \subsubsection{Arbeitsschritte}
+% \begin{enumerate}
+%   \item Entfernen der Schutzhülle und des Mantels
+%   \item Reinigen der Faser
+%   \item Abschneiden/Brechen? der Faser(n)
+%   \item In Fusions-Spleißgerät legen
+%   \item Justieren (automatisch)
+%   \item Lichtbogen
+%   \item Spleiß-Schutz anbringen
+% \end{enumerate}
+
+% \subsubsection{Spleißfehler}
+% \begin{itemize}
+% \item Kontaminierung oder Defekte/Blasen(Gaseinschließungen)
+%   \item Zu geringe Leistung des Lichtbogens
+%   \item Unterschiedliche Faserarten
+%   \item Schlechte Ausrichtung/Justierung
+%   \item zu lange oder Kurze Schweißzeit
+%   \item zu hohe Temperatur
+%   \item \glqq Auto-Feed\grqq zu hoch oder niedrig
+%   \item End-Winkel (Abschnittwinkel) (sollte kleiner sein als $2\si{\degree}$)
+% \end{itemize}
+
+% \subsection{Selbstjustierungseffekt}
+% Durch die Erhitzung der Faserenden mit dem Lichtbogen schmelzen diese und nehmen eine Kugelform an. Wenn die zwei flüssigen Enden sich berühren, streben diese durch physikalische Gesetze eine möglichst geringe Oberfläche an. Dadurch kommt es zur eigenständigen Ausrichtung der Faserenden zueinander und mögliche Ausrichtungsabweichungen werden ausgeglichen.
+
+% \subsection{Mikro- und Makrobiegungen}
+% \begin{description}
+% \item[Mikrobiegungen] sind mikroskopische Biegungen, Störstellen oder Brüche, die durch externe Kräfte (z.B. durch die Beschaffenheit der Oberfläche, auf der der Leiter montiert ist) oder auch Herstellungsfehler hervorgerufen werden. Diese können die Brechungsindizes lokal stören und ungewollte Reflexionen/ -winkel hervorrufen, welche zu Licht- bzw. Energieverlust und damit der Dämpfungserhöhung führen.
+
+% \item[Makrobiegungen] sind Biegungen des Lichtwellenleiters über den kritischen Winkel (Winkel der Totalreflexion) hinaus, wodurch Licht an der Stelle der Biegung durch Brechung austritt, Energie verloren geht und dadurch die Dämpfung steigt. Die Dämpfung durch die Makrobiegung ist wellenlängenabhängig, bei längeren Wellenlängen treten höhere Verluste auf.
+
+% \end{description}
+
+% \subsection{Sinken der Faserfestigkeit beim Lichtbogen-Spleißen}
+
+% \begin{figure}[H]
+%   \centering
+%   \includegraphics[width=0.618\textwidth]{graphics/restfestigkeit}
+% \caption{Restfestigkeit verschiedener Faserverbundwerkstoffe über der Temperatur (\href{https://de.wikipedia.org/wiki/Datei:Festigkeit_von_Fasern.svg}{Quelle})}
+% \end{figure}
+
+% \subsubsection{Ursache}
+% Erhitzung der Faser bei Fusion-Spleiß und dadurch Sinken der Faserfestigkeit.
+
+% \subsubsection{Maßnahmen}
+% Auf bessere Wärmeverteilung beim Spleißen achten.
+
+\includepdf{./titlepage/titlepage2.pdf}
+\clearpage
+\setcounter{page}{1}
+\section{Versuchsaufgaben}
+\input{versuchsaufgaben.tex}
+
+
+%\notebox{hey}{\blindtext}
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{preamble.tex}
+
+\addbibresource{sources.bib}
+
+\begin{document}
+
+\includepdf{./titlepage/titlepage.pdf}
+
+% ------------------------------------------------------------------------------
+
+\input{chapters/introduction.tex}
+\input{chapters/types.tex}
+
+\section{Conclusions}
+Periodograms estimate the power spectral density of a random process. There are numerous different estimation methods of which two have been analyzed. Each of these comes with advantages and drawbacks so that one has to both evaluate which method is best suited as well as tune its parameters to fit the specific application needs.
+
+% ------------------------------------------------------------------------------
+
+\printbibheading
+\begin{refsection}[sources.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Literature}]
+\end{refsection}
+
+\begin{refsection}[software.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Software Used}]
+\end{refsection}
+
+\pagebreak
+\appendix
+\section{Python Code}\label{app:script}
+
+\subsection{Welch Periodogram}\label{app:welch}
+\inputminted{python}{./code/welch1.py}
+
+\subsection{Welch Periodogram: Varying Segment Size}\label{app:welch_comp}
+\inputminted{python}{./code/welch_comp.py}
+
+\subsection{Lomb-Scargle Periodogram}\label{app:lomb}
+\inputminted{python}{./code/lombscargle1.py}
+
+\end{document}

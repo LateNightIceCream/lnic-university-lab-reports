@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+\begin{center}
+  \Large Blindleistungskompensation
+\end{center}
+
+\begin{flushright}
+  R.G., 2020
+\end{flushright}
+
+Die komplexe Scheinleistung $S$ setzt sich zusammen aus Wirkleistung $P$ und Blindleistung $Q$.
+
+\[ \underline{S} = P + j Q \]
+
+Wirkleistung ist die Leistung, die tatsächlich in \emph{Arbeit} (mech., therm., etc.) umgesetzt wird. Verbraucher sind jedoch in der Regel keine reinen Wirkleistungs-aufnehmer. Beispielsweise benötigen Motoren Blindleistung zum Aufbau ihrer magnetischen Felder und geben sie bei Abbau dieser wieder ab. Diese Leistung pendelt zwischen Verbraucher und Erzeuger, setzt keine nützliche Energie um und belastet die Leitungen, wodurch eine höhere Leistung am Erzeuger erzeugt werden muss, als eigentlich umgesetzt wird und sich die Leitungsverluste erhöhen.\\
+
+Der Anteil der Wirkleistung an  der gesamten Scheinleistung wird \emph{Leistungsfaktor} $\lambda$ bzw. $\cos{\phi}$ genannt und wird bestimmt über\\
+
+\[ \lambda = \cos{\phi} = \frac{P}{S} = \frac{P}{\sqrt{P^{2} + Q^{2}}} = \cos{(\arg{\underline{Z}})}\]
+
+Die Blindleistungskompensation hat als Ziel, die Verluste, die durch Blindströme in den Zuleitungen entstehen zu minimieren. 
+
+
+\end{document}

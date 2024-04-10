@@ -1,0 +1,301 @@
+\documentclass[11pt, a4paper]{article}
+
+\input{"/home/zamza/Documents/HS/Notes Template/preamble.tex"}
+
+
+\begin{document}
+
+\begin{center}
+  \Large{Theoretische Elektrotechnik: Einführung}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\tableofcontents
+\pagebreak
+
+\section{Feldbegriffe und Felddarstellung}
+\emph{Felder beschreiben den Zustand des Raumes}. Dieser Zustand wird durch physikalische Größen, den Feldgrößen, ausgedrückt. Jedem Punkt (x, y, z) im Raum wird über das Feld eine physikalische Größe zugeordnet.\\
+
+Man unterscheidet ein Feld nach Art der Größe, die es beschreibt:\\
+
+\noindent{\color{blue-8} \textbf{Skalare Felder}}
+\begin{itemize}
+\item Jedem Raumpunkt (Feldpunkt) wird ein \emph{Betrag} einer physikalischen Größe zugeordnet.
+\item Beispiel: Temperatur(x, y, z) \\$\rightarrow$ Temperaturfeld im Raum
+\end{itemize}
+
+\noindent{\color{red-8}\textbf{Vektorielle Felder}}
+\begin{itemize}
+\item Jedem Raumpunkt wird ein \emph{Betrag und Richtug} einer physikalischen Größe zugeordnet (ein Vektor).
+\item Beispiel: Kraftfeld (z. B. Erdschwerefeld)
+\end{itemize}
+
+
+\subsection{Darstellung von Feldern}
+
+\begin{itemize}
+  \item Feldstärkelinien verlaufen aus positiven Ladungen heraus und in negative hinein
+  \item Potentiallinien stehen senkrecht auf Feldstärkelinien
+  \item Darstellung nach \glqq Methode Quadratähnlicher Figuren\grqq
+\end{itemize}
+
+\subsubsection{Beispiel für homogenes Feld}
+\begin{description}
+        \item[Homogen:] parallele Feldlinien in gleichem Abstand, Betrag des Feldes in jedem Raumpunkt gleich.
+\end{description}
+\begin{figure}[H]
+\centering
+\resizebox{0.7\textwidth}{!}{\import{graphics/}{felddarstellung.pdf_tex}}
+\end{figure}
+
+\subsubsection{Beispiel für inhomogenes Feld}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.7\textwidth}{!}{\import{graphics/}{felddarstellung2.pdf_tex}}
+\end{figure}
+
+\subsubsection{Beispiel für inhomogenes Feld mit Symmetrien}
+Manchmal kann man Symmetrien von Aufbauten nutzen, um Berechnungen zu vereinfachen. Z. B. Kugelsymmetrien oder Zylindersymmetrien.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.382\textwidth}{!}{\import{graphics/}{felddarstellung3.pdf_tex}}
+\end{figure}
+
+\section{Einteilung von Feldern}
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{feldeinteilung.pdf_tex}}
+\end{figure}
+
+EM-Felder werden als erstes unterteilt nach ihrer zeitlichen Änderung. Liegt keine zeitliche Änderung vor, d.h. ist die partielle Ableitung des Feldes $F(x, y, z, t)$ gleich 0, so spricht man von \emph{statischen} Feldern.\\
+
+Liegt eine zeitliche Änderung vor, so ist weiterhin zu unterscheiden zwischen der Geschwindigkeit der Änderung. Ist die zeitliche Änderung des Feldes langsam (was auch immer das heißt), so spricht man von \emph{quasistationären} Feldern\\
+
+Bei den sich zeitlich langsam ändernden Feldern sind zwar schon einige Phänomene der zeitlichen Änderung präsent, andere sind widerum nicht unbedingt ausgeprägt, wie z.B.
+die Wellenausbreitung
+
+Geschieht die zeitliche Änderung sehr schnell, tritt Wellenausbreitung auf.
+
+\section{Einige Elemente der Vektoranalysis}
+\subsection{Skalare und Vektoren}
+
+\textbf{Skalarfelder} $\Phi(x,y,z)$\\
+Jedem Raumpunkt wird ein Wert durch das Feld zugewiesen.
+\begin{itemize}
+  \item Temperaturfeld
+  \item Potentialfeld (Energie, el. Potential)
+  \item Luftdruck
+  \item Dichtefeld
+  \item Höhe
+\end{itemize}
+
+\noindent \textbf{Vektorfelder} $\vec{F}(x,y,z)$\\
+Jedem Raumpunkt wird ein Wert und eine Richtung durch das Feld zugewiesen.
+Die Komponenten ($F_{x}, F_{y}, F_{z}$) des aus dem Feld resultierenden Vektors (z.B. $\vec{F}(1,2,3)$) sind
+skalare, können aber selbst von den Raumkoordinaten abhängen (nicht konstant).
+
+\begin{align*}
+    \vec{F}(x, y, z) &= \begin{bmatrix}
+           F_{x}(x,y,z)\\
+           F_{y}(x,y,z)\\
+           F_{z}(x,y,z)\\
+         \end{bmatrix}
+\end{align*}
+
+oder kartesisch..
+\[\vec{F}(x,y,z) = F_{x}(x,y,z)\cdot \vec{e}_{x} + F_{y}(x,y,z) \cdot \vec{e}_{y} + F_{z}(x,y,z) \cdot \vec{e}_{z}\]
+
+\begin{itemize}
+
+\item fluidisches Strömungsfeld
+\item el. Flussdichte
+\end{itemize}
+
+\subsection{Infinitesimale Elemente}
+\textbf{Vektorielles Linienelement}\\
+Zerlegbar in 3 Komponenten
+\[d\vec{s} = \begin{bmatrix}dx\\dy\\dz\end{bmatrix}\]
+
+\noindent\textbf{Vektorielles Flächenelement}\\
+Zerlegbar in 3 Komponenten
+\[d\vec{A} = \begin{bmatrix}
+    dA_{x}\\
+    dA_{y}\\
+    dA_{z}
+  \end{bmatrix} = \begin{bmatrix}
+    dy \cdot dz\\
+    dx \cdot dz\\
+    dx \cdot dy
+  \end{bmatrix}\]
+
+$\rightarrow$ Fläche in Orientierung x (=Normalvektor der Fläche parallel zur x-Achse) darstellbar durch Produkt aus Längen dy und dz, usw.\\
+
+Eine Idee bei Längenelementen und Flächenelementen ist es, die Integration über im allgemeinen \glqq willkürliche\grqq Vektorfelder $\vec{F}$\grqq{} zu ermöglichen. Hat man z.B. eine Kurve / einen Weg, der durch $\vec{F}$ führt und man möchte über diesen Weg integrieren, dann kann man die Kurve in undenlich kleine Teilstücke $d\vec{s}$ zerteilen, deren unendlich kleinen Beitrag zum Ergebnis berechnen und diese Beitrage dann zum Gesamtergebnis aufsummieren (integrieren). Ein gutes Beispiel ist die Gleichung
+\[W = \vec{F} \cdot \vec{s}\]
+Die skalare Größe Energie ergiebt sich aus dem Skalarprodukt aus Kraft- und Wegvektor (Winkel beachten!).
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{wfs.pdf_tex}}
+\end{figure}
+
+Dies gilt jedoch nur, wenn der Weg geradlinig ist. Um die Energie für allgemeine Weg-/Kurvenverläufe herausfinden zu können, teilt man sich den beliebigen Kurvenverlauf in unendlich viele, unendlich kleine geradlinie Stücke auf, für die dann wiederum die obige Gleichung gilt. Zum Schluss muss dann nur noch aufsummiert werden. Außerdem kann $\vec{F}$ vom Ort $\vec{r}$ abhängen.
+
+\begin{figure}[H]
+\centering
+\resizebox{\textwidth}{!}{\import{graphics/}{wfds.pdf_tex}}
+\end{figure}
+
+\[dW = \vec{F}(\vec{r}) \cdot d\vec{s}_{\vec{r}}\]
+
+Linienintegral:
+\[W = \int_{\vec{r_{a}}}^{\vec{r_{b}}}{\vec{F}(\vec{r}) \cdot d\vec{s}_{\vec{r}}} = \int_{C}{...}\]
+
+Für Flächen, über die Integriert werden soll, gilt analog, dass man diese - allgemein beliebig geformten - Flächen in unendlich viele, kleine Teilflächen zerlegt, für welche dann wieder eine bestimmte Gleichung gilt. Ein Beispiel ist ist der Fluss, der durch eine beliebige Fläche innerhalb eines beliebigen Flussdichtefeldes tritt.
+
+\[\phi = \int_{A}{\vec{D} \cdot d \vec{A}}\]
+
+Analog für Volumen / Volumenelemente.
+
+\subsection{Nabla-Operator}
+Der Nabla-Operator ist einfach definiert als \emph{Vektor}, dessen Komponenten die jeweiligen partiellen Ableitungen in die Raumrichtung sind. Er stellt eine Kurzschreibweise für die entsprechende Anwendungsvorschrift, alle Ableitungen der Komponenten nach der zugehörigen Koordinate zu bilden, dar.
+\[\vec{\nabla} =
+  \begin{bmatrix}
+    \frac{\partial}{\partial x}\\
+    \frac{\partial}{\partial y}\\
+    \frac{\partial}{\partial z}\\
+  \end{bmatrix}
+    = \frac{\partial}{\partial x} \cdot \vec{e_{x}}+ \frac{\partial}{\partial y} \cdot \vec{e_{y}}  + \frac{\partial}{\partial z} \cdot \vec{e_{z}}
+\]
+\subsection{Differentialoperatoren}
+\subsubsection{Gradient}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{gradientbox.pdf_tex}}
+\end{figure}
+
+Der Gradient einer \emph{skalaren} Funktion $T(x,y,z)$ liefert ein Vektorfeld. Er lässt sich als Skalarprodukt aus dem Nabla-Operator mit $T$ darstellen.
+\[\text{grad}T = \vec{\nabla} \cdot T(x,y,z) =
+    = \frac{\partial T(x)}{\partial x} \cdot \vec{e_{x}}+ \frac{\partial T(y)}{\partial y} \cdot \vec{e_{y}}  + \frac{\partial T(z)}{\partial z} \cdot \vec{e_{z}}\]
+  Der Gradient gibt also die Änderung der skalaren Größe, beschrieben durch $T(x,y,z)$ in jedem Punkt bei kleiner Änderung um $d\vec{r} = (dx,dy,dz)$ an. Er wird auch \emph{Richtungsableitung} genannt. Der Gradient zeigt in Richtung der größten Änderung des Skalarfeldes.
+
+\subsubsection{Divergenz}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{divergencebox.pdf_tex}}
+\end{figure}
+
+Die Divergenz beschreibt das Quellenverhalten eines Raumes, d.h. eines Volumens. Es kann nur auf Vektorfelder angewendet werden. Das Resultat ist ein Skalar, dessen Größe etwas über die Quelldichte des betrachteten Raumes aussagt. Das Vorzeichen gibt an, ob es sich um eine Quelle oder eine Senke handelt.\\
+
+Basically zieht die Divergenz die Bilanz der aus einem Raum austretenden bzw. in einem Raum eintretenden Vektoren, also deren Größen und Richtungen.\\
+
+Die Bildungsvorschrift bei einem Vektorfeld $\vec{F}$ ist:
+\[\text{div} \cdot \vec{F} = \frac{\partial F_{x}}{\partial x} + \frac{\partial F_{y}}{\partial y} + \frac{\partial F_{z}}{\partial z}\]
+Bzw. als Skalarprodukt des Nabla-Operators mit dem Vektorfeld:
+\[\text{div} \cdot \vec{F} = \vec{\nabla} \cdot \vec{F}\]
+
+\subsubsection{Rotation}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{rotationbox.pdf_tex}}
+\end{figure}
+
+Die Rotation eines Vektorfeldes beschreibt dessen \emph{Wirbeldichte}. Bildungsvorschrift:
+\[\text{rot} \vec{F} = \vec{\nabla} \times \vec{F}\]
+
+\subsubsection{Laplace-Operator $\Delta$}
+Wieder nur eine vereinfachte Schreibweise für doppelte Anwendung von Nabla:
+\[\text{div}(\text{grad}T)=\underbrace{\vec{\nabla} \cdot}_{\text{Skalarprodukt}} (\vec{\nabla} \cdot T)=\vec{\nabla} \cdot \vec{\nabla} \cdot T = \vec{\nabla}^{2} \cdot T = \Delta T\]
+Entspricht also $\nabla$ nur mit der zweiten Ableitung in alle Raumrichtungen, statt der ersten.
+
+\section{Einige wichtige Rechenregeln}
+\subsection{rot grad T}
+\notebox{Kombination}{
+  \[\text{rot}\ \text{grad} T = \vec{\nabla} \times (\vecnabla \cdot T) = 0\]
+}
+
+\textbf{Mathematische Begründung}: Kreuzprodukt paralleler Vektoren,
+da $\vec{l} \times \vec{l} = 0$\\
+
+\textbf{Physikalische Begründung}: rot = Wirbeldichte = 0, d.h. das Feld ist wirbelfrei. grad$T$ ergibt immer ein Quellenfeld, daher gilt
+\notebox{Note!}{
+  Quellenfelder sind Wirbelfrei.
+}
+
+\subsection{div rot F}
+\notebox{Kombination}{
+  \[\text{div}\ \text{rot}\vec{F} = \vecnabla \cdot (\vecnabla \times \vec{F}) = \vec{F} \cdot (\vecnabla \times \vecnabla) = 0\] (Spatprodukt)
+}
+
+Veranschaulichung durch Spatprodukt (Vektor, der das Volumen eines Spates angibt). In diesem Fall spannen die drei Vektoren $\vec{F}$, Nabla und Nabla einen Spat auf. Da zwei Vektoren gleich sind, muss das Volumen des Spates 0 sein (Höhe 0).
+
+\notebox{Note!}{
+  Wirbelfelder sind Quellenfrei.
+}
+
+\subsection{rot rot F}
+\notebox{Kombination}{
+  \[\rot\ \rot \vec{F} = \vecnabla \times \vecnabla \times \vec{F} = \vecnabla \cdot (\vecnabla \cdot \vec{F}) - \vec{F} \cdot (\vecnabla \cdot \vecnabla)\]
+  \[=\text{grad} (\text{div} \vec{F}) - \Delta \vec{F}\]
+}
+mathematisch \glqq Gaußmann-Identität\grqq{} oder \glqq Entwicklungssatz\grqq{} oder \glqq BAC-CAB-Formel\grqq{}.
+\[\vec{a} \times \vec{b} \times \vec{c} = \vec{b} \cdot (\vec{a} \cdot \vec{c}) - \vec{c} \cdot (\vec{a} \cdot \vec{b})\]
+
+\section{Integralsätze}
+\subsection{Skalarprodukt!!!}
+Das Skalarprodukt zwischen zwei Vektoren, z.B. zwischen $\vec{F}$ und $d\vec{A}$ filtert einfach die $\vec{F}$-Komponente heraus, die in die dA-Richtung zeigt, da jeder Vektor $\vec{F}$ als kombination aus zwei orthogonalen Vektoren gesehen werden kann und dadurch einer dieser Vektoren definitiv rechtwinkling auf dem Normalvektor der Fläche steht, wodurch das Skalarprodukt mit diesem Vektor zu 0 wird! Das gleiche gilt für Wegelemente/Kurven.
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{scalarproduct.pdf_tex}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.86\textwidth}{!}{\import{graphics/}{scalarproduct2.pdf_tex}}
+\end{figure}
+
+\subsection{Satz von Stokes}
+\[\iint{\rot \vec{F} \cdot d\vec{A}} = \oint_{\text{Rand A}}{\vec{F} \cdot d\vec{s}}\]
+
+\emph{Flächenintegral wird zu Umlaufintegral}. Der Umlauf geschieht über den Umriss der Fläche der linken Seite der Gleichung.
+Die rechte Seite der Gleichung gibt an, wie viel des Vektorfeldes $\vec{F}$ entlang der Kurve verläuft, die durch den Umriss von A definiert ist (rausgefiltert über das Skalarprodukt, infinitesimale Beiträge der Feldkomponenten entlang des Randes der Fläche).
+
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{umrissia.pdf_tex}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\resizebox{0.618\textwidth}{!}{\import{graphics/}{umrissaskalarprod.pdf_tex}}
+\end{figure}
+
+
+\subsection{Satz von Gauss}
+\[\iiint_{V}{\text{div}\vec{F} \cdot d\vec{V}} = \oiint_{Huelle V}{\vec{F} \cdot d\vec{A}}\]
+Ähnlich wie oben, \emph{Volumenintegral wird zu Hüllintegral}. Integriert wird rechts über die Oberfläche des Volumens der linken Gleichung.
+
+\section{Maxwellgleichungen}
+
+
+
+
+
+
+\subsection{Integralform}
+\subsection{Differentialform}
+
+%\notebox{hey}{\blindtext}
+\end{document}

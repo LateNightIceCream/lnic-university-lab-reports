@@ -1,0 +1,97 @@
+%% Creator: Inkscape 1.0.1 (3bc2e813f5, 2020-09-07), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'zustandsdiagramm.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{550.9819184bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.28002028)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{zustandsdiagramm.pdf}}%
+    \put(0.2413799,0.08322064){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{zustandsdiagramm.pdf}}%
+    \put(0.42574575,0.08184627){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{zustandsdiagramm.pdf}}%
+    \put(0.16031017,0.08427238){\color[rgb]{0.85490196,0.46666667,0.94901961}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$97\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{zustandsdiagramm.pdf}}%
+    \put(0.34345352,0.08225146){\color[rgb]{0.85490196,0.46666667,0.94901961}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$92\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{zustandsdiagramm.pdf}}%
+    \put(0.30270491,0.00272938){\color[rgb]{0.07058824,0.72156863,0.5254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{zustandsdiagramm.pdf}}%
+    \put(0.30041892,0.16341486){\color[rgb]{0.2,0.60392157,0.94117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{zustandsdiagramm.pdf}}%
+    \put(0.60848303,0.08313303){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{zustandsdiagramm.pdf}}%
+    \put(0.79284884,0.08175862){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{zustandsdiagramm.pdf}}%
+    \put(0.52741324,0.08418477){\color[rgb]{0.85490196,0.46666667,0.94901961}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$92\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{zustandsdiagramm.pdf}}%
+    \put(0.71055662,0.08216381){\color[rgb]{0.85490196,0.46666667,0.94901961}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$92\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{zustandsdiagramm.pdf}}%
+    \put(0.66980804,0.00264173){\color[rgb]{0.07058824,0.72156863,0.5254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{zustandsdiagramm.pdf}}%
+    \put(0.66752206,0.16332721){\color[rgb]{0.2,0.60392157,0.94117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{zustandsdiagramm.pdf}}%
+    \put(0.48267216,0.16349803){\color[rgb]{0.2,0.60392157,0.94117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{zustandsdiagramm.pdf}}%
+    \put(0.49119204,0.00129651){\color[rgb]{0.07058824,0.72156863,0.5254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{zustandsdiagramm.pdf}}%
+    \put(0.85281427,0.16156409){\color[rgb]{0.2,0.60392157,0.94117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$3\%$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{zustandsdiagramm.pdf}}%
+    \put(0.85915474,0.00249512){\color[rgb]{0.07058824,0.72156863,0.5254902}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$5\%$\end{tabular}}}}%
+    \put(0.96064639,0.08205045){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$...$\end{tabular}}}}%
+    \put(-0.00061414,0.24217254){\color[rgb]{1,0.52941176,0.52941176}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Zustands-\\wahrscheinlichkeiten:\end{tabular}}}}%
+    \put(0.22446171,0.21648517){\color[rgb]{0.28627451,0.31372549,0.34117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$P_0$\end{tabular}}}}%
+    \put(0.41453199,0.22141701){\color[rgb]{0.28627451,0.31372549,0.34117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$P_1$\end{tabular}}}}%
+    \put(0.59993941,0.22023069){\color[rgb]{0.28627451,0.31372549,0.34117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$P_2$\end{tabular}}}}%
+    \put(0.781629,0.22069395){\color[rgb]{0.28627451,0.31372549,0.34117647}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$P_3$\end{tabular}}}}%
+    \put(0.20527716,0.26718511){\color[rgb]{0.87058824,0.88627451,0.90196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(WSK, dass niemand\\in der Schlange)\end{tabular}}}}%
+    \put(0.40969037,0.26628728){\color[rgb]{0.87058824,0.88627451,0.90196078}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(WSK, dass einer\\in der Schlange)\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

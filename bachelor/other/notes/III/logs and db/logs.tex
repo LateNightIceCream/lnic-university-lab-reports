@@ -1,0 +1,118 @@
+\documentclass[a4paper, 12pt]{article}
+
+\setlength\parindent{0pt}
+
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{svg}
+\usepackage{graphicx,import}
+
+\newcommand{\holine}{
+  \noindent\rule{\textwidth}{0.618pt}
+}
+\newcommand{\inklude}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+\begin{document}
+
+\section*{Logarithms}
+
+if
+$$ b^x = N $$
+then
+$$ x = \log_b{N} $$
+
+\begin{center}
+Logarithms return exponents.
+\end{center}
+
+$$ \log_{10}{100} = 2 $$
+because $10^2 = 100$
+
+\holine
+
+\begin{align*}
+  \log{0} = \textrm{undefined} (\rightarrow -\infty)\\
+  \log{a} = \textrm{undefined} ; a<1\\
+  \log{1} = 0 \\
+  \log{(a \cdot b} = \log(a) + \log(b)\\
+  \log{\frac{a}{b}} = \log(a) - \log(b)\\
+  \log{a^b} = b\cdot\log(a)\\
+\end{align*}
+
+\holine
+
+\begin{center}
+\begin{tikzpicture}
+  \begin{axis}
+    \addplot[color=red]{log10(x)};
+  \end{axis}
+\end{tikzpicture}
+\end{center}
+
+Logarithms allow for a graphical representation of both very small and very
+large values in a plot. Using a linearily scaled x- (or y-)axis results in fixed
+$\Delta x$ ($\Delta y$) which also results in a fixed physical distance (i.e. on
+a piece of paper or a screen) between each axis ticks. So as the range of values
+increases, the space needed for the plot increases linearily.\\
+
+With logarithmic scales, each tick is one power of 10 greater than its
+predecessor, i.e. $10^1 = 10, 10^2 = 100, 10^3 = 1000$.\\
+
+When choosing to plot raw data, say i.e. the datum 500, with a log-scale of i.e. base 10,
+one has to take the log of each datum to find the distance of the point from 0.
+
+\[ \log{500} \approx 2.7 \]
+
+which means that the datum 500 is 2.7 units from the 0 point. This is also where
+the name 'logarithmic' scale comes from.
+You get the exponent of 10 on the axis you want to plot the value on.
+
+\holine
+
+\subsection*{Gain and dB}
+Systems are divided into active and passive.\\
+
+\textit{Active} systems produce an output that is \textit{greater} than their
+input. They require external supply for amplification\\
+
+\textit{Passive} systems produce an output that is \textit{less} than their
+input\\
+
+\inklude{schnibibean}
+
+The Gain of active and passive Systems make use of logarithmic units.\\
+
+The standard (logarithmic) unit for gain is the Bel.\\
+
+$$\textrm{GAIN/Bel} = \log{\frac{P_{out}}{P_{in}}}$$
+
+$$10 \textrm{dB} = 1 Bel$$ so
+
+$$\textrm{GAIN/deciBel} = 10 \cdot \log{\frac{P_{out}}{P_{in}}}$$\\
+
+It sometimes makes more sense to use voltage or current in order to calculate
+gain, so express power accordingly:
+
+$$\textrm{GAIN/dB} = 10 \cdot \log{\frac{\dfrac{V_1^2}{R}}{\dfrac{V_2^2}{R}}} =
+20 \cdot \log{\frac{V_1}{V_2}}$$ that is if we assume Resistance to be the same!
+
+\underline{Examples:}\\
+$$V_{in} = 5V, V_{out} = 12V, V_{out}/V_{in} = 2.4$$
+$$\rightarrow 20 \log{\frac{12V}{5V}} = 7.6 dB$$\\
+
+$$V_{in} = 0.005V, V_{out} = 12V, V_{out}/V_{in} = 2400$$
+$$\rightarrow 20 \log{\frac{12V}{0.005V}} = 67.6 dB$$
+
+Relation to Active/Passive Systems:\\[0.5cm]
+
+Passive Systems: Output $<$ Input $\rightarrow$ - GAIN\\
+Active Systems: Output $>$ Input $\rightarrow$ + GAIN\\
+
+For filters, the critical frequency describes the situation where output Power
+is half of input Power
+$$ V_{out} = V_{in} / \sqrt{2} \rightarrow 1/2 \cdot P_{max}, GAIN: -3 dB$$
+$$ V_{out} = V_{in} / 10 \rightarrow 1/100 \cdot P_{max}, GAIN: -20 dB$$
+
+\end{document}

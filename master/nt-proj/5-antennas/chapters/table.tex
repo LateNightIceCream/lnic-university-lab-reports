@@ -1,0 +1,35 @@
+
+\begin{table}[h]
+
+\centering
+
+\begin{minipage}{\textwidth}
+\begin{tabular}{lcccccc} \toprule
+    {Name} & {$D$ ($\si{\deci\bel}$)} & {$3\,\si{\deci\bel}$-Beamw.} & {Impedance} & {Bandwidth} & {Polarization} & {Typical Sizes} \\ \midrule\midrule
+  {(nearly) omni-dir.} & & & & & & \\
+  \midrule
+    {$\lambda/2$ Dipole}  & 2.15 & $\approx 80\,\si{\degree}$ & $73\,\si{\ohm}$ & narrow & linear & $\lambda/2$  \\
+  {$\lambda/4$ Monopole}  & 5.2  & $\approx 40\,\si{\degree}$ & $36.5\,\si{\ohm}$ & narrow & linear & $\lambda/4$ \\
+  \midrule
+  {directional} & & & & & & \\
+  \midrule
+    {Patch}  & 5{...}8  & typ. $65\,\si{\degree}$ & $50..300\,\si{\ohm}$ \footnote{depends on patch width}  & narrow & linear & some $10 \,\si{\milli\meter}$\\
+    {Helix (Axial-Mode)}  & 8...14 & $\frac{5}{2}\frac{C}{\lambda}\sqrt{\frac{N\cdot S}{\lambda}}$  \footnote{$C$: circumference of one turn, $N$: number of turns, $S$: axial pitch between turns}  & $\approx 140\cdot C / \lambda$  & narrow & elliptical & $50\,\si{\milli\meter}$...few $\si{\meter}$\\
+    {Horn}  & 10{...}20  & $11\,\si{\degree}...15\,\si{\degree}$  & $50\,\si{\ohm}$ \footnote{can be matched to waveguide geometry}  & wide & linear & $50...400\,\si{\mm}$ \\
+    {Yagi}  & {...}20  & $30\,\si{\degree}...70\,\si{\degree}$ & $10...40\,\si{\ohm}$  & narrow & linear & $<10\,\si{\meter}$ \\
+    {Parabolic}  & 10{...}40  & $\approx 70\lambda / D\,\si{\degree}$ \footnote{$D$ is the aperture diameter} & depends \footnote{depends on feed antenna}  & wide & depends \footnote{depends on feed antenna}  & $0.5...500\,\si{\meter}$ \footnote{see FAST radio telescope} \\ \midrule
+  {antenna groups} & & & & & & \\
+  \midrule
+    {2x2 Patch Array}  & > patch  & $\approx 15\,\si{\degree}$ & $50\,\si{\ohm}$ & narrow  & linear &  some $10\,\si{\milli\meter}$\\
+    {Collinear Dipoles}  & $10\cdot\log{n}$ \footnote{$n:$ number of elements, gain relative to single element}  & $\propto 1/n$ & $73\,\si{\ohm} / n$ & narrow & linear & $n \cdot (\lambda / 2 + s)$ \\
+    \bottomrule
+\end{tabular}
+\end{minipage}
+
+\caption{Compilation of different antenna types.}\label{tab:ant1}
+
+\end{table}
+
+% https://en.wikipedia.org/wiki/Parabolic_antenna
+% https://en.wikipedia.org/wiki/Collinear_antenna_array
+% https://en.wikipedia.org/wiki/Monopole_antenna
