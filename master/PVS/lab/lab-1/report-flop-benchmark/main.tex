@@ -1,0 +1,109 @@
+\documentclass[10pt, a4paper]{article}
+
+\input{preamble.tex}
+
+\addbibresource{sources.bib}
+\addbibresource{web.bib}
+
+\begin{document}
+
+%\includepdf{./titlepage/titlepage.pdf}
+%\pagebreak
+
+\begin{center}
+  \Large{Einfacher COTS Performance-Benchmark}
+\end{center}
+
+\begin{flushright}
+  R. Grünert\\
+  \today
+\end{flushright}
+
+\begin{flushleft}
+  CPU: i7 4790k
+\end{flushleft}
+
+\section{Erster Benchmark}
+
+\input{chapters/flop-benchmark.tex}
+
+Für einen ersten Performancetest wurde das in Listing \ref{fig:progi} gezeigte Programm in Rust geschrieben.
+Es berechnet lediglich die durch Aufrufargumente übergebene Anzahl an (32-bit-) Fließpunktmultiplikationen (Zeile 22).
+In diesem Fall wurde \inlinecodee{num\_iterations=40000000000} gewählt.\\
+
+Das Programm wurde mit zwei unterschiedlichen Optimierungsstufen kompiliert \cite{profiles}:
+\begin{itemize}
+  \item Sog. \glqq{}release\grqq-Modus (\inlinecodee{opt-level 3})
+  \item Keine Optimierung (\inlinecodee{opt-level 0})
+\end{itemize}
+
+\begin{table}[H]
+  \centering
+\begin{tabular}{|l|l|l|}
+\hline
+opt-level & Zeit / s & Perf. / GFLOPS \\ \hline
+0         & $14.529$ & $2.753$        \\ \hline
+3         & $4.675$  & $8.557$        \\ \hline
+\end{tabular}
+\caption{Ergebnisse des ersten Benchmarks.}
+\end{table}
+
+\section{Zweiter Benchmark}
+
+\begin{figure}[H]
+  \begin{center}
+    \inputminted{rust}{./code/main2.rs}
+  \end{center}
+  \caption{Zweites Benchmarkprogramm.}
+  \label{fig:programm3}
+\end{figure}
+
+In einem weiteren Test wurde das erste Programm modifiziert, um parallele Vektoroperationen zu testen. Erneut wurde mit zwei Optimierungsstufen kompiliert.\\
+
+Lässt man sich den generierten Assembler-Code dieses Programmes ausgeben\footnote{ \inlinecodee{cargo rustc --release -- --emit asm}}, findet man im Fall der optimierten Kompilierung die Schleife der Zeilen 26 bis 36 wieder (Abb. \ref{fig:programm2}). Man erkennt partielles Loop-Unrolling sowie die SIMD-Operationen \inlinecodee{mulps} und \inlinecodee{addps}, welche die Addition bzw. Multiplikation der 4 Arraywerte in einer einzigen 128-bit Operation ermöglichen (siehe \cite{wiki_sse}). Dies ist natürlich ein konstruiertes Szenario, welches die SIMD-Operationen bevorzugt, was sich auch in der erhöhten Performance wiederspiegelt (Tabelle \ref{fig:simdm}).
+
+\begin{figure}[h]
+  \begin{center}
+    \inputminted{asm}{./code/simd.s}
+  \end{center}
+  \caption{Snippet aus dem optimierten Assembler-Code des zweiten Benchmarkprogrammes.}
+  \label{fig:programm2}
+\end{figure}
+
+\begin{table}[h]
+  \centering
+\begin{tabular}{|l|l|l|}
+\hline
+opt-level & Zeit / s & Perf. / GFLOPS \\ \hline
+0         & $43.741$ & $7.316$        \\ \hline
+3         & $7.867$  & $40.679$        \\ \hline
+\end{tabular}
+\caption{Ergebnisse des zweiten Benchmarks.}
+  \label{fig:simdm}
+\end{table}
+
+
+%\pagebreak
+
+% ------------------------------------------------------------------------------
+
+\printbibheading
+%\begin{refsection}[sources.bib]
+%\nocite{*}
+%\printbibliography[heading=subbibliography,title={Literature}]
+%\end{refsection}
+
+\begin{refsection}[web.bib]
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Web}]
+\end{refsection}
+
+%\begin{refsection}[software.bib]
+%\nocite{*}
+%\printbibliography[heading=subbibliography,title={Software Used}]
+%\end{refsection}
+
+
+%\input{task4_app.tex}
+
+\end{document}

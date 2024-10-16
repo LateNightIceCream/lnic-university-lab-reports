@@ -1,0 +1,28 @@
+Für Rust Installation:
+https://www.rust-lang.org/tools/install
+
+Danach sollte der Befehl "cargo" von der Commandline verfügbar sein.
+(test z.B. mit cargo --version)
+
+Meine Rust Version ist 1.72.0
+
+---
+
+Um das Benchmarkprogramm auszuführen, sollte man im
+Projektverzeichnis sein und folgenden Befehl ausführen:
+
+Für opt-level 0:
+cargo run --profile no-opt -- --num-iterations 4000000000
+
+Für opt-level 3:
+cargo run --release -- --num-iterations 4000000000
+
+Beim ersten Ausführen werden noch einige Pakete heruntergeladen. 
+Danach sollte alles laufen.
+
+---
+
+Hier gibt es einen CPU-Benchmark (Whetstone),
+der viele CPUs beinhaltet. Damit kann man zumindest
+die Größenordnung des Ergebnisses vergleichen.
+https://setiathome.berkeley.edu/cpu_list.php

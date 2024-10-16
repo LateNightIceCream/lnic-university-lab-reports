@@ -1,0 +1,51 @@
+\subsection{Halb- und Volladdierer}
+
+Addierschaltungen werden genutzt, um binäre Arithmetik mittels kombinatorischer Logik umzusetzen. Die beiden grundlegenden Bausteine sind Halb- und Volladdierer.
+
+\subsubsection{Halbaddierer}
+Ein Halbaddierer erzeugt das Summen- sowie das Übertragsbit (Carry) der Addition seiner zwei Eingänge $A$ und $B$.
+Die Summe kann über ein XOR-Gate und das Carry-Bit über ein einfaches AND-Gate realisiert werden.
+
+
+\begin{table}[H]
+\centering
+ \begin{tabular}{|c|c|c|c|}
+  \hline
+    $A$ & $B$ & $OUT$ & $C_{OUT}$ \\\hline
+    0 & 0 & 0 & 0\\\hline
+    0 & 1 & 1 & 0\\\hline
+    1 & 0 & 1 & 0\\\hline
+    1 & 1 & 0 & 1\\\hline
+  \end{tabular}
+  \caption{Wahrheitstabelle des Halbaddierers.}
+\end{table}
+
+\begin{figure}[H]
+  \def\svgwidth{0.382\textwidth}\normalsize
+  \begin{center}
+     \import{graphics/vorbereitung/}{halfadder.pdf_tex}
+  \end{center}
+  \caption{Schaltbild des Halbaddierers.}
+  \label{fig:halfadder}
+\end{figure}
+
+
+\subsubsection{Volladdierer}
+Zusätzlich zu den Ein- und Ausgängen des Halbaddierers besitzt ein Volladdierer ein Übertragsbit als Eingang. Die Schaltfunktion für das Summenbit des Volladdierers ist
+\[
+  OUT = A \oplus B \oplus C_{in}
+\]
+\[
+  C_{out} = A \land B \lor (A \oplus B) \land C_{in}
+\]
+
+Dies ermöglicht es, einen Volladdierer aus zwei Halbaddierern aufzubauen.
+
+\begin{figure}[H]
+  \def\svgwidth{\textwidth}\normalsize
+  \begin{center}
+     \import{graphics/vorbereitung/}{halfadder-fulladder.pdf_tex}
+  \end{center}
+  \caption{Schaltbild des Volladdierers aus zwei Halbaddierern.}
+  \label{fig:fulladder-1}
+\end{figure}
